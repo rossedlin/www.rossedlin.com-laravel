@@ -14,6 +14,10 @@ if [ -d ~/cuttingweb.co.uk/www.cuttingweb.co.uk-laravel ]; then
     cd ~/cuttingweb.co.uk/www.cuttingweb.co.uk-laravel
     composer install
 
+    #Environment File
+    cd ~/cuttingweb.co.uk/
+    cp ~/cuttingweb.co.uk/laravel-dev/.env ~/cuttingweb.co.uk/www.cuttingweb.co.uk-laravel/.env
+
     #Folders
     cd ~/cuttingweb.co.uk/
     mv laravel-dev old_laravel-dev
