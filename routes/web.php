@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/new-age', function () {
     return view('theme/new-age/index');
+});
+
+Route::get('/agency', function () {
+    return view('theme/agency/index');
 });
