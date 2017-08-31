@@ -7,9 +7,9 @@
  *
  */
 ?>
-@extends('unify.layouts.default')
+@extends('unify.layouts.home-page-4')
 @section('content')
-{{--    @include('unify.sections.home-page-1.promo')--}}
+    @include('unify.sections.home-page-4.promo')
     {{--@include('unify.sections.home-page-1.icon')--}}
 
     {{--<hr class="g-brd-gray-light-v4 my-0">--}}
