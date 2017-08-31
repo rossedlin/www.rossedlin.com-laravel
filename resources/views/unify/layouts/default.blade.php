@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ross Edlin
  * Date: 31/08/2017
- * Time: 14:34
+ * Time: 15:44
  */
 ?>
         <!DOCTYPE html>
@@ -14,12 +14,12 @@
 
 <body>
 <main>
-    @include('unify.header.home-page-1')
+    @include('unify.header.default')
 
     @yield('content')
 
-    @include('unify.sections.home-page-1.footer')
-    @include('unify.footer.home-page-1')
+    @include('unify.sections.home.footer')
+    @include('unify.footer.default')
 
     <a class="js-go-to u-go-to-v1" href="#"
        data-type="fixed"

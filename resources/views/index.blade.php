@@ -7,25 +7,25 @@
  *
  */
 ?>
-@extends('unify.layouts.home-page-1')
+@extends('unify.layouts.default')
 @section('content')
-    @include('unify.sections.home-page-1.promo')
-    @include('unify.sections.home-page-1.icon')
+{{--    @include('unify.sections.home-page-1.promo')--}}
+    {{--@include('unify.sections.home-page-1.icon')--}}
 
-    <hr class="g-brd-gray-light-v4 my-0">
+    {{--<hr class="g-brd-gray-light-v4 my-0">--}}
 
-    @include('unify.sections.home-page-1.about')
+{{--    @include('unify.sections.home-page-1.about')--}}
 
-    <hr class="g-brd-gray-light-v4 my-0">
+    {{--<hr class="g-brd-gray-light-v4 my-0">--}}
 
-    @include('unify.sections.home-page-1.recent-projects')
-    @include('unify.sections.home-page-1.quality-solution')
-    @include('unify.sections.home-page-1.our-environment')
-    @include('unify.sections.home-page-1.counters')
+{{--    @include('unify.sections.home-page-1.recent-projects')--}}
+{{--    @include('unify.sections.home-page-1.quality-solution')--}}
+{{--    @include('unify.sections.home-page-1.our-environment')--}}
+{{--    @include('unify.sections.home-page-1.counters')--}}
 
-    <hr class="g-brd-gray-light-v4 my-0">
+    {{--<hr class="g-brd-gray-light-v4 my-0">--}}
 
-    @include('unify.sections.home-page-1.latest-news')
-    @include('unify.sections.home-page-1.call-to-action')
+{{--    @include('unify.sections.home-page-1.latest-news')--}}
+{{--    @include('unify.sections.home-page-1.call-to-action')--}}
 
 @stop
