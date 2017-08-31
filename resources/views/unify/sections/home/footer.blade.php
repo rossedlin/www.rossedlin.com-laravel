@@ -65,19 +65,19 @@
 					<ul class="list-unstyled g-mt-minus-10 mb-0">
 						<li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
 							<h4 class="h6 g-pr-20 mb-0">
-								<a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">About Us</a>
+								<a class="g-color-white-opacity-0_8 g-color-white--hover" href="/about">About Us</a>
 								<i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
 							</h4>
 						</li>
 						<li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
 							<h4 class="h6 g-pr-20 mb-0">
-								<a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Portfolio</a>
+								<a class="g-color-white-opacity-0_8 g-color-white--hover" href="/portfolio">Portfolio</a>
 								<i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
 							</h4>
 						</li>
 						<li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
 							<h4 class="h6 g-pr-20 mb-0">
-								<a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Our Services</a>
+								<a class="g-color-white-opacity-0_8 g-color-white--hover" href="/services">Our Services</a>
 								<i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
 							</h4>
 						</li>
@@ -89,7 +89,7 @@
 						</li>
 						<li class="g-pos-rel g-py-10">
 							<h4 class="h6 g-pr-20 mb-0">
-								<a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Contact Us</a>
+								<a class="g-color-white-opacity-0_8 g-color-white--hover" href="/contact">Contact Us</a>
 								<i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
 							</h4>
 						</li>
@@ -106,6 +106,8 @@
 
 				<address class="g-bg-no-repeat g-font-size-12 mb-0"
 						 style="background-image: url(/theme/unify/assets/img/maps/map2.png);">
+
+                    <?php /*
 					<!-- Location -->
 					<div class="d-flex g-mb-20">
 						<div class="g-mr-10">
@@ -116,7 +118,9 @@
 						<p class="mb-0">795 Folsom Ave, Suite 600, <br> San Francisco, CA 94107 795</p>
 					</div>
 					<!-- End Location -->
+                    */ ?>
 
+					<?php /*
 					<!-- Phone -->
 					<div class="d-flex g-mb-20">
 						<div class="g-mr-10">
@@ -124,9 +128,12 @@
                       <i class="fa fa-phone"></i>
                     </span>
 						</div>
-						<p class="mb-0">(+123) 456 7890 <br> (+123) 456 7891</p>
+						<p class="mb-0" style="margin-top: 8px;">
+							<a class="g-color-white-opacity-0_8 g-color-white--hover" href="tel:+442032907017">(+44) 020 3290 7017</a>
+						</p>
 					</div>
 					<!-- End Phone -->
+ 					*/ ?>
 
 					<!-- Email and Website -->
 					<div class="d-flex g-mb-20">
@@ -137,10 +144,10 @@
 						</div>
 						<p class="mb-0">
 							<a class="g-color-white-opacity-0_8 g-color-white--hover"
-							   href="mailto:info@htmlstream.com">info@htmlstream.com</a>
+							   href="mailto:contact@cuttingweb.co.uk">contact@cuttingweb.co.uk</a>
 							<br>
 							<a class="g-color-white-opacity-0_8 g-color-white--hover"
-							   href="#">www.htmlstream.com</a>
+							   href="http://www.cuttingweb.co.uk">www.cuttingweb.co.uk</a>
 						</p>
 					</div>
 					<!-- End Email and Website -->
