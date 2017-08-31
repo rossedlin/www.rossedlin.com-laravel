@@ -9,15 +9,23 @@
 ?>
 @extends('unify.layouts.home-page-1')
 @section('content')
-    <section id="portfolio" class="bg-light-gray">
-        {{--@include('sections.agency.portfolio')--}}
-    </section>
+    @include('unify.sections.home-page-1.promo')
+    @include('unify.sections.home-page-1.icon')
 
-    <section id="experience">
-{{--        @include('sections/agency/experience')--}}
-    </section>
+    <hr class="g-brd-gray-light-v4 my-0">
 
-    <section id="contact">
-{{--        @include('sections/agency/contact')--}}
-    </section>
+    @include('unify.sections.home-page-1.about')
+
+    <hr class="g-brd-gray-light-v4 my-0">
+
+    @include('unify.sections.home-page-1.recent-projects')
+    @include('unify.sections.home-page-1.quality-solution')
+    @include('unify.sections.home-page-1.our-environment')
+    @include('unify.sections.home-page-1.counters')
+
+    <hr class="g-brd-gray-light-v4 my-0">
+
+    @include('unify.sections.home-page-1.latest-news')
+    @include('unify.sections.home-page-1.call-to-action')
+
 @stop

@@ -13,21 +13,13 @@
 </head>
 
 <body>
-
-<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-    {{--@include('includes.agency.nav')--}}
-</nav>
-
 <main>
-{{--@yield('content')--}}
+    @include('unify.header.home-page-1')
 
-    <header id="js-header" class="u-header u-header--static">
-        @include('unify.header.home-page-1')
-    </header>
+    @yield('content')
 
-    <footer>
-        @include('unify.footer.home-page-1')
-    </footer>
+    @include('unify.sections.home-page-1.footer')
+    @include('unify.footer.home-page-1')
 
     <a class="js-go-to u-go-to-v1" href="#"
        data-type="fixed"
