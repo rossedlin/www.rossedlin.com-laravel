@@ -18,7 +18,7 @@
 
     @yield('content')
 
-    @include('unify.sections.home-page-1.footer')
+    @include('unify.sections.home.footer')
     @include('unify.footer.home-page-1')
 
     <a class="js-go-to u-go-to-v1" href="#"
