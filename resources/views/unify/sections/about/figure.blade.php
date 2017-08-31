@@ -11,7 +11,7 @@
     <figure class="row">
         <!-- Figure Image -->
         <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0 g-mb-30">
-            <img class="w-100" src="/img/about/ross-edlin-headshot-400-450.jpg" alt="Image Description">
+            <img class="w-100 rounded border" src="/img/about/ross-edlin-headshot-400-450.jpg" alt="Image Description">
         </div>
         <!-- End Figure Image -->
 

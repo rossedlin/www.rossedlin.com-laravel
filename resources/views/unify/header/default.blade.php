@@ -201,6 +201,18 @@
                             </ul>
                         </li>
                         <!-- End Demos -->
+
+                        <!-- About -->
+                        <li class="hs-has-mega-menu nav-item g-mx-10--lg g-mx-15--xl">
+                            <a id="mega-menu-about" class="nav-link g-py-7 g-px-0" href="/about">About</a>
+                        </li>
+                        <!-- End About -->
+
+                        <!-- Contact -->
+                        <li class="hs-has-mega-menu nav-item g-mx-10--lg g-mx-15--xl">
+                            <a id="mega-menu-about" class="nav-link g-py-7 g-px-0" href="/contact">Contact</a>
+                        </li>
+                        <!-- End Contact -->
                     </ul>
                 </div>
                 <!-- End Navigation -->

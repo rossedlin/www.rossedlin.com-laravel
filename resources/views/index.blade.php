@@ -7,7 +7,7 @@
  *
  */
 ?>
-@extends('unify.layouts.home-page-4')
+@extends('unify.layouts.default')
 @section('content')
     @include('unify.sections.home-page-4.promo')
     {{--@include('unify.sections.home-page-1.icon')--}}
