@@ -11,14 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function ()
+{
+	return view('index');
 });
 
-Route::get('/new-age', function () {
-    return view('theme/new-age/index');
+Route::get('/new-age', function ()
+{
+	return view('theme/new-age/index');
 });
 
-Route::get('/agency', function () {
-    return view('theme/agency/index');
+Route::get('/agency', function ()
+{
+	return view('theme/agency/index');
+});
+
+Route::get('/unify', function ()
+{
+	return view('theme/unify/demo/home/page-1');
 });
