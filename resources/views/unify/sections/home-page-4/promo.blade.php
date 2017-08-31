@@ -8,7 +8,7 @@
 ?>
 <!-- Promo Block -->
 <section class="g-flex-centered g-bg-pos-center g-bg-img-hero g-py-150"
-         style="background-image: url(/theme/unify/assets/img-temp/1920x1080/img2.jpg);" data-calc-target="#js-header">
+         style="background-image: url(/img/header/young-employee-working-2000vh.jpg);" data-calc-target="#js-header">
     <div class="container text-center g-z-index-1">
         <div class="g-mb-50"
              data-animation="fadeInUp"
@@ -41,9 +41,9 @@
                 data-animation-delay="1100"
                 data-animation-duration="1500">
             <a class="btn btn-lg u-btn-outline-black g-font-weight-600 g-font-size-13 text-uppercase g-rounded-50 mx-2 g-px-25 g-py-15 g-mb-20"
-               href="#">Discover More</a>
+               href="/portfolio">See our portfolio</a>
             <a class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase g-rounded-50 mx-2 g-px-25 g-py-15 g-mb-20"
-               href="#">Purchase Now</a>
+               href="/contact">Contact Us</a>
         </div>
     </div>
 </section>
