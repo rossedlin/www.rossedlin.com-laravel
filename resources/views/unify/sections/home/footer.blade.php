@@ -83,12 +83,6 @@
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
-                        <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
-                            <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Latest Jobs</a>
-                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
-                            </h4>
-                        </li>
                         <li class="g-pos-rel g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
                                 <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/contact">Contact Us</a>
