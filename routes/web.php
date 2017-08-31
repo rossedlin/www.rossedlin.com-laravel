@@ -16,6 +16,20 @@ Route::get('/', function ()
 	return view('index');
 });
 
+Route::get('/about', function ()
+{
+	return view('about');
+});
+
+Route::get('/portfolio', function ()
+{
+	return view('portfolio');
+});
+
+/**
+ * Themes
+ */
+
 Route::get('/new-age', function ()
 {
 	return view('theme/new-age/index');
@@ -24,9 +38,4 @@ Route::get('/new-age', function ()
 Route::get('/agency', function ()
 {
 	return view('theme/agency/index');
-});
-
-Route::get('/unify', function ()
-{
-	return view('theme/unify/demo/home/page-1');
 });

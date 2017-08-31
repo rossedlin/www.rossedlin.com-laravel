@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Ross Edlin
  * Date: 31/08/2017
- * Time: 15:44
+ * Time: 16:27
  */
 ?>
         <!DOCTYPE html>
@@ -18,8 +18,8 @@
 
     @yield('content')
 
-    @include('unify.sections.home.footer')
     @include('unify.footer.default')
+    @include('unify.copyright.default')
 
     <a class="js-go-to u-go-to-v1" href="#"
        data-type="fixed"
@@ -41,22 +41,26 @@
 <script src="/theme/unify/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 <!-- JS Implementing Plugins -->
+<script src="/theme/unify/assets/vendor/appear.js"></script>
+<script src="/theme/unify/assets/vendor/slick-carousel/slick/slick.js"></script>
 <script src="/theme/unify/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
 <script src="/theme/unify/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
 <script src="/theme/unify/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
 <script src="/theme/unify/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
-<script src="/theme/unify/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-<script src="/theme/unify/assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="/theme/unify/assets/vendor/typedjs/typed.min.js"></script>
+<script src="/theme/unify/assets/vendor/hs-bg-video/hs-bg-video.js"></script>
+<script src="/theme/unify/assets/vendor/hs-bg-video/vendor/player.min.js"></script>
+<script src="/theme/unify/assets/vendor/fancybox/jquery.fancybox.js"></script>
 
 <!-- JS Unify -->
 <script src="/theme/unify/assets/js/hs.core.js"></script>
 <script src="/theme/unify/assets/js/components/hs.header.js"></script>
 <script src="/theme/unify/assets/js/helpers/hs.hamburgers.js"></script>
 <script src="/theme/unify/assets/js/components/hs.tabs.js"></script>
+<script src="/theme/unify/assets/js/helpers/hs.height-calc.js"></script>
+<script src="/theme/unify/assets/js/components/hs.onscroll-animation.js"></script>
+<script src="/theme/unify/assets/js/helpers/hs.bg-video.js"></script>
 <script src="/theme/unify/assets/js/components/hs.popup.js"></script>
 <script src="/theme/unify/assets/js/components/hs.carousel.js"></script>
-<script src="/theme/unify/assets/js/components/text-animation/hs.text-slideshow.js"></script>
 <script src="/theme/unify/assets/js/components/hs.go-to.js"></script>
 
 <!-- JS Customization -->
@@ -68,26 +72,44 @@
         // initialization of carousel
         $.HSCore.components.HSCarousel.init('.js-carousel');
 
+        $('#we-provide').slick('setOption', 'responsive', [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }], true);
+
         // initialization of tabs
         $.HSCore.components.HSTabs.init('[role="tablist"]');
 
-        // initialization of popups
-        $.HSCore.components.HSPopup.init('.js-fancybox');
+        // initialization of header's height equal offset
+        $.HSCore.helpers.HSHeightCalc.init();
+
+        // initialization of scroll animation
+        $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+        // initialization of video on background
+        $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
+
+        // initialization of popups with media
+        $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+            helpers: {
+                media: {},
+                overlay: {
+                    css: {
+                        'background': 'rgba(0, 0, 0, .8)'
+                    }
+                }
+            }
+        });
 
         // initialization of go to
         $.HSCore.components.HSGoTo.init('.js-go-to');
-
-        // initialization of text animation (typing)
-        $(".u-text-animation.u-text-animation--typing").typed({
-            strings: [
-                "an awesome template",
-                "perfect template",
-                "just like a boss"
-            ],
-            typeSpeed: 60,
-            loop: true,
-            backDelay: 1500
-        });
     });
 
     $(window).on('load', function () {
