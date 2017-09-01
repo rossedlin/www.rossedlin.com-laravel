@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use App\Objects\Page;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
@@ -47,7 +48,9 @@ class Handler extends ExceptionHandler
     {
         if ($exception instanceof NotFoundHttpException)
         {
-			return response()->view('404', [], 404);
+            return response()->view('not-found', [
+                'page' => new Page(),
+            ], 404);
         }
 
         return parent::render($request, $exception);
