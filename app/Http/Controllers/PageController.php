@@ -59,6 +59,9 @@ class PageController extends Controller
 			case 'index':
 				return view('index', $this->data);
 
+			case 'portfolio':
+				return view('portfolio', $this->data);
+
 			case 'about':
 				return view('about', $this->data);
 

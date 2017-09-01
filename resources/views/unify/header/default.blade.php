@@ -43,12 +43,15 @@
                         </li>
                         <!-- End Home -->
 
+                        <?php /*
                         <!-- Blog -->
                         <li class="hs-has-mega-menu nav-item g-mx-10--lg g-mx-15--xl">
                             <a id="mega-menu-blog" class="nav-link g-py-7 g-px-0" href="/blog">Blog</a>
                         </li>
                         <!-- End Blog -->
+                        */ ?>
 
+                        <?php /*
                         <!-- Demos -->
                         <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mx-15--xl"
                             data-animation-in="fadeIn"
@@ -201,6 +204,13 @@
                             </ul>
                         </li>
                         <!-- End Demos -->
+                        */ ?>
+
+                        <!-- Portfolio -->
+                        <li class="hs-has-mega-menu nav-item g-mx-10--lg g-mx-15--xl">
+                            <a id="mega-menu-portfolio" class="nav-link g-py-7 g-px-0" href="/portfolio">Portfolio</a>
+                        </li>
+                        <!-- End Portfolio -->
 
                         <!-- About -->
                         <li class="hs-has-mega-menu nav-item g-mx-10--lg g-mx-15--xl">
