@@ -11,20 +11,8 @@
 |
 */
 
-Route::get('/', function ()
-{
-	return view('index');
-});
-
-Route::get('/about', function ()
-{
-	return view('about');
-});
-
-Route::get('/portfolio', function ()
-{
-	return view('portfolio');
-});
+Route::get('/', 'PageController');
+Route::get('/{page}', 'PageController');
 
 /**
  * Themes

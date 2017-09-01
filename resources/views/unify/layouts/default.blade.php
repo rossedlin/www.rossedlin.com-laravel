@@ -9,7 +9,7 @@
         <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('unify.head.home-page-1')
+    @include('unify.head.default')
 </head>
 
 <body>

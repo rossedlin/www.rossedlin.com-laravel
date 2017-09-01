@@ -1,14 +1,13 @@
 <?php
 namespace App\Objects;
-
-	/**
-	 * Created by PhpStorm.
-	 * User: rosse
-	 * Date: 01/09/2017
-	 * Time: 15:00
-	 */
+use League\Flysystem\Config;
 
 /**
+ * Created by PhpStorm.
+ * User: Ross Edlin
+ * Date: 01/09/2017
+ * Time: 15:00
+ *
  * Class Page
  * @package App\Objects
  */
@@ -29,7 +28,9 @@ class Page
 	 */
 	public function __construct($data = [])
 	{
-		$this->data = array_merge(self::$default, $data);
+		$this->data = array_merge([
+			'title' => config('site.title'),
+		], $data);
 	}
 
 	/**
