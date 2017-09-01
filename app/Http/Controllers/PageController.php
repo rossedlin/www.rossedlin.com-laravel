@@ -62,6 +62,9 @@ class PageController extends Controller
 			case 'about':
 				return view('about', $this->data);
 
+			case 'contact':
+				return view('contact', $this->data);
+
 			case 'feed':
 				return $this->feed();
 		}

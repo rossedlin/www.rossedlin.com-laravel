@@ -8,6 +8,6 @@
 ?>
 @extends('unify.layouts.default')
 @section('content')
-    @include('unify.sections.about.breadcrumbs')
-    @include('unify.sections.about.figure')
+    @include('unify.sections.contact.breadcrumbs')
+    @include('unify.sections.contact.contact-form')
 @stop
