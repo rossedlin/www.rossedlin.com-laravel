@@ -15,6 +15,9 @@ class Element
 	/** @var string $subUrl */
 	private $subUrl;
 
+	/** @var bool $active */
+	private $active = false;
+
 
 	/**
 	 * Navigation
@@ -26,6 +29,11 @@ class Element
 	{
 		$this->name   = (string)$name;
 		$this->subUrl = (string)$subUrl;
+
+		if ($subUrl == '/')
+		{
+			$this->active = true;
+		}
 	}
 
 	/**
@@ -42,5 +50,18 @@ class Element
 	public function getSubUrl()
 	{
 		return $this->subUrl;
+	}
+
+	/**
+	 * @return bool
+	 */
+	public function isActive()
+	{
+		if ($this->active)
+		{
+			return true;
+		}
+
+		return false;
 	}
 }
