@@ -45,7 +45,7 @@ class PageController extends Controller
 		$this->data = [
 			'page'       => $this->page,
 			'navigation' => [
-				new Objects\Navigation\Element('Home', '/home'),
+				new Objects\Navigation\Element('Home', '/'),
 				new Objects\Navigation\Element('Portfolio', '/portfolio'),
 				new Objects\Navigation\Element('About', '/about'),
 				new Objects\Navigation\Element('Contact', '/contact'),
