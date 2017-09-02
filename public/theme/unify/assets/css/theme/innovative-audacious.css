@@ -1,10 +1,22 @@
 /**
  *
  * #FFFFFF
+ * #000000
  *
- * #272727
+ * #0e0e0e - Near Black
+ * #272727 - Dark Gray
+ * #747474 - Light Gray
+
+ * #FF652F - Orange
+ * #FFE400 - Yellow
+ * #14A76C - Green
  *
  */
+
+body
+{
+	color: #747474;
+}
 
 .navbar
 {
@@ -13,7 +25,7 @@
 
 a
 {
-	color: #DAAD86;
+	color: #14A76C;
 }
 
 /**
@@ -21,10 +33,20 @@ a
  */
 .nav-item a
 {
-	color: #FFFFFF;
+	color: #FF652F;
 }
 
 .nav-item
 {
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer
+{
+	background-color: #272727;
+}
+
+.copyright
+{
+	background-color: #0e0e0e;
 }
