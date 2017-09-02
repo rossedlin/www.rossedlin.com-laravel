@@ -45,3 +45,10 @@
 
 <!-- CSS Customization -->
 <link rel="stylesheet" href="<?= \CuttingWeb\Core::addVersionToCssFile('/theme/unify/assets/css/custom.css') ?>">
+
+<?php
+if (config('site.theme'))
+{ ?>
+<link rel="stylesheet"
+      href="<?= \CuttingWeb\Core::addVersionToCssFile('/theme/unify/assets/css/theme/' . config('site.theme') . '.css') ?>">
+<?php } ?>

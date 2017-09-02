@@ -8,7 +8,8 @@
 
 return [
 	//Site
-	'title' => 'Cutting Web',
+	'theme'    => 'natural-earthy',
+	'title'    => 'Cutting Web',
 
 	//Social
 	'facebook' => 'https://www.facebook.com/scotchdevelopment',

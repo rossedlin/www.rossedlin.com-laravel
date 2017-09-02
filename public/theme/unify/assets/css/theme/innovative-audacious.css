@@ -1,0 +1,30 @@
+/**
+ *
+ * #FFFFFF
+ *
+ * #272727
+ *
+ */
+
+.navbar
+{
+	background-color: #272727;
+}
+
+a
+{
+	color: #DAAD86;
+}
+
+/**
+ * Nav
+ */
+.nav-item a
+{
+	color: #FFFFFF;
+}
+
+.nav-item
+{
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
