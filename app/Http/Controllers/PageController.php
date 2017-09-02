@@ -43,7 +43,13 @@ class PageController extends Controller
 		]);
 
 		$this->data = [
-			'page' => $this->page,
+			'page'       => $this->page,
+			'navigation' => [
+				new Objects\Navigation\Element('Home', '/home'),
+				new Objects\Navigation\Element('Portfolio', '/portfolio'),
+				new Objects\Navigation\Element('About', '/about'),
+				new Objects\Navigation\Element('Contact', '/contact'),
+			],
 		];
 	}
 
@@ -54,6 +60,8 @@ class PageController extends Controller
 	 */
 	public function __invoke($id = 'index')
 	{
+		$this->data['id'] = $id;
+
 		switch ($id)
 		{
 			case 'index':
