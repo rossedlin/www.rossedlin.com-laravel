@@ -51,4 +51,5 @@ if (config('site.theme'))
 { ?>
 <link rel="stylesheet"
       href="<?= \CuttingWeb\Core::addVersionToCssFile('/theme/unify/assets/css/theme/' . config('site.theme') . '.css') ?>">
+<link rel="stylesheet" href="<?= \CuttingWeb\Core::addVersionToCssFile('/theme/unify/assets/css/theme.css') ?>">
 <?php } ?>

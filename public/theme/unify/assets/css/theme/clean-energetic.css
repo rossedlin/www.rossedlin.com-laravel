@@ -1,0 +1,19 @@
+/**
+ *
+ * #FFFFFF
+ * #000000
+ *
+ * #5680E9
+ * #84CEEB
+ * #5AB9EA
+ * #C1C8E4
+ * #8860D0
+ *
+ */
+
+:root
+{
+	--text-color:       #ffffff;
+	--background-color: #C1C8E4;
+	--link-color:       #5680E9;
+}

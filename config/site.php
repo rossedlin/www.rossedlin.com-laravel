@@ -11,7 +11,8 @@ return [
 	 * Site
 	 */
 //	'theme'    => 'natural-earthy',
-	'theme'    => 'innovative-audacious',
+//	'theme'    => 'innovative-audacious',
+	'theme'    => 'clean-energetic',
 	'title'    => 'Cutting Web',
 
 	/**
