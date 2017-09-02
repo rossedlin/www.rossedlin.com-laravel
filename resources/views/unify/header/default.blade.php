@@ -38,14 +38,14 @@
                 <!-- Navigation -->
                 <div class="collapse navbar-collapse align-items-center"
                      id="navBar">
-                    <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+                    <ul class="navbar-nav text-uppercase ml-auto">
 
                         <?php foreach ($navigation as $element)
                         {
                         ?>
 
-                        <li class="hs-has-mega-menu nav-item g-mx-10--lg g-mx-15--xl">
-                            <a id="mega-menu-home" class="nav-link g-py-7 g-px-0" href="<?= $element->getSubUrl() ?>"><?= $element->getName() ?></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= $element->getSubUrl() ?>"><?= $element->getName() ?></a>
                         </li>
 
                         <?php } ?>
