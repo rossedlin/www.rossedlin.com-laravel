@@ -10,7 +10,6 @@
  */
 ?>
 <header id="js-header" class="u-header u-header--static">
-    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
         <nav class="js-mega-menu navbar navbar-toggleable-md">
             <div class="container">
                 <!-- Responsive Toggle Button -->
@@ -54,5 +53,4 @@
                 <!-- End Navigation -->
             </div>
         </nav>
-    </div>
 </header>
