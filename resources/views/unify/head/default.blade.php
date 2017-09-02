@@ -44,4 +44,4 @@
 <link rel="stylesheet" href="/theme/unify/assets/css/unify.css">
 
 <!-- CSS Customization -->
-<link rel="stylesheet" href="/theme/unify/assets/css/custom.css">
+<link rel="stylesheet" href="<?= \CuttingWeb\Core::addVersionToCssFile('/theme/unify/assets/css/custom.css') ?>">
