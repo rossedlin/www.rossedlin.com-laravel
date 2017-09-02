@@ -7,11 +7,16 @@
  */
 
 return [
-	//Site
-	'theme'    => 'natural-earthy',
+	/**
+	 * Site
+	 */
+//	'theme'    => 'natural-earthy',
+	'theme'    => 'innovative-audacious',
 	'title'    => 'Cutting Web',
 
-	//Social
-	'facebook' => 'https://www.facebook.com/scotchdevelopment',
-	'twitter'  => 'https://twitter.com/scotch_io',
+	/**
+	 * Social
+	 */
+	'facebook' => 'https://www.facebook.com/rossedlin',
+	'twitter'  => 'https://twitter.com/rossedlin',
 ];
