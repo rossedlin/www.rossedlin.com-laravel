@@ -7,7 +7,7 @@
  */
 ?>
 <!-- Footer -->
-<div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+<footer class="footer g-py-60">
     <div class="container">
         <div class="row">
             <!-- Footer Content -->
@@ -29,7 +29,7 @@
 
                 <article>
                     <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Incredible template</a>
+                        <a class="g-color-white--hover" href="#">Incredible template</a>
                     </h3>
                     <div class="small g-color-white-opacity-0_6">May 8, 2017</div>
                 </article>
@@ -38,7 +38,7 @@
 
                 <article>
                     <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">New features</a>
+                        <a class="g-color-white--hover" href="#">New features</a>
                     </h3>
                     <div class="small g-color-white-opacity-0_6">June 23, 2017</div>
                 </article>
@@ -47,7 +47,7 @@
 
                 <article>
                     <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">New terms and
+                        <a class="g-color-white--hover" href="#">New terms and
                             conditions</a>
                     </h3>
                     <div class="small g-color-white-opacity-0_6">September 15, 2017</div>
@@ -65,27 +65,27 @@
                     <ul class="list-unstyled g-mt-minus-10 mb-0">
                         <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/about">About Us</a>
+                                <a class="g-color-white--hover" href="/about">About Us</a>
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
                         <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover"
+                                <a class="g-color-white--hover"
                                    href="/portfolio">Portfolio</a>
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
                         <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/services">Our
+                                <a class="g-color-white--hover" href="/services">Our
                                     Services</a>
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
                         <li class="g-pos-rel g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/contact">Contact Us</a>
+                                <a class="g-color-white--hover" href="/contact">Contact Us</a>
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
@@ -125,7 +125,7 @@
                     </span>
 						</div>
 						<p class="mb-0" style="margin-top: 8px;">
-							<a class="g-color-white-opacity-0_8 g-color-white--hover" href="tel:+442032907017">(+44) 020 3290 7017</a>
+							<a class="g-color-white--hover" href="tel:+442032907017">(+44) 020 3290 7017</a>
 						</p>
 					</div>
 					<!-- End Phone -->
@@ -139,10 +139,10 @@
                     </span>
                         </div>
                         <p class="mb-0">
-                            <a class="g-color-white-opacity-0_8 g-color-white--hover"
+                            <a class="g-color-white--hover"
                                href="mailto:contact@cuttingweb.co.uk">contact@cuttingweb.co.uk</a>
                             <br>
-                            <a class="g-color-white-opacity-0_8 g-color-white--hover"
+                            <a class="g-color-white--hover"
                                href="http://www.cuttingweb.co.uk">www.cuttingweb.co.uk</a>
                         </p>
                     </div>
@@ -152,5 +152,5 @@
             <!-- End Footer Content -->
         </div>
     </div>
-</div>
+</footer>
 <!-- End Footer -->
