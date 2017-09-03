@@ -8,11 +8,16 @@
 
 return [
 	/**
-	 * Site
+	 * Theme
 	 */
 //	'theme'    => 'natural-earthy',
 //	'theme'    => 'innovative-audacious',
-	'theme'    => 'clean-energetic',
+//	'theme'    => 'clean-energetic',
+	'theme'    => 'gorgeous-contrast',
+
+	/**
+	 * Site
+	 */
 	'title'    => 'Cutting Web',
 
 	/**
