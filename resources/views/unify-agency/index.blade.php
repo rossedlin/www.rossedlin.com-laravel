@@ -24,7 +24,8 @@
     {{--@include('unify-agency.sections.word-process')--}}
     {{--@include('unify-agency.sections.skills')--}}
     {{--@include('unify-agency.sections.team')--}}
-    {{--@include('unify-agency.sections.testimonials')--}}
+
+    @include('unify-agency.sections.testimonials')
     @include('unify-agency.sections.contact')
 
     @include('unify-agency.footer.default')
