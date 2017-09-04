@@ -13,76 +13,11 @@
 </head>
 
 <body>
-<main>
-    <!-- Header v1 -->
-    <header id="js-header" class="u-header u-header--static u-header--show-hide u-header--change-appearance"
-            data-header-fix-moment="100"
-            data-header-fix-effect="slide">
-        <div class="u-header__section g-bg-white g-transition-0_3 g-py-16 g-py-10--md"
-             data-header-fix-moment-exclude="g-bg-white"
-             data-header-fix-moment-classes="u-shadow-v27 g-bg-white-opacity-0_9">
-            <nav class="navbar navbar-toggleable-md p-0 g-px-15">
-                <div class="container">
-                    <!-- Logo -->
-                    <a href="#" class="navbar-brand u-header__logo">
-                        <img class="u-header__logo-img u-header__logo-img--main g-width-130"
-                             src="/theme/unify-agency/assets/img/logo-dark.png" alt="Image Description">
-                    </a>
-                    <!-- End Logo -->
+<div>
 
-                    <!-- Navigation -->
-                    <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
-                        <ul id="js-scroll-nav"
-                            class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 ml-auto g-pt-20 g-pt-0--lg">
-                            <li class="nav-item g-mr-15--lg g-mb-7 g-mb-0--lg active">
-                                <a href="#about" class="nav-link p-0">About <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                                <a href="#whyWe" class="nav-link p-0">Why we</a>
-                            </li>
-                            <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                                <a href="#services" class="nav-link p-0">Services</a>
-                            </li>
-                            <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                                <a href="#workProcess" class="nav-link p-0">Work process</a>
-                            </li>
-                            <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                                <a href="#skills" class="nav-link p-0">Skills</a>
-                            </li>
-                            <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                                <a href="#team" class="nav-link p-0">Team</a>
-                            </li>
-                            <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                                <a href="#testimonials" class="nav-link p-0">Testimonials</a>
-                            </li>
-                            <li class="nav-item g-ml-15--lg">
-                                <a href="#contact" class="nav-link p-0">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- End Navigation -->
+@include('unify-agency.header.default')
 
-                    <!-- Responsive Toggle Button -->
-                    <button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-mt-18 ml-auto" type="button"
-                            aria-label="Toggle navigation"
-                            aria-expanded="false"
-                            aria-controls="navBar"
-                            data-toggle="collapse"
-                            data-target="#navBar">
-                <span class="hamburger hamburger--slider">
-                  <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                  </span>
-                </span>
-                    </button>
-                    <!-- End Responsive Toggle Button -->
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- End Header v1 -->
-
-    <!-- Section Content -->
+<!-- Section Content -->
     <section id="home">
         <div id="promoSliderWrapper" class="rev_slider_wrapper fullscreen-container" data-alias="scroll-effect76"
              style="background-color: #111111; padding: 0;">
@@ -104,7 +39,8 @@
                         data-saveperformance="off"
                         data-title="Unify Agency">
                         <!-- MAIN IMAGE -->
-                        <img class="rev-slidebg" src="/theme/unify-agency/assets/img-temp/1920x1080/img1.jpg" alt="Image description"
+                        <img class="rev-slidebg" src="/theme/unify-agency/assets/img-temp/1920x1080/img1.jpg"
+                             alt="Image description"
                              data-bgposition="center center"
                              data-bgfit="cover"
                              data-bgrepeat="no-repeat"
@@ -245,7 +181,8 @@
                         data-saveperformance="off"
                         data-title="HTML5 Video">
                         <!-- MAIN IMAGE -->
-                        <img class="rev-slidebg" src="/theme/unify-agency/assets/img-temp/1920x1080/img2.jpg" alt="Image description"
+                        <img class="rev-slidebg" src="/theme/unify-agency/assets/img-temp/1920x1080/img2.jpg"
+                             alt="Image description"
                              data-bgposition="center center"
                              data-bgfit="cover"
                              data-bgrepeat="no-repeat"
@@ -403,7 +340,8 @@
                         data-saveperformance="off"
                         data-title="Scroll Down">
                         <!-- MAIN IMAGE -->
-                        <img class="rev-slidebg" src="/theme/unify-agency/assets/img-temp/1920x1080/img3.jpg" alt="Image description"
+                        <img class="rev-slidebg" src="/theme/unify-agency/assets/img-temp/1920x1080/img3.jpg"
+                             alt="Image description"
                              data-bgposition="center center"
                              data-bgfit="cover"
                              data-bgrepeat="no-repeat"
@@ -547,7 +485,8 @@
         <div class="row align-items-stretch no-gutters">
             <div class="col-md-6">
                 <!-- Article -->
-                <article class="h-100 g-bg-img-hero" style="background-image: url(/theme/unify-agency/assets/img-temp/900x390/img1.jpg);">
+                <article class="h-100 g-bg-img-hero"
+                         style="background-image: url(/theme/unify-agency/assets/img-temp/900x390/img1.jpg);">
                     <div class="d-flex text-left text-lg-right h-100 g-theme-bg-gray-dark-v2 g-bg-primary-dark-v1-opacity-0_9--hover g-py-30 g-py-90--md g-px-15 g-px-30--md g-pr-170--lg g-transition-0_3 g-transition--ease-in">
                         <div class="align-self-center">
                             <h3 class="h5 text-uppercase g-font-weight-700 g-font-secondary g-color-white g-mb-12">We
@@ -563,7 +502,8 @@
 
             <div class="col-md-6">
                 <!-- Article -->
-                <article class="h-100 g-bg-img-hero" style="background-image: url(/theme/unify-agency/assets/img-temp/900x390/img2.jpg);">
+                <article class="h-100 g-bg-img-hero"
+                         style="background-image: url(/theme/unify-agency/assets/img-temp/900x390/img2.jpg);">
                     <div class="d-flex h-100 g-theme-bg-gray-dark-v1 g-bg-primary-dark-v1-opacity-0_9--hover g-py-30 g-py-90--md g-px-15 g-px-30--md g-pl-170--lg g-transition-0_3 g-transition--ease-in">
                         <div class="align-self-center">
                             <h3 class="h5 text-uppercase g-font-weight-700 g-font-secondary g-color-white g-mb-12">We
@@ -581,7 +521,8 @@
         <div class="row align-items-stretch no-gutters">
             <div class="col-md-6">
                 <!-- Article -->
-                <article class="h-100 g-bg-img-hero" style="background-image: url(/theme/unify-agency/assets/img-temp/900x390/img3.jpg);">
+                <article class="h-100 g-bg-img-hero"
+                         style="background-image: url(/theme/unify-agency/assets/img-temp/900x390/img3.jpg);">
                     <div class="d-flex text-left text-lg-right h-100 g-theme-bg-gray-dark-v1 g-bg-primary-dark-v1-opacity-0_9--hover g-py-30 g-py-90--md g-px-15 g-px-30--md g-pr-170--lg g-transition-0_3 g-transition--ease-in">
                         <div class="align-self-center">
                             <h3 class="h5 text-uppercase g-font-weight-700 g-font-secondary g-color-white g-mb-12">We
@@ -597,7 +538,8 @@
 
             <div class="col-md-6">
                 <!-- Article -->
-                <article class="h-100 g-bg-img-hero" style="background-image: url(/theme/unify-agency/assets/img-temp/900x390/img4.jpg);">
+                <article class="h-100 g-bg-img-hero"
+                         style="background-image: url(/theme/unify-agency/assets/img-temp/900x390/img4.jpg);">
                     <div class="d-flex h-100 g-theme-bg-gray-dark-v2 g-bg-primary-dark-v1-opacity-0_9--hover g-py-30 g-py-90--md g-px-15 g-px-30--md g-pl-170--lg g-transition-0_3 g-transition--ease-in">
                         <div class="align-self-center">
                             <h3 class="h5 text-uppercase g-font-weight-700 g-font-secondary g-color-white g-mb-12">We
@@ -1182,7 +1124,8 @@
                         <!-- Figure -->
                         <figure class="g-pos-rel g-parent g-mb-30">
                             <!-- Figure Image -->
-                            <img class="w-100" src="/theme/unify-agency/assets/img-temp/270x450/img1.jpg" alt="Image Description">
+                            <img class="w-100" src="/theme/unify-agency/assets/img-temp/270x450/img1.jpg"
+                                 alt="Image Description">
                             <!-- End Figure Image -->
 
                             <!-- Figure Caption -->
@@ -1237,7 +1180,8 @@
                         <!-- Figure -->
                         <figure class="g-pos-rel g-parent g-mb-30">
                             <!-- Figure Image -->
-                            <img class="w-100" src="/theme/unify-agency/assets/img-temp/270x450/img2.jpg" alt="Image Description">
+                            <img class="w-100" src="/theme/unify-agency/assets/img-temp/270x450/img2.jpg"
+                                 alt="Image Description">
                             <!-- End Figure Image -->
 
                             <!-- Figure Caption -->
@@ -1292,7 +1236,8 @@
                         <!-- Figure -->
                         <figure class="g-pos-rel g-parent g-mb-30">
                             <!-- Figure Image -->
-                            <img class="w-100" src="/theme/unify-agency/assets/img-temp/270x450/img3.jpg" alt="Image Description">
+                            <img class="w-100" src="/theme/unify-agency/assets/img-temp/270x450/img3.jpg"
+                                 alt="Image Description">
                             <!-- End Figure Image -->
 
                             <!-- Figure Caption -->
@@ -1347,7 +1292,8 @@
                         <!-- Figure -->
                         <figure class="g-pos-rel g-parent g-mb-30">
                             <!-- Figure Image -->
-                            <img class="w-100" src="/theme/unify-agency/assets/img-temp/270x450/img4.jpg" alt="Image Description">
+                            <img class="w-100" src="/theme/unify-agency/assets/img-temp/270x450/img4.jpg"
+                                 alt="Image Description">
                             <!-- End Figure Image -->
 
                             <!-- Figure Caption -->
@@ -1430,7 +1376,8 @@
                             <!-- Testimonial Block -->
                             <div class="media g-mb-25">
                                 <div class="media-left g-pr-20">
-                                    <img class="media-object rounded-circle" src="/theme/unify-agency/assets/img-temp/80x80/img1.jpg"
+                                    <img class="media-object rounded-circle"
+                                         src="/theme/unify-agency/assets/img-temp/80x80/img1.jpg"
                                          alt="Image Description">
                                 </div>
 
@@ -1454,7 +1401,8 @@
                             <!-- Testimonial Block -->
                             <div class="media g-mb-25">
                                 <div class="media-left g-pr-20">
-                                    <img class="media-object rounded-circle" src="/theme/unify-agency/assets/img-temp/80x80/img2.jpg"
+                                    <img class="media-object rounded-circle"
+                                         src="/theme/unify-agency/assets/img-temp/80x80/img2.jpg"
                                          alt="Image Description">
                                 </div>
 
@@ -1637,7 +1585,8 @@
 
         <div class="g-color-white g-bg-primary-dark-v1 g-py-40 g-px-15">
             <a class="d-inline-block g-mb-30" href="/">
-                <img class="img-fluid g-width-130" src="/theme/unify-agency/assets/img/logo-light.png" alt="Image description">
+                <img class="img-fluid g-width-130" src="/theme/unify-agency/assets/img/logo-light.png"
+                     alt="Image description">
             </a>
             <p class="g-color-white-opacity-0_7 g-mb-30">Integer accumsan maximus leo, et consectetur metus vestibulum
                 in. Vestibulum viverra justo odio maximus efficitur</p>
@@ -1702,7 +1651,7 @@
        data-show-effect="zoomIn">
         <i class="hs-icon hs-icon-arrow-top"></i>
     </a>
-</main>
+</div>
 
 <!-- JS Global Compulsory -->
 <script src="/theme/unify/assets/vendor/jquery/jquery.min.js"></script>
