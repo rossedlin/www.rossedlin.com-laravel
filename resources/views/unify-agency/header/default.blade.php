@@ -15,11 +15,17 @@
          data-header-fix-moment-classes="u-shadow-v27 g-bg-white-opacity-0_9">
         <nav class="navbar navbar-toggleable-md p-0 g-px-15">
             <div class="container">
+
                 <!-- Logo -->
-                <a href="#" class="navbar-brand u-header__logo">
-                    <img class="u-header__logo-img u-header__logo-img--main g-width-130"
-                         src="/theme/unify-agency/assets/img/logo-dark.png" alt="Image Description">
-                </a>
+                <div class="title">
+                    <?php /*
+                    <a href="#" class="navbar-brand u-header__logo">
+                        <img class="u-header__logo-img u-header__logo-img--main g-width-130"
+                             src="/theme/unify-agency/assets/img/logo-dark.png" alt="Image Description">
+                    </a>
+                    */ ?>
+                    @lang('site.title')
+                </div>
                 <!-- End Logo -->
 
                 <!-- Navigation -->

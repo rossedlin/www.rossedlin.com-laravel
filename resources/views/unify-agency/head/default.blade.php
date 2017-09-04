@@ -45,4 +45,4 @@
 <link rel="stylesheet" href="/theme/unify-agency/assets/css/styles.op-agency.css">
 
 <!-- CSS Customization -->
-<link rel="stylesheet" href="/theme/unify/assets/css/custom.css">
+<link rel="stylesheet" href="<?= \CuttingWeb\Core::addVersionToCssFile('/theme/unify-agency/assets/css/custom.css') ?>">
