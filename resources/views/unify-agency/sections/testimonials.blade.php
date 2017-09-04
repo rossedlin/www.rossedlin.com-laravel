@@ -8,17 +8,16 @@
 ?>
 <!-- Section Content -->
 <section id="testimonials" class="g-theme-bg-gray-light-v4">
-    <div class="container text-center g-max-width-770 g-py-30 g-py-70--md">
-        <div class="u-heading-v8-2 g-mb-40">
-            <h2 class="text-uppercase u-heading-v8__title g-font-weight-700 g-font-secondary g-font-size-26 g-color-gray-dark-v2 g-mb-25">
-                Want to join our team?</h2>
-            <p class="mb-0">Sed eget aliquet nisl. Proin laoreet accumsan nisl non vestibulum. Donec molestie, lorem
-                nec sollicitudin elementum, mi justo posuere lectus, vitae ullamcorper orci mi vel massa.
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <div class="text-center g-py-30 g-py-80--md">
+        <div class="container">
+            <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary">
+                <h4 class="g-line-height-1 g-font-weight-600 g-font-size-12 g-color-primary g-mb-20">
+                    Testimonials
+                </h4>
+                <h2 class="u-heading-v2__title g-font-weight-600 g-font-size-30 g-font-size-40--md g-theme-color-gray-dark-v1">
+                    What people say about me</h2>
+            </div>
         </div>
-
-        <a class="btn u-btn-primary btn-md text-uppercase g-font-weight-700 g-font-size-12 rounded-0 g-px-25 g-py-10 mb-0"
-           href="#">Send your resume</a>
     </div>
 
     <div class="">
