@@ -18,11 +18,5 @@ return [
 	/**
 	 * Site
 	 */
-	'title'    => 'Cutting Web',
-
-	/**
-	 * Social
-	 */
-	'facebook' => 'https://www.facebook.com/rossedlin',
-	'twitter'  => 'https://twitter.com/rossedlin',
+	'title'    => 'Ross Edlin',
 ];

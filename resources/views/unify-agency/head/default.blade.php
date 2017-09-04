@@ -4,10 +4,12 @@
  * User: Ross Edlin
  * Date: 04/09/2017
  * Time: 11:16
+ *
+ * @var \App\Objects\Page $page
  */
-        ?>
+?>
 <!-- Title -->
-<title>Agency | Unify - Responsive Website Template</title>
+<title><?= $page->getTitle() ?></title>
 
 <!-- Required Meta Tags Always Come First -->
 <meta charset="utf-8">
