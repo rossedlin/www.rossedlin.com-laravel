@@ -8,3 +8,14 @@ footer .title
 {
 	color: #ffffff;
 }
+
+.tp-caption.BigBold-Title, .BigBold-Title
+{
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
+}
+
+.tp-caption.BigBold-SubTitle, .BigBold-SubTitle
+{
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
+	color:       rgba(255, 255, 255, 0.80);
+}
