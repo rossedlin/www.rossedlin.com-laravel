@@ -11,20 +11,28 @@
 |
 */
 
-Route::get('/', 'PageController');
-Route::get('/color-palette', 'ColorPaletteController');
-Route::get('/{page}', 'PageController');
+//Route::get('/', 'PageController');
+//Route::get('/color-palette', 'ColorPaletteController');
 
 /**
  * Themes
  */
-
-Route::get('/new-age', function ()
+Route::get('/', function ()
 {
-	return view('theme/new-age/index');
+	return view('unify-agency/index');
 });
 
-Route::get('/agency', function ()
-{
-	return view('theme/agency/index');
-});
+//Route::get('/new-age', function ()
+//{
+//	return view('theme/new-age/index');
+//});
+//
+//Route::get('/agency', function ()
+//{
+//	return view('theme/agency/index');
+//});
+//
+///**
+// * Default for everything else
+// */
+//Route::get('/{page}', 'PageController');
