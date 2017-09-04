@@ -8,5 +8,5 @@
 
 return [
 
-	'title' => 'Cutting Web',
+	'title' => 'Ross Edlin',
 ];
