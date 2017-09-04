@@ -36,7 +36,7 @@
             <div class="col-sm-6 col-md-4 g-theme-bg-gray-dark-v1 px-0 g-py-60">
                 <i class="icon-line icon-screen-smartphone d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
                 <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Phone number</h3>
-                <strong class="g-font-size-16 g-color-white">@lang('contact.number')</strong>
+                <a class="g-font-size-16 g-color-white" href="tel:@lang('contact.number')"><strong>@lang('contact.number')</strong></a>
             </div>
         </address>
     </div>
