@@ -16,22 +16,32 @@
         <p class="g-color-white-opacity-0_7 g-mb-30">Integer accumsan maximus leo, et consectetur metus vestibulum
             in. Vestibulum viverra justo odio maximus efficitur</p>
         <ul class="list-inline d-inline-block g-mb-30">
+
             <li class="list-inline-item g-mr-10">
                 <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in"
-                   href="#"><i class="fa fa-twitter"></i></a>
+                   href="@lang('social.facebook')"
+                   target="_blank"><i class="fa fa-facebook"></i></a>
             </li>
-            <li class="list-inline-item g-mr-10">
-                <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in"
-                   href="#"><i class="fa fa-pinterest"></i></a>
-            </li>
-            <li class="list-inline-item g-mr-10">
-                <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in"
-                   href="#"><i class="fa fa-facebook"></i></a>
-            </li>
+
             <li class="list-inline-item">
                 <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in"
-                   href="#"><i class="fa fa-linkedin"></i></a>
+                   href="@lang('social.linkedin')"
+                   target="_blank"><i class="fa fa-linkedin"></i></a>
             </li>
+
+            <li class="list-inline-item">
+                <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in"
+                   href="@lang('social.instagram')"
+                   target="_blank"><i class="fa fa-instagram"></i></a>
+            </li>
+
+            <li class="list-inline-item g-mr-10">
+                <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-primary g-color-white--hover g-bg-white g-bg-gray-dark-v2--hover g-transition-0_2 g-transition--ease-in"
+                   href="@lang('social.github')"
+                   target="_blank"><i class="fa fa-github"></i></a>
+            </li>
+
+
         </ul>
         <ul class="list-inline text-uppercase g-font-weight-600 g-font-size-11 mb-0">
             <li class="list-inline-item g-px-12--md">
@@ -55,14 +65,11 @@
             </li>
             <li class="list-inline-item g-px-12--md">
                 <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover"
-                   href="#">Team</a>
-            </li>
-            <li class="list-inline-item g-px-12--md">
-                <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Testimonials</a>
+                   href="#testimonials">Testimonials</a>
             </li>
             <li class="list-inline-item g-px-12--md">
                 <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover"
-                   href="#">Contact</a>
+                   href="#contact">Contact</a>
             </li>
         </ul>
     </div>
