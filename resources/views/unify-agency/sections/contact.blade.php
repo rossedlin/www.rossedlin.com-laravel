@@ -19,29 +19,22 @@
 
     <div class="container-fluid">
         <address class="row g-color-gray-dark-v4 mb-0">
-            <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v1 px-0 g-py-60">
-                <i class="icon-line icon-map d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
-                <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Address</h3>
-                <strong class="g-font-size-16 g-color-white">In sed lectus tincidunt</strong>
-            </div>
-
-            <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v2 px-0 g-py-60">
-                <i class="icon-line icon-screen-smartphone d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
-                <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Phone number</h3>
-                <strong class="g-font-size-16 g-color-white">+48 555 2566 112</strong>
-            </div>
-
-            <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v1 px-0 g-py-60">
+            <div class="col-sm-6 col-md-4 g-theme-bg-gray-dark-v1 px-0 g-py-60">
                 <i class="icon-line icon-envelope-letter d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
                 <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Email</h3>
-                <a class="g-font-size-16 g-color-white" href="mailto:info@htmlstream.com"><strong>info@htmlstream
-                        .com</strong></a>
+                <a class="g-font-size-16 g-color-white" href="mailto:@lang('contact.email')"><strong>@lang('contact.email')</strong></a>
             </div>
 
-            <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v2 px-0 g-py-60">
-                <i class="icon-line icon-call-in d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
-                <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Call free</h3>
-                <strong class="g-font-size-16 g-color-white">+48 555 1258 987</strong>
+            <div class="col-sm-6 col-md-4 g-theme-bg-gray-dark-v2 px-0 g-py-60">
+                <i class="icon-line icon-map d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
+                <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Current Location</h3>
+                <strong class="g-font-size-16 g-color-white">@lang('contact.current-location')</strong>
+            </div>
+
+            <div class="col-sm-6 col-md-4 g-theme-bg-gray-dark-v1 px-0 g-py-60">
+                <i class="icon-line icon-screen-smartphone d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
+                <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Phone number</h3>
+                <strong class="g-font-size-16 g-color-white">@lang('contact.number')</strong>
             </div>
         </address>
     </div>
@@ -69,21 +62,6 @@
                     </div>
 
                     <div class="col-md-6 form-group g-mb-30">
-                        <select id="inputGroup1_3"
-                                class="js-custom-select form-control text-left u-form-control u-select-v1 g-font-size-default g-theme-color-gray-dark-v2 g-bg-white g-brd-white g-brd-gray-light-v3--hover g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in"
-                                style="width: 100%;"
-                                data-placeholder="Department"
-                                data-open-icon="fa fa-caret-down"
-                                data-close-icon="fa fa-caret-up">
-                            <option></option>
-                            <option value="Department1">Department1</option>
-                            <option value="Department2">Department2</option>
-                            <option value="Department3">Department3</option>
-                            <option value="Department4">Department4</option>
-                        </select>
-                    </div>
-
-                    <div class="col-md-6 form-group g-mb-30">
                         <input id="inputGroup1_4"
                                class="form-control g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in"
                                type="text" placeholder="Subject">
@@ -105,6 +83,7 @@
         </div>
     </div>
 
+    <?php /*
     <!-- Google (Map) [custom] -->
     <div class="g-pos-rel g-height-500">
         <div id="gMap" class="js-g-map g-pos-abs w-100 h-100"
@@ -122,4 +101,5 @@
              data-pin-icon="assets/img/pin.png"></div>
     </div>
     <!-- End Google (Map) [custom] -->
+    */ ?>
 </section>
