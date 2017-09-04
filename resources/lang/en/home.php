@@ -8,6 +8,6 @@
 
 return [
 	'name'   => 'Ross Edlin',
-	'about'   => 'A Premium Revolution Slider Template for your Website Highlights & Multi-Media Content.',
+	'about'  => 'A software developer with a passion for creating whilst travelling',
 	'button' => 'Read More',
 ];
