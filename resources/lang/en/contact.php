@@ -9,7 +9,7 @@
 return [
 
 	'number'           => '+44 20 3290 7017',
-	'email'            => 'contact@cuttingweb.co.uk',
+	'email'            => 'contact@rossedlin.co.uk',
 	'current-location' => 'Thailand',
 
 ];
