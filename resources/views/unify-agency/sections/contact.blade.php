@@ -46,7 +46,7 @@
             <div class="u-heading-v8-2 g-mb-60">
                 <h2 class="h1 text-uppercase u-heading-v8__title g-font-weight-700 g-font-size-26 g-font-secondary g-color-gray-dark-v2 g-mb-25">
                     Have a questions?</h2>
-                <p class="mb-0">Sed eget aliquet nisl. Proin laoreet accumsan nisl non vestibulum.</p>
+                <p class="mb-0">Send me a message and I'll get back to you as soon as I can!</p>
             </div>
 
             <form>

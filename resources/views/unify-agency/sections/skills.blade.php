@@ -12,7 +12,8 @@
         <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary g-mb-30">
             <h3 class="g-font-weight-600 g-font-size-12 g-color-primary g-mb-20">Skills</h3>
             <h2 class="u-heading-v2__title g-line-height-1 g-letter-spacing-2 g-font-weight-700 g-font-size-30 g-font-size-40--md g-theme-color-gray-dark-v1 mb-0">
-                Our best side</h2>
+                The best of me
+            </h2>
         </div>
 
         <p class="mb-0">Integer accumsan maximus leo, et consectetur metus vestibulum in. Vestibulum viverra justo
@@ -113,7 +114,8 @@
         <div class="row">
             <div class="col-md-6 g-px-30 g-px-15--md g-mb-30">
                 <h6 class="text-uppercase g-letter-spacing-0_5 g-font-weight-600 g-font-size-11 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">
-                    Web development</h6>
+                    Web development - PHP, JavaScript, HTML, CSS
+                </h6>
 
                 <div class="js-hr-progress-bar progress g-pos-rel g-height-10 rounded-0 g-overflow-visible g-mb-20">
                     <div class="js-hr-progress-bar-indicator progress-bar g-theme-bg-gray-dark-v1"
@@ -127,7 +129,8 @@
 
             <div class="col-md-6 g-px-30 g-px-15--md g-mb-30">
                 <h6 class="text-uppercase g-letter-spacing-0_5 g-font-weight-600 g-font-size-11 g-font-secondary g-theme-color-gray-dark-v1 g-mb-15">
-                    App development</h6>
+                    App development
+                </h6>
 
                 <div class="js-hr-progress-bar progress g-pos-rel g-height-10 rounded-0 g-overflow-visible g-mb-20">
                     <div class="js-hr-progress-bar-indicator progress-bar g-theme-bg-gray-dark-v1"

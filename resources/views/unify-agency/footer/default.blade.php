@@ -4,17 +4,15 @@
  * User: Ross Edlin
  * Date: 04/09/2017
  * Time: 11:31
+ *
+ * @var \App\Objects\Navigation\Element[] $navigation
  */
 ?>
 <!-- Footer -->
 <footer class="text-center">
 
     <div class="g-color-white g-bg-primary-dark-v1 g-py-40 g-px-15">
-        <a class="title d-inline-block g-mb-30" href="/">
-            @lang('site.title')
-        </a>
-        <p class="g-color-white-opacity-0_7 g-mb-30">Integer accumsan maximus leo, et consectetur metus vestibulum
-            in. Vestibulum viverra justo odio maximus efficitur</p>
+
         <ul class="list-inline d-inline-block g-mb-30">
 
             <li class="list-inline-item g-mr-10">
@@ -44,33 +42,16 @@
 
         </ul>
         <ul class="list-inline text-uppercase g-font-weight-600 g-font-size-11 mb-0">
-            <li class="list-inline-item g-px-12--md">
+
+            <?php foreach ($navigation as $element)
+            {
+            ?>
+            <li class="list-inline-item g-px-12--md <?= ($element->isActive() ? 'active' : '') ?>">
                 <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover"
-                   href="#">About</a>
+                   href="<?= $element->getSubUrl() ?>"><?= $element->getName() ?></a>
             </li>
-            <li class="list-inline-item g-px-12--md">
-                <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Why
-                    we</a>
-            </li>
-            <li class="list-inline-item g-px-12--md">
-                <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Services</a>
-            </li>
-            <li class="list-inline-item g-px-12--md">
-                <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover" href="#">Work
-                    process</a>
-            </li>
-            <li class="list-inline-item g-px-12--md">
-                <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover"
-                   href="#">Skills</a>
-            </li>
-            <li class="list-inline-item g-px-12--md">
-                <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover"
-                   href="#testimonials">Testimonials</a>
-            </li>
-            <li class="list-inline-item g-px-12--md">
-                <a class="g-color-white-opacity-0_7 g-color-white--hover g-text-underline--none--hover"
-                   href="#contact">Contact</a>
-            </li>
+            <?php } ?>
+
         </ul>
     </div>
 </footer>

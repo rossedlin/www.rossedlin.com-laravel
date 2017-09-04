@@ -40,9 +40,12 @@ abstract class _Controller extends BaseController
             'page'       => $this->page,
             'navigation' => [
                 new Objects\Navigation\Element('Home', '/'),
-                new Objects\Navigation\Element('Portfolio', '/portfolio'),
-                new Objects\Navigation\Element('About', '/about'),
-                new Objects\Navigation\Element('Contact', '/contact'),
+//                new Objects\Navigation\Element('Blog', '/#blog'),
+//                new Objects\Navigation\Element('Portfolio', '/#portfolio'),
+//                new Objects\Navigation\Element('Work process', '/#work-process'),
+                new Objects\Navigation\Element('Testimonials', '/#testimonials'),
+                new Objects\Navigation\Element('About', '/#about'),
+                new Objects\Navigation\Element('Contact', '/#contact'),
             ],
         ];
     }

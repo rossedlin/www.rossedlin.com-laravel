@@ -17,8 +17,8 @@
 
     @include('unify-agency.header.default')
 
-    {{--@include('unify-agency.sections.home')--}}
-    {{--@include('unify-agency.sections.about')--}}
+    @include('unify-agency.sections.home')
+    @include('unify-agency.sections.about')
     {{--@include('unify-agency.sections.why-me')--}}
     {{--@include('unify-agency.sections.services')--}}
     {{--@include('unify-agency.sections.word-process')--}}

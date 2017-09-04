@@ -17,10 +17,9 @@
 /**
  * Themes
  */
-Route::get('/', function ()
-{
-	return view('unify-agency/index');
-});
+Route::get('/', 'IndexController');
+
+Route::get('/{id}', 'PageController');
 
 //Route::get('/new-age', function ()
 //{

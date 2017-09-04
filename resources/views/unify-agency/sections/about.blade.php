@@ -7,7 +7,7 @@
  */
 ?>
 <!-- Figure -->
-<section class="g-pt-100 g-pb-40">
+<section id="about" class="g-pt-100 g-pb-40">
     <div class="container">
         <figure class="row">
             <!-- Figure Image -->
@@ -30,28 +30,28 @@
                     <ul class="list-inline">
                         <li class="list-inline-item g-mx-2">
                             <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle"
-                               href="https://www.facebook.com/rossedlin" target="_blank">
+                               href="@lang('social.facebook')" target="_blank">
                                 <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
                                 <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
                             </a>
                         </li>
                         <li class="list-inline-item g-mx-2">
                             <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle"
-                               href="https://www.instagram.com/rossedlin/" target="_blank">
+                               href="@lang('social.instagram')" target="_blank">
                                 <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-instagram"></i>
                                 <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-instagram"></i>
                             </a>
                         </li>
                         <li class="list-inline-item g-mx-2">
                             <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle"
-                               href="https://www.linkedin.com/in/rossedlin/" target="_blank">
+                               href="@lang('social.linkedin')" target="_blank">
                                 <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-linkedin"></i>
                                 <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-linkedin"></i>
                             </a>
                         </li>
                         <li class="list-inline-item g-mx-2">
                             <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle"
-                               href="https://github.com/rossedlin/" target="_blank">
+                               href="@lang('social.github')" target="_blank">
                                 <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-github"></i>
                                 <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-github"></i>
                             </a>

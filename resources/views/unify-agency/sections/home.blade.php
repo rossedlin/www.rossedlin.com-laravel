@@ -20,13 +20,12 @@
                     data-easein="Power4.easeInOut"
                     data-easeout="Power4.easeInOut"
                     data-masterspeed="1000"
-                    data-thumb="assets/img-temp/100x50/img1.jpg"
                     data-rotate="0"
                     data-fstransition="fade"
                     data-fsmasterspeed="1500"
                     data-fsslotamount="7"
                     data-saveperformance="off"
-                    data-title="Unify Agency">
+                    data-title="Ross Edlin">
                     <!-- MAIN IMAGE -->
                     <img class="rev-slidebg" src="/img/header/stock-photo-laptop-1.jpg"
                          alt="Image description"
