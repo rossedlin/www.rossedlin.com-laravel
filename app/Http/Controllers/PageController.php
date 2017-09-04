@@ -13,46 +13,8 @@ use \App\Objects;
  * Class PageController
  * @package App\Http\Controllers
  */
-class PageController extends Controller
+class PageController extends _Controller
 {
-	/**
-	 * @var Feed\Object\Wordpress $wordpress
-	 */
-	private $wordpress;
-
-	/**
-	 * @var Objects\Page $page
-	 */
-	private $page;
-
-	/**
-	 * @var array $data
-	 */
-	private $data;
-
-	/**
-	 * PageController constructor.
-	 */
-	public function __construct()
-	{
-		$feed            = new Feed\Wordpress();
-		$this->wordpress = $feed->getFromUrl("https://wordpress.cuttingweb.co.uk/feed/");
-
-		$this->page = new Objects\Page([
-			'title' => $this->wordpress->getTitle(),
-		]);
-
-		$this->data = [
-			'page'       => $this->page,
-			'navigation' => [
-				new Objects\Navigation\Element('Home', '/'),
-				new Objects\Navigation\Element('Portfolio', '/portfolio'),
-				new Objects\Navigation\Element('About', '/about'),
-				new Objects\Navigation\Element('Contact', '/contact'),
-			],
-		];
-	}
-
 	/**
 	 * @param $id
 	 *
@@ -70,27 +32,17 @@ class PageController extends Controller
 			case 'portfolio':
 				return view('portfolio', $this->data);
 
+			case 'colour-palette':
+				return view('colour-palette', $this->data);
+
 			case 'about':
 				return view('about', $this->data);
 
 			case 'contact':
 				return view('contact', $this->data);
-
-			case 'feed':
-				return $this->feed();
 		}
 
 		abort(404);
 		exit;
-	}
-
-	/**
-	 *
-	 */
-	private function feed()
-	{
-		pre($this->wordpress->getTitle());
-		pre($this->wordpress->getLink());
-		pre($this->wordpress);
 	}
 }

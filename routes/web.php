@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PageController');
+Route::get('/color-palette', 'ColorPaletteController');
 Route::get('/{page}', 'PageController');
 
 /**

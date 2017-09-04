@@ -13,6 +13,11 @@ a
 	color: var(--link-color);
 }
 
+.g-color-primary
+{
+	color: var(--link-color);
+}
+
 /**
  * Nav
  */
