@@ -29,6 +29,7 @@ Route::group(['prefix' => 'demo'], function ()
 	 * Api
 	 */
 	Route::get('/api', 'Demo\Api');
+	Route::get('/api/ajax', 'Demo\Api@ajax');
 });
 
 Route::get('/{id}', 'PageController');
