@@ -20,6 +20,17 @@
 Route::get('/', 'IndexController');
 Route::get('/billomat', 'BillomatController');
 
+/**
+ * Demo
+ */
+Route::group(['prefix' => 'demo'], function ()
+{
+	/**
+	 * Api
+	 */
+	Route::get('/api', 'Demo\Api');
+});
+
 Route::get('/{id}', 'PageController');
 
 //Route::get('/new-age', function ()
