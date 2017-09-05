@@ -18,6 +18,7 @@
  * Themes
  */
 Route::get('/', 'IndexController');
+Route::get('/billomat', 'BillomatController');
 
 Route::get('/{id}', 'PageController');
 
