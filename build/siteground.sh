@@ -1,29 +1,29 @@
-cd ~/cuttingweb.co.uk/
-echo "Install -> laravel-dev.cuttingweb.co.uk"
+cd ~/rossedlin.co.uk/
+echo "Install -> laravel-dev.rossedlin.co.uk"
 
 #Cleanup
 rm -R -f old_laravel-dev
-rm -R -f www.cuttingweb.co.uk-laravel
+rm -R -f www.rossedlin.co.uk-laravel
 
 #Git
-git clone https://bitbucket.org/cuttingweb/www.cuttingweb.co.uk-laravel
+git clone https://bitbucket.org/rossedlin/www.rossedlin.co.uk-laravel
 
-if [ -d ~/cuttingweb.co.uk/www.cuttingweb.co.uk-laravel ]; then
+if [ -d ~/rossedlin.co.uk/www.rossedlin.co.uk-laravel ]; then
 
     #Composer
-    cd ~/cuttingweb.co.uk/www.cuttingweb.co.uk-laravel
+    cd ~/rossedlin.co.uk/www.rossedlin.co.uk-laravel
     composer install
 
     #Environment File
-    cd ~/cuttingweb.co.uk/
-    cp ~/cuttingweb.co.uk/laravel-dev/.env ~/cuttingweb.co.uk/www.cuttingweb.co.uk-laravel/.env
+    cd ~/rossedlin.co.uk/
+    cp ~/rossedlin.co.uk/laravel-dev/.env ~/rossedlin.co.uk/www.rossedlin.co.uk-laravel/.env
 
     #Folders
-    cd ~/cuttingweb.co.uk/
+    cd ~/rossedlin.co.uk/
     mv laravel-dev old_laravel-dev
-    mv www.cuttingweb.co.uk-laravel laravel-dev
+    mv www.rossedlin.co.uk-laravel laravel-dev
 
     #Permissions
-    chmod 755 -R ~/cuttingweb.co.uk/laravel-dev
+    chmod 755 -R ~/rossedlin.co.uk/laravel-dev
 
 fi
