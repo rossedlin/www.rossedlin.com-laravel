@@ -26,10 +26,11 @@ Route::get('/billomat', 'BillomatController');
 Route::group(['prefix' => 'demo'], function ()
 {
 	/**
-	 * Api
+	 * Api Integration
 	 */
-	Route::get('/api', 'Demo\Api');
-	Route::get('/api/ajax', 'Demo\Api@ajax');
+	Route::get('/api-integration', 'Demo\ApiIntegration');
+	Route::get('/api-integration/sample', 'Demo\ApiIntegration@sample');
+	Route::post('/api-integration/ajax_get_request', 'Demo\ApiIntegration@ajax_get_request');
 });
 
 Route::get('/{id}', 'PageController');
