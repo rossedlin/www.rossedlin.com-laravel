@@ -8,13 +8,18 @@
         {
             "type": "vcs",
             "url": "https://github.com/CuttingWeb/cuttingweb-php-core"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rossedlin/cryslo-php-core"
         }
     ],
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "cuttingweb/cuttingweb-php-core": "1.0.*"
+        "cuttingweb/cuttingweb-php-core": "1.0.*",
+        "rossedlin/cryslo-php-core": "1.9.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
