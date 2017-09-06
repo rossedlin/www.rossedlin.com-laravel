@@ -1,0 +1,33 @@
+/**
+ *
+ * #FFFFFF
+ * #8D8741
+ * #659DBD - Blue
+ * #DAAD86
+ * #BC986A
+ * #FBEEC1
+ *
+ */
+
+.navbar
+{
+	background-color: #659DBD;
+}
+
+.nav-item a
+{
+	color: #DAAD86;
+}
+
+/**
+ * Nav
+ */
+.nav-item a
+{
+	color: #FFFFFF;
+}
+
+.nav-item
+{
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
