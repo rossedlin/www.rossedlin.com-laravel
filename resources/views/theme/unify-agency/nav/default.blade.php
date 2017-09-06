@@ -23,15 +23,28 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
 
-            <?php foreach ($navigation as $element)
-            {
-            ?>
             <li class="nav-item">
-                <a class="nav-link" href="<?= $element->getSubUrl() ?>"><?= $element->getName() ?></a>
+                <a class="nav-link" href="/#">Home</a>
             </li>
-            <?php } ?>
+
+            <div class="dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Demo</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/demo/api-integration">API Integration</a></li>
+                    <li><a href="/demo/stripe">Stripe</a></li>
+                </ul>
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/#testimonials">Testimonials</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/#about">About</a>
+            </li>
 
         </ul>
+
     </div>
 
 </nav>
