@@ -24,6 +24,7 @@
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="theme/new-age/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="theme/new-age/vendor/simple-line-icons/css/simple-line-icons.css">
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -49,33 +50,9 @@
 
 <body id="page-top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <a class="navbar-brand" href="#page-top">Ross Edlin</a>
-    <button class="navbar-toggler navbar-toggler-right"
-            type="button" data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="http://www.cuttingweb.co.uk/" target="_blank">Business Website</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://www.cuttingweb.co.uk/cv" target="_blank">C.V.</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://www.cuttingweb.co.uk/contact" target="_blank">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
+
+@include('theme.new-age.nav.default')
 @include('theme.new-age.header.default')
 
 <?php /*
