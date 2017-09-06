@@ -50,5 +50,4 @@
 <link rel="stylesheet" href="/theme/unify-agency/assets/css/styles.op-agency.css">
 
 <!-- CSS Customization -->
-<link rel="stylesheet" href="<?= \Cryslo\Core\Utils::addVersionToCssFile('/theme/unify-agency/assets/css/new-age.css') ?>">
 <link rel="stylesheet" href="<?= \Cryslo\Core\Utils::addVersionToCssFile('/theme/unify-agency/assets/css/custom.css') ?>">

@@ -33,13 +33,11 @@ Route::group(['prefix' => 'demo'], function ()
 	Route::post('/api-integration/ajax_get_request', 'Demo\ApiIntegration@ajax_get_request');
 });
 
-Route::get('/{id}', 'PageController');
+Route::get('/new-age', function ()
+{
+	return view('theme/new-age/index');
+});
 
-//Route::get('/new-age', function ()
-//{
-//	return view('theme/new-age/index');
-//});
-//
 //Route::get('/agency', function ()
 //{
 //	return view('theme/agency/index');

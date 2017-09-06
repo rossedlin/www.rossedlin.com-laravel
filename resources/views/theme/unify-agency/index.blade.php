@@ -18,15 +18,12 @@
 
     {{--@include('theme.unify-agency.header.default')--}}
 
-    <div style="background: url(/theme/new-age/img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);">
-        @include('theme.unify-agency.nav.new-age')
-        @include('theme.unify-agency.header.new-age')
-    </div>
+    @include('theme.unify-agency.nav.default')
 
+    @include('theme.unify-agency.sections.about')
     @include('theme.unify-agency.sections.contact')
 
     {{--@include('theme.unify-agency.sections.home')--}}
-    @include('theme.unify-agency.sections.about')
     {{--@include('theme.unify-agency.sections.why-me')--}}
     {{--@include('theme.unify-agency.sections.services')--}}
     {{--@include('theme.unify-agency.sections.word-process')--}}

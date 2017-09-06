@@ -4,16 +4,6 @@
 	font-size: 26px;
 }
 
-.img-circle
-{
-	border-radius: 50%;
-}
-
-footer .title
-{
-	color: #ffffff;
-}
-
 .tp-caption.BigBold-Title, .BigBold-Title
 {
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
@@ -23,6 +13,14 @@ footer .title
 {
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
 	color:       rgba(255, 255, 255, 0.80);
+}
+
+/**
+ * Footer
+ */
+footer .title
+{
+	color: #ffffff;
 }
 
 .footer
@@ -41,6 +39,9 @@ footer .title
 	color: rgb(201, 148, 30);
 }
 
+/**
+ * Copyright
+ */
 .copyright
 {
 	background-color: #0e0e0e;
