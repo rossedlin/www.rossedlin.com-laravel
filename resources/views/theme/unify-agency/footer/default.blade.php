@@ -154,3 +154,5 @@
     </div>
 </footer>
 <!-- End Footer -->
+
+@yield('footer.post')
