@@ -36,6 +36,7 @@ Route::group(['prefix' => 'demo'], function ()
 	 * Stripe
 	 */
 	Route::get('/stripe', 'Demo\Stripe');
+	Route::post('/stripe/authorise', 'Demo\Stripe@checkoutAuthorise');
 });
 
 Route::get('/new-age', function ()

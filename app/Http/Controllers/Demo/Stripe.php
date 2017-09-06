@@ -1,10 +1,9 @@
 <?php
 namespace App\Http\Controllers\Demo;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
-use App\Library\Payment;
+use \App\Http\Controllers;
+use \App\Objects;
+use \Cryslo\Core;
 
 /**
  * Created by PhpStorm.
@@ -15,57 +14,96 @@ use App\Library\Payment;
  * Class Stripe
  * @package App\Http\Controllers
  */
-class Stripe extends Controller
+class Stripe extends Controllers\_Controller
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 	 */
 	public function __invoke()
 	{
-		return view('demo/stripe', [
-			'secret_key'         => Payment\Stripe::getSecretKey(),
-			'publish_key'        => Payment\Stripe::getPublishKey(),
+		return view('pages/demo/stripe', [
+			'id'                 => self::getId(),
+			'amount'             => self::getAmount(),
+			'currency_code'      => self::getCurrencyCode(),
+			'secret_key'         => self::getSecretKey(),
+			'publish_key'        => self::getPublishKey(),
 			'url_ajax_authorise' => secure_url('demo/stripe/ajax_authorise'),
 			'csrf_token'         => csrf_token(),
-		]);
+		], $this->data);
 	}
 
 	/**
-	 * @param Request $request
 	 *
-	 * @return \Illuminate\Http\JsonResponse
 	 */
-	public function AjaxAuthorise(Request $request)
+	public function checkoutAuthorise()
 	{
-		$success = false;
-		$message = "";
-		$token  = $request->input('token');
-		$amount = (int)$request->input('amount');
+		$id          = Core\Request::post('id');
+		$stripeToken = Core\Request::post('stripeToken');
 
 		try
 		{
-			\Stripe\Stripe::setApiKey(Payment\Stripe::getSecretKey());
+			\Stripe\Stripe::setApiKey(self::getSecretKey());
 			$response = \Stripe\Charge::create(array(
-				"amount"      => $amount,
-				"currency"    => Payment\Stripe::getCurrencyCode(),
-				"source"      => $token,
-				"description" => "",
+				"amount"      => self::getAmount(),
+				"currency"    => self::getCurrencyCode(),
+				"source"      => $stripeToken,
+				"description" => "Test Payment #" . $id,
 			));
 
 			if ($response instanceof \Stripe\Charge)
 			{
-				$success = true;
+				pre($response);
 			}
 		}
 		catch (\Exception $e)
 		{
-			$message = $e->getMessage();
+			pre($e);
 		}
+	}
 
-		return response()->json([
-			'amount'  => $amount,
-			'success' => $success,
-			'message' => $message,
-		]);
+	/**
+	 * @return int
+	 */
+	public static function getId()
+	{
+		return rand();
+	}
+
+	/**
+	 *
+	 */
+	public static function getAmount()
+	{
+		return "999";
+	}
+
+	/**
+	 * @return string
+	 */
+	private static function getSecretKey()
+	{
+		/**
+		 * Only test keys, does not matter that they're in the source
+		 */
+		return "sk_test_Fy2gjzzTjIkPCENjxuLBn28M";
+	}
+
+	/**
+	 * @return string
+	 */
+	private static function getPublishKey()
+	{
+		/**
+		 * Only test keys, does not matter that they're in the source
+		 */
+		return "pk_test_LbFIAL4dmQyihwu1kX1OfcNI";
+	}
+
+	/**
+	 * @return string
+	 */
+	private static function getCurrencyCode()
+	{
+		return "GBP";
 	}
 }

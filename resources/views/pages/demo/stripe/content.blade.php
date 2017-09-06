@@ -4,6 +4,8 @@
  * User: Ross Edlin
  * Date: 06/09/2017
  * Time: 16:17
+ *
+ * @var int $id
  */
 ?>
 <div class="container" style="padding: 50px 20px;">
@@ -11,7 +13,7 @@
 
         <div class="card col-xs-12" style="margin-bottom: 30px;">
             <div class="card-block">
-                <h4 class="card-title">Stripe Checkout</h4>
+                <h4 class="card-title">Stripe Checkout - ID #<?= $id ?></h4>
                 <p class="card-text">Stripe's embedded payment form, Checkout, simplifies and secures online payment processing. Quickly integrate Checkout into your site to provide your users with a streamlined, mobile-ready payment experience that is constantly improving.</p>
 
                 @include('pages.demo.stripe.snippets.checkout')
