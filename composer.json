@@ -19,7 +19,8 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "cuttingweb/cuttingweb-php-core": "1.0.*",
-        "rossedlin/cryslo-php-core": "1.9.*"
+        "rossedlin/cryslo-php-core": "1.9.*",
+        "stripe/stripe-php": "^3.23"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
