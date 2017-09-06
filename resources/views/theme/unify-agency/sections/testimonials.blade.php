@@ -25,7 +25,7 @@
 
             <?php foreach (\Illuminate\Support\Facades\Lang::get('testimonials') as $key => $testimonial)
             { ?>
-            @include('unify-agency.snippets.testimonials.testimonial')
+            @include('theme.unify-agency.snippets.testimonials.testimonial')
             <?php } ?>
 
         </div>

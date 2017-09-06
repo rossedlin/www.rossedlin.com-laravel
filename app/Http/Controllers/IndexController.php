@@ -19,6 +19,6 @@ class IndexController extends _Controller
 	 */
 	public function __invoke()
 	{
-		return view('unify-agency/index', $this->data);
+		return view('theme/unify-agency/index', $this->data);
 	}
 }

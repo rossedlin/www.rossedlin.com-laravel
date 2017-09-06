@@ -9,26 +9,26 @@
         <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('unify-agency.head.default')
+    @include('theme.unify-agency.head.default')
 </head>
 
 <body>
 <main>
 
-    @include('unify-agency.header.default')
+    @include('theme.unify-agency.header.default')
 
-    @include('unify-agency.sections.home')
-    @include('unify-agency.sections.about')
-    {{--@include('unify-agency.sections.why-me')--}}
-    {{--@include('unify-agency.sections.services')--}}
-    {{--@include('unify-agency.sections.word-process')--}}
-    {{--@include('unify-agency.sections.skills')--}}
-    {{--@include('unify-agency.sections.team')--}}
+    @include('theme.unify-agency.sections.home')
+    @include('theme.unify-agency.sections.about')
+    {{--@include('theme.unify-agency.sections.why-me')--}}
+    {{--@include('theme.unify-agency.sections.services')--}}
+    {{--@include('theme.unify-agency.sections.word-process')--}}
+    {{--@include('theme.unify-agency.sections.skills')--}}
+    {{--@include('theme.unify-agency.sections.team')--}}
 
-    @include('unify-agency.sections.testimonials')
-    @include('unify-agency.sections.contact')
+    @include('theme.unify-agency.sections.testimonials')
+    @include('theme.unify-agency.sections.contact')
 
-    @include('unify-agency.footer.default')
+    @include('theme.unify-agency.footer.default')
 
     <a class="js-go-to u-go-to-v1" href="#"
        data-type="fixed"
