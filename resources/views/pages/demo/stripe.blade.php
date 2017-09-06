@@ -12,7 +12,7 @@
 ?>
 @extends('theme.unify-agency.layouts.default')
 @section('head.post')
-    @include('pages.demo.stripe.head')
+    {{--@include('pages.demo.stripe.head')--}}
 @stop
 
 @section('content')
@@ -20,5 +20,5 @@
 @stop
 
 @section('footer.post')
-    @include('pages.demo.stripe.footer')
+    {{--@include('pages.demo.stripe.footer')--}}
 @stop
