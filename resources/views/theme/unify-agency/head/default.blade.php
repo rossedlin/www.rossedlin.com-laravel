@@ -8,6 +8,9 @@
  * @var \App\Objects\Page $page
  */
 ?>
+
+@yield('head.pre')
+
 <!-- Title -->
 <title><?= $page->getTitle() ?></title>
 
@@ -51,3 +54,5 @@
 
 <!-- CSS Customization -->
 <link rel="stylesheet" href="<?= \Cryslo\Core\Utils::addVersionToCssFile('/theme/unify-agency/assets/css/custom.css') ?>">
+
+@yield('head.post')

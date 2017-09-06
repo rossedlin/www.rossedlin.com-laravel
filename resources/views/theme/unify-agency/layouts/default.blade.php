@@ -9,17 +9,18 @@
         <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('unify-agency.head.default')
+    @include('theme.unify-agency.head.default')
+
 </head>
 
 <body>
 <main>
-
-    @include('unify-agency.header.default')
+    @include('theme.unify-agency.nav.default')
 
     @yield('content')
 
-    @include('unify-agency.footer.default')
+    @include('theme.unify-agency.footer.default')
+    @include('theme.unify-agency.copyright.default')
 
     <a class="js-go-to u-go-to-v1" href="#"
        data-type="fixed"
