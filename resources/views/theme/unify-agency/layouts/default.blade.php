@@ -17,7 +17,9 @@
 <main>
     @include('theme.unify-agency.nav.default')
 
-    @yield('content')
+    <div id="content">
+        @yield('content')
+    </div>
 
     @include('theme.unify-agency.footer.default')
     @include('theme.unify-agency.copyright.default')
