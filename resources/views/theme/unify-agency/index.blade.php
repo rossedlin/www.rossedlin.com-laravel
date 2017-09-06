@@ -10,14 +10,22 @@
 <html lang="en">
 <head>
     @include('theme.unify-agency.head.default')
+
 </head>
 
 <body>
 <main>
 
-    @include('theme.unify-agency.header.default')
+    {{--@include('theme.unify-agency.header.default')--}}
 
-    @include('theme.unify-agency.sections.home')
+    <div style="background: url(/theme/new-age/img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);">
+        @include('theme.unify-agency.nav.new-age')
+        @include('theme.unify-agency.header.new-age')
+    </div>
+
+    @include('theme.unify-agency.sections.contact')
+
+    {{--@include('theme.unify-agency.sections.home')--}}
     @include('theme.unify-agency.sections.about')
     {{--@include('theme.unify-agency.sections.why-me')--}}
     {{--@include('theme.unify-agency.sections.services')--}}
@@ -26,9 +34,9 @@
     {{--@include('theme.unify-agency.sections.team')--}}
 
     @include('theme.unify-agency.sections.testimonials')
-    @include('theme.unify-agency.sections.contact')
 
-    @include('theme.unify-agency.footer.default')
+    @include('theme.unify-agency.footer.unify')
+    @include('theme.unify-agency.copyright.default')
 
     <a class="js-go-to u-go-to-v1" href="#"
        data-type="fixed"
