@@ -31,6 +31,11 @@ Route::group(['prefix' => 'demo'], function ()
 	Route::get('/api-integration', 'Demo\ApiIntegration');
 	Route::get('/api-integration/sample', 'Demo\ApiIntegration@sample');
 	Route::post('/api-integration/ajax_get_request', 'Demo\ApiIntegration@ajax_get_request');
+
+	/**
+	 * Stripe
+	 */
+	Route::get('/stripe', 'Demo\Stripe');
 });
 
 Route::get('/new-age', function ()
