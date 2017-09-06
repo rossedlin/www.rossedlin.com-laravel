@@ -19,17 +19,17 @@
     <title>Ross Edlin</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="theme/new-age/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="theme/new-age/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="theme/new-age/vendor/simple-line-icons/css/simple-line-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/new-age.css?v=<?= Utils::getFileModifyTime(__DIR__ . '/css/new-age.css') ?>" rel="stylesheet">
+    <link href="theme/new-age/css/new-age.css" rel="stylesheet">
 
     <style>
         .img-circle
@@ -93,7 +93,7 @@
             <div class="col-xs-12 col-lg-5 text-center">
                 <div class="container">
                     <img id="img-ross-edlin" class="img-responsive img-thumbnail img-circle"
-                         src="img/ross-edlin-casual-500.jpg">
+                         src="img/header/ross-edlin-casual-500x500.jpg">
                 </div>
             </div>
         </div>
@@ -227,12 +227,12 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/popper/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="theme/new-age/vendor/jquery/jquery.min.js"></script>
+<script src="theme/new-age/vendor/popper/popper.min.js"></script>
+<script src="theme/new-age/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="theme/new-age/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for this template -->
 <script src="js/new-age.min.js"></script>
