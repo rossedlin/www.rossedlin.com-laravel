@@ -9,6 +9,7 @@
 return [
 	'facebook'  => 'https://www.facebook.com/rossedlin',
 	'instagram' => 'https://www.instagram.com/rossedlin/',
+	'twitter'   => 'https://twitter.com/rossedlin',
 	'linkedin'  => 'https://www.linkedin.com/in/rossedlin/',
 	'github'    => 'https://github.com/rossedlin/',
 ];
