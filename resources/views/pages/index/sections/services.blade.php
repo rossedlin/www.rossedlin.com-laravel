@@ -7,7 +7,7 @@
  */
 ?>
 <!-- Services -->
-<div id="services-section" class="g-bg-secondary g-py-100">
+<div id="services" class="g-bg-secondary g-py-100">
     <div class="container">
         <!-- Heading -->
         <div class="g-max-width-550 text-center mx-auto g-mb-70">
