@@ -9,7 +9,7 @@
  * @var string $ajax_get_request_url
  */
 ?>
-@extends('theme.unify.layouts.default')
+@extends('theme.unify-consulting.layouts.default')
 @section('content')
     <!-- Contact Form -->
     <section class="container g-py-100">
