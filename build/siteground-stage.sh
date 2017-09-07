@@ -26,4 +26,8 @@ if [ -d ~/rossedlin.com/www.rossedlin.com-laravel ]; then
     #Permissions
     chmod 755 -R ~/rossedlin.com/laravel-stage
 
+    #Robots.txt
+    cd ~/rossedlin.com/laravel-stage
+    cp ./build/robots-dev.txt ./public/robots.txt
+
 fi
