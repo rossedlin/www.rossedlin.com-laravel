@@ -1,14 +1,15 @@
-/*
- * #61892f
- * #86c232
- * #222629
- * #474b4f
- * #6b6e70
- */
-
 :root
 {
+	--dummy:            #ffffff;
+	--dummy:            #000000;
+
+	--dummy:            #61892f;
+	--dummy:            #86c232;
+	--dummy:            #222629;
+	--dummy:            #474b4f;
+	--dummy:            #6b6e70;
+
 	--background-color: #222629;
-	--text-color:       #6b6e70;
-	--link-color:       #61892f;
+	--text-color:       #ffffff;
+	--link-color:       #86c232;
 }

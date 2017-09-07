@@ -39,17 +39,18 @@ Route::group(['prefix' => 'demo'], function ()
 	Route::post('/stripe/authorise', 'Demo\Stripe@checkoutAuthorise');
 });
 
-Route::get('/new-age', function ()
+/**
+ * Theme
+ */
+Route::group(['prefix' => 't'], function ()
 {
-	return view('theme/new-age/index');
-});
+	Route::get('/new-age', function ()
+	{
+		return view('theme/new-age/index');
+	});
 
-//Route::get('/agency', function ()
-//{
-//	return view('theme/agency/index');
-//});
-//
-///**
-// * Default for everything else
-// */
-//Route::get('/{page}', 'PageController');
+	Route::get('/unify-consulting', function ()
+	{
+		return view('theme/unify-consulting/index');
+	});
+});

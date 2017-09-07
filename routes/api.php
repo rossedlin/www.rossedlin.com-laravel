@@ -16,3 +16,19 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/**
+ * Demo
+ */
+Route::group(['prefix' => 'demo'], function ()
+{
+    /**
+     * Api Integration
+     */
+    Route::post('/api-integration/ajax_get_request', 'Demo\ApiIntegration@ajax_get_request');
+
+    /**
+     * Stripe
+     */
+    Route::get('/stripe/authorise', 'Demo\Stripe@ApiAuthorise');
+});

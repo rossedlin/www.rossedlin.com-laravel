@@ -23,7 +23,7 @@
             <div class="col-xs-12 col-lg-5 text-center">
                 <div class="container">
                     <img id="img-ross-edlin" class="img-responsive img-thumbnail img-circle"
-                         src="img/header/ross-edlin-casual-500x500.jpg">
+                         src="/img/header/ross-edlin-casual-500x500.jpg">
                 </div>
             </div>
         </div>

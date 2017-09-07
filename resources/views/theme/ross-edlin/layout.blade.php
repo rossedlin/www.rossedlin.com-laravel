@@ -14,7 +14,7 @@
 
 <body>
 <main>
-    {{--@include('theme.unify.header.default')--}}
+    @include('theme.ross-edlin.nav')
 
     @yield('content')
 
