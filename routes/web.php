@@ -11,14 +11,13 @@
 |
 */
 
-//Route::get('/', 'PageController');
-//Route::get('/color-palette', 'ColorPaletteController');
+
 
 /**
- * Themes
+ * Main
  */
 Route::get('/', 'IndexController');
-Route::get('/billomat', 'BillomatController');
+Route::get('/contact', 'IndexController');
 
 /**
  * Demo
@@ -29,7 +28,6 @@ Route::group(['prefix' => 'demo'], function ()
 	 * Api Integration
 	 */
 	Route::get('/api-integration', 'Demo\ApiIntegration');
-	Route::get('/api-integration/sample', 'Demo\ApiIntegration@sample');
 	Route::post('/api-integration/ajax_get_request', 'Demo\ApiIntegration@ajax_get_request');
 
 	/**
