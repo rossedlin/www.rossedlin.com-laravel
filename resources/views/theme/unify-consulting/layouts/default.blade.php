@@ -24,6 +24,8 @@
 
     @yield('content')
 
+    @include('theme.unify-consulting.copyright.default')
+
 </main>
 
 <!-- JS Global Compulsory -->
