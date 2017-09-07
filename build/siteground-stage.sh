@@ -6,7 +6,7 @@ rm -R -f old_laravel-stage
 rm -R -f www.rossedlin.com-laravel
 
 #Git
-git clone -b stage https://bitbucket.org/rossedlin/www.rossedlin.com-laravel
+git clone -b stage https://bitbucket.org/cuttingweb/www.rossedlin.com-laravel
 
 if [ -d ~/rossedlin.com/www.rossedlin.com-laravel ]; then
 

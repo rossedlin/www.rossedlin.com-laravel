@@ -6,7 +6,7 @@ rm -R -f old_laravel-dev
 rm -R -f www.rossedlin.co.uk-laravel
 
 #Git
-git clone -b dev https://bitbucket.org/rossedlin/www.rossedlin.co.uk-laravel
+git clone -b dev https://bitbucket.org/cuttingweb/www.rossedlin.com-laravel
 
 if [ -d ~/rossedlin.co.uk/www.rossedlin.co.uk-laravel ]; then
 
