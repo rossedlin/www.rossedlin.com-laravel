@@ -7,16 +7,143 @@
  */
 ?>
 <!-- About -->
-<div id="about-section">
+<div id="about">
     <div class="container g-pt-100">
         <!-- Heading -->
         <div class="g-max-width-550 text-center mx-auto g-mb-100">
             <h1 class="text-uppercase g-color-main-light-v1 g-font-weight-600 g-font-size-13 g-letter-spacing-2 mb-4">
-                About Us</h1>
-            <p class="g-font-size-16">Unify creative technology company providing key digital services. Focused on
-                helping our clients to build a successful business on web and mobile.</p>
+                About Me
+            </h1>
+            <p class="g-font-size-16">
+                Unify creative technology company providing key digital services. Focused on
+                helping our clients to build a successful business on web and mobile.
+            </p>
         </div>
         <!-- End Heading -->
+
+        <!-- Figure -->
+        <section class="container g-pt-100 g-pb-40">
+            <figure class="row">
+                <!-- Figure Image -->
+                <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0 g-mb-30">
+                    <img class="w-100" src="/img/about/ross-edlin-headshot-400-450.jpg" alt="Image Description">
+                </div>
+                <!-- End Figure Image -->
+
+                <!-- Figure Body -->
+                <div class="col-lg-8">
+                    <div class="d-flex justify-content-between g-mb-10">
+                        <div class="g-mb-20">
+                            <h4 class="h5 g-mb-5">Ross Edlin</h4>
+                            <em class="d-block g-font-style-normal g-font-size-default text-uppercase g-color-primary">Senior
+                                Web Developer</em>
+                        </div>
+
+                        <!-- Figure Social Icons -->
+                        <ul class="list-inline">
+
+                            <li class="list-inline-item g-mx-2">
+                                <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle"
+                                   href="@lang('social.facebook')"
+                                   target="_blank">
+                                    <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+                                    <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item g-mx-2">
+                                <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle"
+                                   href="@lang('social.instagram')"
+                                   target="_blank">
+                                    <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-instagram"></i>
+                                    <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item g-mx-2">
+                                <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle"
+                                   href="@lang('social.twitter')"
+                                   target="_blank">
+                                    <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                                    <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item g-mx-2">
+                                <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle"
+                                   href="@lang('social.linkedin')"
+                                   target="_blank">
+                                    <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-linkedin"></i>
+                                    <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-linkedin"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item g-mx-2">
+                                <a class="u-icon-v1 u-icon-size--sm u-icon-slide-up--hover g-color-gray-light-v1 g-bg-gray-light-v5 g-color-gray-light-v1--hover rounded-circle"
+                                   href="@lang('social.github')"
+                                   target="_blank">
+                                    <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-github"></i>
+                                    <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Figure Social Icons -->
+                    </div>
+
+                    <!-- Figure Info -->
+                    <div class="g-mb-50">
+                        <p>I am an ambitious workaholic, but apart from that, pretty simple person. Whether it's
+                            branding, print, UI + UX I've got you covered. I strive to figure out the right solutions
+                            for your look to stand out amongst the rest.</p>
+                        <p>As creatives, it's important that I strive to do work outside of obligation. This lets us
+                            stay ahead of the curve for our clients and internal projects. At the end of the day, it's
+                            important to not let being busy distract us from having fun. Smiling, laughing, and hanging
+                            helps us work together to achieve this.</p>
+                    </div>
+                    <!-- End Info -->
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <!-- Progress Bar v2 -->
+                            <h4 class="h6 g-mb-5">Web Design - 80%</h4>
+                            <div class="js-hr-progress-bar progress rounded-0 g-height-4 mb-5">
+                                <div class="js-hr-progress-bar-indicator progress-bar" role="progressbar"
+                                     style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <!-- End Progress Bar v2 -->
+
+                            <!-- Progress Bar v2 -->
+                            <h4 class="h6 g-mb-5">PHP/WordPress - 76%</h4>
+                            <div class="js-hr-progress-bar progress rounded-0 g-height-4 mb-5">
+                                <div class="js-hr-progress-bar-indicator progress-bar" role="progressbar"
+                                     style="width: 76%;" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <!-- End Progress Bar v2 -->
+                        </div>
+
+                        <div class="col-sm-6">
+                            <!-- Progress Bar v2 -->
+                            <h4 class="h6 g-mb-5">jQuery - 80%</h4>
+                            <div class="js-hr-progress-bar progress rounded-0 g-height-4 mb-5">
+                                <div class="js-hr-progress-bar-indicator progress-bar" role="progressbar"
+                                     style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <!-- End Progress Bar v2 -->
+
+                            <!-- Progress Bar v2 -->
+                            <h4 class="h6 g-mb-5">CSS - 76%</h4>
+                            <div class="js-hr-progress-bar progress rounded-0 g-height-4 mb-5">
+                                <div class="js-hr-progress-bar-indicator progress-bar" role="progressbar"
+                                     style="width: 76%;" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <!-- End Progress Bar v2 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Figure Body -->
+            </figure>
+        </section>
+        <!-- End Figure -->
 
         <!-- Icon Blocks -->
         <ul class="row list-inline u-info-v9-1 g-pb-70 mb-0">
@@ -37,7 +164,7 @@
                         <span class="g-color-main g-font-weight-700">01.</span>
                         Consult
                     </h3>
-                    <p>We aim high at being focused on building relationships with our clients and community.</p>
+                    <p>I focus on finding out what you really want and offer realistic solutions to your problems.</p>
                 </div>
                 <!-- End Icon Blocks -->
             </li>
@@ -59,8 +186,7 @@
                         <span class="g-color-main g-font-weight-700">02.</span>
                         Create
                     </h3>
-                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients
-                        relevant.</p>
+                    <p>Using my expertise</p>
                 </div>
                 <!-- End Icon Blocks -->
             </li>
@@ -88,85 +214,6 @@
             </li>
         </ul>
         <!-- End Icon Blocks -->
-
-        <!-- Mockup Image -->
-        <img class="img-fluid w-100" src="/theme/unify-consulting/img-temp/1445x750/img1.png"
-             alt="Image Description">
-        <!-- End Mockup Image -->
-
-        <div class="g-pt-100 g-pb-70">
-            <!-- Heading -->
-            <div class="g-max-width-550 text-center mx-auto g-mb-100">
-                <div class="d-inline-block g-width-60 g-height-2 g-bg-secondary-light-v1 mb-3"></div>
-                <h2 class="h3">Our end to end suite includes Customer Support, Responsiveness, 1610+ Ui Elements and
-                    more.</h2>
-            </div>
-            <!-- End Heading -->
-
-            <!-- Vision & Mission -->
-            <div class="g-pos-rel">
-                <div class="row justify-content-between">
-                    <div class="col-lg-5 g-mb-30">
-                        <div class="g-mt-20 mb-5">
-                            <h3 class="h6 text-uppercase g-color-main-light-v1 g-font-weight-600 g-letter-spacing-2 mb-3">
-                                Vision</h3>
-                            <h2 class="mb-4">Our Vision and Mission</h2>
-                            <p class="g-line-height-2">We aim high at being focused on building relationships with
-                                our clients and community. Working together on the daily requires each individual to
-                                let the greater good of the team's work surface above their own ego.</p>
-                        </div>
-
-                        <!-- Icon Block -->
-                        <div class="media mb-4">
-                            <div class="d-flex mr-4">
-                      <span class="u-icon-v3 g-width-50 g-height-50 g-color-bluegray g-bg-bluegray-opacity-0_1 g-font-size-16 rounded-circle">
-                        <i class="icon-communication-114 u-line-icon-pro"></i>
-                      </span>
-                            </div>
-                            <div class="media-body">
-                                <span class="g-font-weight-700">31,500+</span>
-                                <p class="g-text">Happy clients all over the world</p>
-                            </div>
-                        </div>
-                        <!-- End Icon Block -->
-
-                        <!-- Icon Block -->
-                        <div class="media mb-4">
-                            <div class="d-flex mr-4">
-                      <span class="u-icon-v3 g-width-50 g-height-50 g-color-primary g-bg-primary-opacity-0_1 g-font-size-16 rounded-circle">
-                        <i class="icon-finance-091 u-line-icon-pro"></i>
-                      </span>
-                            </div>
-                            <div class="media-body">
-                                <span class="g-font-weight-700">No. 1</span>
-                                <p class="g-text">WrapBootstrap theme of all time</p>
-                            </div>
-                        </div>
-                        <!-- End Icon Block -->
-
-                        <!-- Icon Block -->
-                        <div class="media mb-4">
-                            <div class="d-flex mr-4">
-                      <span class="u-icon-v3 g-width-50 g-height-50 g-color-red g-bg-red-opacity-0_1 g-font-size-16 rounded-circle">
-                        <i class="icon-communication-116 u-line-icon-pro"></i>
-                      </span>
-                            </div>
-                            <div class="media-body">
-                                <span class="g-font-weight-700">1610+</span>
-                                <p class="g-text">UI Elements &amp; Features</p>
-                            </div>
-                        </div>
-                        <!-- End Icon Block -->
-                    </div>
-                </div>
-
-                <div class="col-lg-6 g-pos-abs--lg g-top-0--lg g-right-0--lg g-mb-30">
-                    <img class="w-100 g-width-auto--lg" src="/theme/unify-consulting/img-temp/900x535/img1.png"
-                         alt="Image Description">
-                </div>
-            </div>
-            <!-- End Vision & Mission -->
-        </div>
     </div>
 </div>
 <!-- End About -->

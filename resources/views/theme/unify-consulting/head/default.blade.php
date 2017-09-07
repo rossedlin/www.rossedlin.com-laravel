@@ -50,4 +50,4 @@
       href="/theme/unify/assets/vendor/revolution-slider/revolution-addons/typewriter/css/typewriter.css">
 
 <!-- CSS Customization -->
-<link rel="stylesheet" href="/theme/unify/assets/css/custom.css">
+<link rel="stylesheet" href="/theme/unify-consulting/css/custom.css">
