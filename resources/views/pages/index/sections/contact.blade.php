@@ -7,7 +7,7 @@
  */
 ?>
 <!-- Contact -->
-<footer id="contact-section" class="g-pos-rel">
+<footer id="contact" class="g-pos-rel">
     <!-- Content -->
     <div class="g-bg-size-cover g-bg-img-hero g-bg-cover g-bg-black-opacity-0_7--after g-pt-120 g-pb-70"
          style="background-image: url(/theme/unify-consulting/img-temp/1920x1080/img4.jpg);">
@@ -50,7 +50,7 @@
                     </span>
                         </div>
                         <div class="media-body">
-                            <p class="g-color-white-opacity-0_6 mb-0">htmlstream@support.com</p>
+                            <p class="g-color-white-opacity-0_6 mb-0">contact@rossedlin.com</p>
                         </div>
                     </div>
                     <!-- End Icon Block -->
@@ -61,26 +61,33 @@
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item g-mx-2">
                             <a class="u-icon-v1 u-icon-size--sm g-color-white g-bg-white-opacity-0_1 g-bg-primary--hover g-font-size-13 rounded-circle"
-                               href="https://www.facebook.com/htmlstream">
+                               href="@lang('social.facebook')" target="_blank">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
                         <li class="list-inline-item g-mx-2">
                             <a class="u-icon-v1 u-icon-size--sm g-color-white g-bg-white-opacity-0_1 g-bg-primary--hover g-font-size-13 rounded-circle"
-                               href="https://twitter.com/htmlstream">
+                               href="@lang('social.instagram')" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item g-mx-2">
+                            <a class="u-icon-v1 u-icon-size--sm g-color-white g-bg-white-opacity-0_1 g-bg-primary--hover g-font-size-13 rounded-circle"
+                               href="@lang('social.twitter')" target="_blank">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li class="list-inline-item g-mx-2">
                             <a class="u-icon-v1 u-icon-size--sm g-color-white g-bg-white-opacity-0_1 g-bg-primary--hover g-font-size-13 rounded-circle"
-                               href="https://github.com/htmlstream">
-                                <i class="fa fa-github"></i>
+                               href="@lang('social.linkedin')" target="_blank">
+                                <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
+
                         <li class="list-inline-item g-mx-2">
                             <a class="u-icon-v1 u-icon-size--sm g-color-white g-bg-white-opacity-0_1 g-bg-primary--hover g-font-size-13 rounded-circle"
-                               href="https://dribbble.com/htmlstream">
-                                <i class="fa fa-dribbble"></i>
+                               href="@lang('social.github')" target="_blank">
+                                <i class="fa fa-github"></i>
                             </a>
                         </li>
                     </ul>
@@ -126,29 +133,5 @@
         </div>
     </div>
     <!-- End Content -->
-
-    <!-- Go To Top -->
-    <a class="js-go-to text-center g-color-main g-color-primary--hover g-left-50x g-ml-minus-100" href="#"
-       data-type="absolute"
-       data-position='{
-             "bottom": 65
-           }'
-       data-offset-top="400"
-       data-compensation="#js-header"
-       data-show-effect="fadeInUp">
-        <svg version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink" width="208px" height="50px">
-            <path fill-rule="evenodd" clip-rule="evenodd" fill="#fff"
-                  d="M111.042,0h-0.085C81.962,0.042,50.96,42.999,6,42.999c-6,0-6,0-6,0v1h214v-1v-0.015C169.917,42.349,139.492,0.042,111.042,0z"/>
-        </svg>
-        <i class="g-font-size-20 g-pos-abs g-bottom-20 g-left-50x g-ml-2 fa fa-angle-double-up"></i>
-    </a>
-    <!-- End Go To Top -->
-
-    <!-- Copyright -->
-    <div class="container text-center g-py-30">
-        <p class="g-font-size-13 mb-0">&#169; 2017 Htmlstream. All Rights Reserved.</p>
-    </div>
-    <!-- End Copyright -->
 </footer>
 <!-- End Contact -->

@@ -18,6 +18,7 @@
  */
 Route::get('/', 'IndexController');
 Route::get('/contact', 'IndexController');
+Route::get('/portfolio', 'Portfolio');
 
 /**
  * Demo
