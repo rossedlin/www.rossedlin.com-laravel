@@ -9,8 +9,8 @@
 <!-- Contact -->
 <footer id="contact" class="g-pos-rel">
     <!-- Content -->
-    <div class="g-bg-size-cover g-bg-img-hero g-bg-cover g-bg-black-opacity-0_7--after g-pt-120 g-pb-70"
-         style="background-image: url(/theme/unify-consulting/img-temp/1920x1080/img4.jpg);">
+    <div class="g-bg-size-cover g-bg-img-hero g-bg-cover g-bg-black-opacity-0_8--after g-pt-120 g-pb-70"
+         style="background-image: url(/img/pixabay/telephone-586266-1920x1280.jpg);">
         <div class="container g-z-index-1">
             <div class="row align-items-center">
                 <div class="col-md-4 g-mb-50">
