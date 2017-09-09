@@ -16,14 +16,14 @@
 /**
  * Main
  */
-Route::get('/', 'IndexController');
-Route::get('/contact', 'IndexController');
+Route::get('/', 'Index');
+Route::get('/contact', 'Contact');
 Route::get('/portfolio', 'Portfolio');
 
 /**
  * Demo
  */
-Route::group(['prefix' => 'demo'], function ()
+Route::group(['prefix' => 'portfolio'], function ()
 {
 	/**
 	 * Api Integration
@@ -36,6 +36,11 @@ Route::group(['prefix' => 'demo'], function ()
 	 */
 	Route::get('/stripe', 'Demo\Stripe');
 	Route::post('/stripe/authorise', 'Demo\Stripe@checkoutAuthorise');
+
+	/**
+	 *
+	 */
+	Route::get('/marco-verch', 'Portfolio\MarcoVerch');
 });
 
 /**

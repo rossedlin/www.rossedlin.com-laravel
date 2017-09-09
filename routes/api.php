@@ -17,10 +17,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('/contact', 'Contact@ajax');
+
 /**
  * Demo
  */
-Route::group(['prefix' => 'demo'], function ()
+Route::group(['prefix' => 'portfolio'], function ()
 {
     /**
      * Api Integration
@@ -31,4 +33,10 @@ Route::group(['prefix' => 'demo'], function ()
      * Stripe
      */
     Route::get('/stripe/authorise', 'Demo\Stripe@ApiAuthorise');
+
+    /**
+     * Marco Verch
+     */
+    Route::post('/marco-verch/mark-invoice-complete', 'Portfolio\MarcoVerch@ajaxMarkInvoiceComplete');
+    Route::post('/marco-verch/send-invoice', 'Portfolio\MarcoVerch@ajaxSendInvoice');
 });
