@@ -16,6 +16,7 @@
                 <div class="col-md-4 g-mb-50">
                     <h3 class="h4 g-color-white mb-4">Contact Info</h3>
 
+                    <?php /*
                     <!-- Icon Block -->
                     <div class="media align-items-center mb-4">
                         <div class="d-flex">
@@ -28,7 +29,9 @@
                         </div>
                     </div>
                     <!-- End Icon Block -->
+                    */ ?>
 
+                    <?php /*
                     <!-- Icon Block -->
                     <div class="media align-items-center mb-4">
                         <div class="d-flex">
@@ -41,6 +44,7 @@
                         </div>
                     </div>
                     <!-- End Icon Block -->
+                    */ ?>
 
                     <!-- Icon Block -->
                     <div class="media align-items-center g-mb-60">
@@ -50,7 +54,7 @@
                     </span>
                         </div>
                         <div class="media-body">
-                            <p class="g-color-white-opacity-0_6 mb-0">contact@rossedlin.com</p>
+                            <a href="mailto:contact@rossedlin.com" class="g-color-white-opacity-0_6 mb-0">contact@rossedlin.com</a>
                         </div>
                     </div>
                     <!-- End Icon Block -->
