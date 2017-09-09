@@ -16,7 +16,9 @@
     @include('pages.index.sections.about-1')
     @include('pages.index.sections.services')
     @include('pages.index.sections.quote-1')
+
     {{--@include('pages.index.sections.quote-2')--}}
+
     {{--@include('pages.index.sections.portfolio')--}}
     {{--@include('pages.index.sections.blog')--}}
     {{--@include('pages.index.sections.testimonials')--}}

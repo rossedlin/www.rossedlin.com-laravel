@@ -1,3 +1,14 @@
+/**
+ * Footer
+ */
+.footer
+{
+	background-color: #1b1b1b;
+}
+
+/**
+ * Copyright
+ */
 .copyright
 {
 	background-color: #0a0a0a;

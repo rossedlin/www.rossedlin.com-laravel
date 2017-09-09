@@ -24,6 +24,7 @@
 
     @yield('content')
 
+    @include('theme.unify-consulting.footer.default')
     @include('theme.unify-consulting.copyright.default')
 
 </main>
