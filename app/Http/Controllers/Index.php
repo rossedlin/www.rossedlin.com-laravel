@@ -12,13 +12,13 @@ use \App\Objects;
  * Class PageController
  * @package App\Http\Controllers
  */
-class IndexController extends _Controller
+class Index extends _Controller
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 	 */
 	public function __invoke()
 	{
-		return view('index', $this->data);
+		return view('coming-soon', $this->data);
 	}
 }
