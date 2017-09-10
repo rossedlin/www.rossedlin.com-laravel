@@ -10,7 +10,7 @@
  * @var string $csrf_token
  */
 ?>
-@extends('theme.unify-agency.layouts.default')
+@extends('theme.unify-consulting.layouts.default')
 @section('head.post')
     {{--@include('pages.demo.stripe.head')--}}
 @stop
