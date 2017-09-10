@@ -22,7 +22,7 @@ abstract class _Controller extends BaseController
     /**
      * @var array $data
      */
-    protected $data;
+    protected $data = [];
 
     /**
      * PageController constructor.

@@ -35,7 +35,7 @@
                         <label class="g-color-gray-dark-v2 g-font-size-13">URL</label>
                         <input id="api-integration-url"
                                class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15"
-                               type="text" placeholder="<?= $sample_url ?>" value="<?= $sample_url ?>">
+                               type="text" placeholder="https://reqres.in/api/users?page=2" value="https://reqres.in/api/users?page=2">
                     </div>
                 </div>
 
@@ -44,8 +44,10 @@
                         <button id="api-integration-button"
                                 class="btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35"
                                 role="button"
-                                onclick="getRequestThreeSecs();"><span style="padding: 0 10px">GET Request</span><span
-                                    class="fa fa-spinner fa-spin" style="display: none; font-size:18px"></span></button>
+                                onclick="getRequestThreeSecs();">
+                            <span style="padding: 0 10px">GET Request</span>
+                            <span class="fa fa-spinner fa-spin" style="display: none; font-size:18px"></span>
+                        </button>
                     </div>
 
                     <div id="api-integration-info" class="col-md-6 form-group g-mb-20" style="padding: 10px 0;"></div>
@@ -117,14 +119,16 @@
 
 //            sleep(2000);
 
-            $.post('<?= $ajax_get_request_url ?>', {
+            $.post('<?= url('api/portfolio/api-integration/get-request') ?>', {
                 url: $('#api-integration-url').val(),
                 _token: '<?= csrf_token(); ?>'
             })
                     .done(function (data, textStatus, jqXHR) {
+
                         $('#api-integration-result').val(data);
                         $('#api-integration-button').find('.fa-spinner').hide();
                         $('#api-integration-info').html('Done!');
+
                     })
                     .fail(function (jqXHR, textStatus, errorThrown) {
 

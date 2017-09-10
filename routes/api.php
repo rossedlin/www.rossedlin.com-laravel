@@ -27,7 +27,7 @@ Route::group(['prefix' => 'portfolio'], function ()
     /**
      * Api Integration
      */
-    Route::post('/api-integration/ajax_get_request', 'Demo\ApiIntegration@ajax_get_request');
+    Route::post('/api-integration/get-request', 'Portfolio\ApiIntegration@apiGetRequest');
 
     /**
      * Stripe
