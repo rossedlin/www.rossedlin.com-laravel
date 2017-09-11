@@ -39,4 +39,9 @@ Route::group(['prefix' => 'portfolio'], function ()
      */
     Route::post('/marco-verch/mark-invoice-complete', 'Portfolio\MarcoVerch@ajaxMarkInvoiceComplete');
     Route::post('/marco-verch/send-invoice', 'Portfolio\MarcoVerch@ajaxSendInvoice');
+
+    /**
+     * Web Scraping
+     */
+    Route::post('/web-scraping/google/search', 'Portfolio\WebScraping@apiGoogleSearch');
 });

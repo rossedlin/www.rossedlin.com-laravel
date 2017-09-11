@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Portfolio;
 use \App\Http\Controllers;
 use \App\Objects;
 use \Cryslo\Core;
+use \Cryslo\WebScraper;
 use \Cryslo\Api;
 
 /**
@@ -13,6 +14,7 @@ use \Cryslo\Api;
  * Time: 23:39
  *
  * Class PageController
+ *
  * @package App\Http\Controllers
  */
 class WebScraping extends Controllers\_Controller
@@ -23,5 +25,22 @@ class WebScraping extends Controllers\_Controller
 	public function __invoke()
 	{
 		return view('pages/portfolio/web-scraping', $this->data);
+	}
+
+	/**
+	 * @throws \Exception
+	 */
+	public function apiGoogleSearch()
+	{
+		$searchValue = Core\Request::post('search_value', 'Ross+Edlin');
+		$subUrl      = '/search?q=' . WebScraper\Google\Search::searchify($searchValue);
+
+		$scraper            = new WebScraper\Google\Search();
+		$this->data['url']  = 'https://www.google.co.uk' . $subUrl;
+		$this->data['rows'] = $scraper->scrap('https://www.google.co.uk/', [
+			'subUrl' => $subUrl,
+		]);
+
+		return view('pages/portfolio/web-scraping/google/search/table', $this->data);
 	}
 }
