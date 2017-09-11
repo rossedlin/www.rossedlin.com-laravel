@@ -40,6 +40,11 @@ Route::group(['prefix' => 'portfolio'], function ()
 	 *
 	 */
 	Route::get('/marco-verch', 'Portfolio\MarcoVerch');
+
+	/**
+	 * Web Scraping
+	 */
+	Route::get('/web-scraping', 'Portfolio\WebScraping');
 });
 
 /**

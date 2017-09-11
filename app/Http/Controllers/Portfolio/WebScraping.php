@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\Demo;
+namespace App\Http\Controllers\Portfolio;
 
 use \App\Http\Controllers;
 use \App\Objects;
@@ -22,6 +22,6 @@ class WebScraping extends Controllers\_Controller
 	 */
 	public function __invoke()
 	{
-		return view('pages/demo/web-scraping', $this->data);
+		return view('pages/portfolio/web-scraping', $this->data);
 	}
 }
