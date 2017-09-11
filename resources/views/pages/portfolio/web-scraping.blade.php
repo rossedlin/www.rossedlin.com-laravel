@@ -19,7 +19,7 @@
                     Web Scraping
                 </h1>
                 <p class="g-font-size-16">
-                    This is a fully working web scraping form, try it!<br />
+                    Hey! This is a fully working web scraping tool, We're going to scrape search results from <b>Google</b>, try it!<br />
                     If you like it and want it on your site, <a href="/contact">contact me!</a>
                 </p>
             </div>
