@@ -23,7 +23,7 @@ class ApiIntegration extends Controllers\_Controller
 	 */
 	public function __invoke()
 	{
-		return view('pages/portfolio/api-integration');
+		return view('pages/portfolio/api-integration/index');
 	}
 
 	/**
