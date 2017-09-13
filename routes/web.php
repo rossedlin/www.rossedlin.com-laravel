@@ -46,6 +46,11 @@ Route::group(['prefix' => 'portfolio'], function ()
 	 * Web Scraping
 	 */
 	Route::get('/web-scraping', 'Portfolio\WebScraping');
+
+	/**
+	 * Web Scraping
+	 */
+	Route::get('/fiveguys', 'Portfolio\FiveGuys');
 });
 
 /**
