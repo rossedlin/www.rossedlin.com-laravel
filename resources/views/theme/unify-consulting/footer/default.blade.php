@@ -11,16 +11,19 @@
     <div class="container">
         <div class="row">
             <!-- Footer Content -->
-            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+            <div class="col-lg-4 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">About Me</h2>
                 </div>
 
-                <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt
-                    sodales.</p>
+                <p>
+                    Hey, my name is Ross Edlin, I'm a web developer. As you can see by this website I love to travel too!<br />
+                    It's quite new so expect a lot more content soon.
+                </p>
             </div>
             <!-- End Footer Content -->
 
+            <?php /*
             <!-- Footer Content -->
             <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
@@ -54,9 +57,10 @@
                 </article>
             </div>
             <!-- End Footer Content -->
+            */ ?>
 
             <!-- Footer Content -->
-            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+            <div class="col-lg-4 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Useful Links</h2>
                 </div>
@@ -95,7 +99,7 @@
             <!-- End Footer Content -->
 
             <!-- Footer Content -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">My Contacts</h2>
                 </div>
