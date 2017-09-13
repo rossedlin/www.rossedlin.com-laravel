@@ -16,10 +16,19 @@
             <div class="container">
                 <!-- Logo -->
                 <a href="/" class="navbar-brand u-header__logo">
+
                     <img class="u-header__logo-img u-header__logo-img--main g-width-90"
-                         src="/theme/unify-consulting/img/logo.png" alt="Image description">
-                    <img class="u-header__logo-img g-width-90" src="/theme/unify-consulting/img/logo-dark.png"
-                         alt="Image description">
+                         src="<?= \Cryslo\Core\Utils::addVersionToCssFile('/img/logo.png') ?>"
+                         width="120"
+                         height="48"
+                         alt="Ross Edlin Logo">
+
+                    <img class="u-header__logo-img g-width-90"
+                         src="<?= \Cryslo\Core\Utils::addVersionToCssFile('/img/logo-dark.png') ?>"
+                         width="120"
+                         height="48"
+                         alt="Ross Edlin Logo">
+
                 </a>
                 <!-- End Logo -->
 
