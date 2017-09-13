@@ -189,6 +189,7 @@
                     }
                 })
                 .fail(function (jqXHR, textStatus, errorThrown) {
+                    $('#contact-submit').find('.fa-spinner').hide();
                     $('#contact-alert-danger').show();
                     setTimeout(hideAlerts, 5000);
                 });
