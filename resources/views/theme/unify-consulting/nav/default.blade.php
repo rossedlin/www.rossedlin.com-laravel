@@ -16,10 +16,19 @@
             <div class="container">
                 <!-- Logo -->
                 <a href="/" class="navbar-brand u-header__logo">
+
                     <img class="u-header__logo-img u-header__logo-img--main g-width-90"
-                         src="/theme/unify-consulting/img/logo.png" alt="Image description">
-                    <img class="u-header__logo-img g-width-90" src="/theme/unify-consulting/img/logo-dark.png"
-                         alt="Image description">
+                         src="<?= \Cryslo\Core\Utils::addVersionToCssFile('/img/logo.png') ?>"
+                         width="120"
+                         height="48"
+                         alt="Ross Edlin Logo">
+
+                    <img class="u-header__logo-img g-width-90"
+                         src="<?= \Cryslo\Core\Utils::addVersionToCssFile('/img/logo-dark.png') ?>"
+                         width="120"
+                         height="48"
+                         alt="Ross Edlin Logo">
+
                 </a>
                 <!-- End Logo -->
 
@@ -31,20 +40,23 @@
                             <a href="/" class="nav-link p-0">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                            <a href="/#about" class="nav-link p-0">About</a>
+                            <a href="/about" class="nav-link p-0">About</a>
                         </li>
+
+                        <?php /*
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                             <a href="/#services" class="nav-link p-0">Services</a>
                         </li>
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                             <a href="/#news" class="nav-link p-0">News</a>
                         </li>
+                        */ ?>
 
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                             <a href="/portfolio" class="nav-link p-0">Portfolio</a>
                         </li>
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                            <a href="/#contact" class="nav-link p-0">Contact</a>
+                            <a href="/contact" class="nav-link p-0">Contact</a>
                         </li>
                     </ul>
                 </div>

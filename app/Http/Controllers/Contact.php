@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use \App\Objects;
 use \Cryslo\Core;
 use \Cryslo\Api;
-use Cryslo\Object;
+use \Cryslo\Object;
 
 /**
  * Created by PhpStorm.
@@ -25,13 +25,13 @@ class Contact extends _Controller
 	 */
 	public function __invoke($id = 'index')
 	{
-		return view('coming-soon', $this->data);
+		return view('contact', $this->data);
 	}
 
 	/**
 	 * @return string
 	 */
-	public function ajax()
+	public function api()
 	{
 		$api = new Object\Api();
 		$api->setRequest([
@@ -41,15 +41,15 @@ class Contact extends _Controller
 			'message' => Core\Request::post('message'),
 		]);
 
-		$transport = \Swift_SmtpTransport::newInstance('smtp-relay.gmail.com', 587);
-		$transport->setUsername('ross.edlin@cuttingweb.co.uk');
-		$transport->setPassword('Qvne673?:');
+		$transport = \Swift_SmtpTransport::newInstance(env('MAIL_HOST'), env('MAIL_PORT'));
+		$transport->setUsername(env('MAIL_USERNAME'));
+		$transport->setPassword(env('MAIL_PASSWORD'));
 
 		$email = new Object\Email();
 		$email->setTransport($transport);
 		$email->setTo('contact@rossedlin.com');
 		$email->setFrom('noreply@rossedlin.com');
-		$email->setBody(Core\Request::post('message'));
+		$email->setBody("efwefw");
 
 		try
 		{
@@ -61,6 +61,6 @@ class Contact extends _Controller
 			$api->addDebug($e->getMessage());
 		}
 
-		return $api->getResponseAsJson();
+		return $api->renderAsJson();
 	}
 }

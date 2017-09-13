@@ -24,7 +24,7 @@ class WebScraping extends Controllers\_Controller
 	 */
 	public function __invoke()
 	{
-		return view('pages/portfolio/web-scraping', $this->data);
+		return view('pages/portfolio/web-scraping/index', $this->data);
 	}
 
 	/**

@@ -19,7 +19,7 @@
     </main>
 
     @include('pages.index.sections.quote-1')
-    @include('pages.index.sections.contact')
+    @include('pages.contact.sections.contact')
 
 @stop
 
