@@ -31,23 +31,6 @@ class Item
 	private $image;
 
 	/**
-	 * Item constructor.
-	 *
-	 * @param string $title
-	 * @param string $date
-	 * @param string $excerpt
-	 * @param string $link
-	 */
-	public function __construct($title, $date, $excerpt, $link, $image)
-	{
-		$this->title   = $title;
-		$this->date    = $date;
-		$this->excerpt = $excerpt;
-		$this->link    = $link;
-		$this->image    = $image;
-	}
-
-	/**
 	 * @return string
 	 */
 	public function getDate()

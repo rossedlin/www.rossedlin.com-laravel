@@ -48,9 +48,29 @@ Route::group(['prefix' => 'portfolio'], function ()
 	Route::get('/web-scraping', 'Portfolio\WebScraping');
 
 	/**
-	 * Web Scraping
+	 * FiveGuys
 	 */
 	Route::get('/fiveguys', 'Portfolio\FiveGuys');
+
+	/**
+	 * Cryslo
+	 */
+	Route::get('/cryslo', 'Portfolio\Cryslo');
+
+	/**
+	 * GoodEarth
+	 */
+	Route::get('/goodearth', 'Portfolio\GoodEarth');
+
+	/**
+	 * DishdashNoqu
+	 */
+	Route::get('/dishdash-noqu', 'Portfolio\DishdashNoqu');
+
+	/**
+	 * RossEdlinLanding
+	 */
+	Route::get('/ross-edlin-landing', 'Portfolio\RossEdlinLanding');
 });
 
 /**
