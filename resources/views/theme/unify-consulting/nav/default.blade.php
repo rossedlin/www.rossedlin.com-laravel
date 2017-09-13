@@ -40,20 +40,23 @@
                             <a href="/" class="nav-link p-0">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                            <a href="/#about" class="nav-link p-0">About</a>
+                            <a href="/about" class="nav-link p-0">About</a>
                         </li>
+
+                        <?php /*
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                             <a href="/#services" class="nav-link p-0">Services</a>
                         </li>
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                             <a href="/#news" class="nav-link p-0">News</a>
                         </li>
+                        */ ?>
 
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                             <a href="/portfolio" class="nav-link p-0">Portfolio</a>
                         </li>
                         <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                            <a href="/#contact" class="nav-link p-0">Contact</a>
+                            <a href="/contact" class="nav-link p-0">Contact</a>
                         </li>
                     </ul>
                 </div>
