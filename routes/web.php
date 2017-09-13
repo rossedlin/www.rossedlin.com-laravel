@@ -17,6 +17,7 @@
  * Main
  */
 Route::get('/', 'Index');
+Route::get('/about', 'About');
 Route::get('/contact', 'Contact');
 Route::get('/portfolio', 'Portfolio');
 
