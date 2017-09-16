@@ -21,19 +21,22 @@ class Item
 	/** @var string $excerpt */
 	private $excerpt;
 
-	/** @var string $title */
-	private $title;
+	/** @var string $image */
+	private $image;
 
 	/** @var string $link */
 	private $link;
 
-	/** @var string $image */
-	private $image;
+	/** @var bool $linkExternal */
+	private $linkExternal;
+
+	/** @var string $title */
+	private $title;
 
 	/**
 	 * @return string
 	 */
-	public function getDate()
+	public function getDate(): string
 	{
 		return $this->date;
 	}
@@ -49,7 +52,7 @@ class Item
 	/**
 	 * @return string
 	 */
-	public function getExcerpt()
+	public function getExcerpt(): string
 	{
 		return $this->excerpt;
 	}
@@ -65,7 +68,41 @@ class Item
 	/**
 	 * @return string
 	 */
-	public function getTitle()
+	public function getImage(): string
+	{
+		return $this->image;
+	}
+
+	/**
+	 * @param string $image
+	 */
+	public function setImage($image)
+	{
+		$this->image = $image;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getLink(): string
+	{
+		return $this->link;
+	}
+
+	/**
+	 * @param string $link
+	 * @param bool   $external
+	 */
+	public function setLink(string $link, bool $external = false)
+	{
+		$this->link         = (string)$link;
+		$this->linkExternal = $external;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getTitle(): string
 	{
 		return $this->title;
 	}
@@ -79,34 +116,10 @@ class Item
 	}
 
 	/**
-	 * @return string
+	 * @return bool
 	 */
-	public function getLink()
+	public function isLinkExternal(): bool
 	{
-		return $this->link;
-	}
-
-	/**
-	 * @param string $link
-	 */
-	public function setLink($link)
-	{
-		$this->link = $link;
-	}
-
-	/**
-	 * @return string
-	 */
-	public function getImage()
-	{
-		return $this->image;
-	}
-
-	/**
-	 * @param string $image
-	 */
-	public function setImage($image)
-	{
-		$this->image = $image;
+		return $this->linkExternal;
 	}
 }
