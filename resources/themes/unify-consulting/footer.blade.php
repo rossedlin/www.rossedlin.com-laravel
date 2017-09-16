@@ -4,6 +4,8 @@
  * User: Ross Edlin
  * Date: 31/08/2017
  * Time: 15:16
+ *
+ * @var Cryslo\Object\WordPress\Item[] $latest_posts
  */
 ?>
 <!-- Footer -->
@@ -11,56 +13,36 @@
     <div class="container">
         <div class="row">
             <!-- Footer Content -->
-            <div class="col-lg-4 col-md-6 g-mb-40 g-mb-0--lg">
+            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">About Me</h2>
                 </div>
 
                 <p>
-                    Hey, my name is Ross Edlin, I'm a web developer. As you can see by this website I love to travel too!<br />
+                    Hey, my name is Ross Edlin, I'm a web developer. As you can see by this website I love to travel
+                    too!<br/>
                     It's quite new so expect a lot more content soon.
                 </p>
             </div>
             <!-- End Footer Content -->
 
-            <?php /*
             <!-- Footer Content -->
             <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Latest Posts</h2>
                 </div>
 
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white--hover" href="#">Incredible template</a>
-                    </h3>
-                    <div class="small g-color-white-opacity-0_6">May 8, 2017</div>
-                </article>
+                <?php $count = count($latest_posts);
+                foreach ($latest_posts as $key => $latest_post)
+                { ?>
+                @include('snippets.latest-post')
+                <?php } ?>
 
-                <hr class="g-brd-white-opacity-0_1 g-my-10">
-
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white--hover" href="#">New features</a>
-                    </h3>
-                    <div class="small g-color-white-opacity-0_6">June 23, 2017</div>
-                </article>
-
-                <hr class="g-brd-white-opacity-0_1 g-my-10">
-
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white--hover" href="#">New terms and
-                            conditions</a>
-                    </h3>
-                    <div class="small g-color-white-opacity-0_6">September 15, 2017</div>
-                </article>
             </div>
             <!-- End Footer Content -->
-            */ ?>
 
             <!-- Footer Content -->
-            <div class="col-lg-4 col-md-6 g-mb-40 g-mb-0--lg">
+            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Useful Links</h2>
                 </div>
@@ -99,7 +81,7 @@
             <!-- End Footer Content -->
 
             <!-- Footer Content -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-3 col-md-6">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">My Contacts</h2>
                 </div>
