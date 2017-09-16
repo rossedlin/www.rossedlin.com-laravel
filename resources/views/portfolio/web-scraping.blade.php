@@ -9,7 +9,7 @@
 @extends('unify-consulting.layout')
 @section('content')
     <!-- Web Scraping -->
-    <div id="demo-stripe">
+    <div id="demo-web-scraping">
         <div class="container demo g-pt-100">
 
             <!-- Heading -->
