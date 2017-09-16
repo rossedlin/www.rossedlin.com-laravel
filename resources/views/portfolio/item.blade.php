@@ -13,13 +13,17 @@
 <div class="masonry-grid-item col-lg-4 col-sm-6 col-xs-12 g-mb-30">
     <!-- Blog Classic Blocks -->
     <article class="u-shadow-v11">
-        <img class="img-fluid w-100" src="<?= $item->getImage() ?>"
-             alt="<?= $item->getTitle() ?>">
+
+        <a href="<?= $item->getLink() ?>" <?= ($item->isLinkExternal() ? 'target="_blank"' : '') ?>>
+            <img class="img-fluid w-100" src="<?= $item->getImage() ?>"
+                 alt="<?= $item->getTitle() ?>">
+        </a>
+
         <div class="g-bg-white g-pa-30">
             <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2"><?= $item->getDate() ?></span>
             <h2 class="h5 g-color-black g-font-weight-600 mb-3">
                 <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer"
-                   href="<?= $item->getLink() ?>">
+                   href="<?= $item->getLink() ?>" <?= ($item->isLinkExternal() ? 'target="_blank"' : '') ?>>
                     <?= $item->getTitle() ?>
                 </a>
             </h2>

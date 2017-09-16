@@ -43,7 +43,7 @@ class Portfolio extends _Controller
 		$obj->setTitle('The GoodEarth');
 		$obj->setDate('October 2015');
 		$obj->setExcerpt('An online ordering website for a Chinese restaurant chain, capturing the essence of the of the GoodEarth brand and Powered by NOQU creating a seamless customer experience.');
-		$obj->setLink(url('/portfolio/goodearth'));
+		$obj->setLink("https://order.goodearthgroup.co.uk/", true);
 		$obj->setImage(url('/img/portfolio/goodearth/goodearth-homepage-450x200.jpg'));
 
 		return $obj;
@@ -119,6 +119,7 @@ class Portfolio extends _Controller
 		$obj->setDate('June 2016');
 		$obj->setExcerpt('An online ordering site for a major burger chain in the UK, Powered by NOQU a highly customisable platform.');
 		$obj->setLink(url('/portfolio/fiveguys'));
+		$obj->setLink("https://www.fiveguys.co.uk/start-order", true);
 		$obj->setImage(url('/img/portfolio/fiveguys/fiveguys-homepage-450x200.jpg'));
 
 		return $obj;
@@ -133,7 +134,7 @@ class Portfolio extends _Controller
 		$obj->setTitle('Cryslo');
 		$obj->setDate('June 2013');
 		$obj->setExcerpt('A Minecraft website designed to be simplistic in nature showcasing the beauty you can create from the game.');
-		$obj->setLink(url('/portfolio/cryslo'));
+		$obj->setLink("https://www.cryslo.com/", true);
 		$obj->setImage(url('/img/portfolio/cryslo/cryslo-homepage-450x200.jpg'));
 
 		return $obj;
