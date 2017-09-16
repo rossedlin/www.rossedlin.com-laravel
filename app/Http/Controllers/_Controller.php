@@ -7,6 +7,8 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
+use Illuminate\Support\Facades\Cache;
+
 use Cryslo\Api;
 use Cryslo\Object;
 use \App\Objects;
@@ -14,6 +16,11 @@ use \App\Objects;
 abstract class _Controller extends BaseController
 {
 	use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+	/**
+	 * Redis Keys
+	 */
+	const CACHE_WORDPRESS = 'feed-wordpress';
 
 	/**
 	 * @var Objects\Page $page
@@ -50,11 +57,7 @@ abstract class _Controller extends BaseController
 	{
 		try
 		{
-//			$redis = new \Predis\Client();
-//			$redis->expire('feed-wordpress', 3600);
-
-			$items = false;
-//			$payload = unserialize($redis->get(self::REDIS_KEY));
+			$items = Cache::get(self::CACHE_WORDPRESS, false);
 
 			if (!$items)
 			{
@@ -62,7 +65,8 @@ abstract class _Controller extends BaseController
 				$feed->setUrl("https://wordpress.rossedlin.com/category/general/feed/");
 
 				$items = $feed->getFeed()->getChannel()->getItems();
-//				$redis->set(self::REDIS_KEY, serialize($payload));
+
+				Cache::put(self::CACHE_WORDPRESS, $items, 60);
 			}
 
 			return $items;
