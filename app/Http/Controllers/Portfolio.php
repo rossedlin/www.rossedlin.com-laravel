@@ -73,7 +73,7 @@ class Portfolio extends _Controller
 		$obj->setTitle('Ross Edlin (Landing)');
 		$obj->setDate('August 2017');
 		$obj->setExcerpt('A simple landing page to describe me in a few words and share my social media.');
-		$obj->setLink(url('/portfolio/ross-edlin-landing'));
+		$obj->setLink("https://projects.rossedlin.com/landing-page.rossedlin.com/public/", true);
 		$obj->setImage(url('/img/portfolio/ross-edlin-landing/ross-edlin-landing-homepage-450x200.jpg'));
 
 		return $obj;
