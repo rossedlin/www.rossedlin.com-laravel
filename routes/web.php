@@ -17,10 +17,18 @@
  * Main
  */
 Route::get('/', 'Index');
+Route::get('/blog', 'Blog');
 Route::get('/about', 'About');
 Route::get('/contact', 'Contact');
 Route::get('/portfolio', 'Portfolio');
-Route::get('/test', 'Test');
+
+/**
+ * Development
+ */
+if (env('APP_ENV') == 'dev')
+{
+	Route::get('/test', 'Test');
+}
 
 /**
  * Demo
