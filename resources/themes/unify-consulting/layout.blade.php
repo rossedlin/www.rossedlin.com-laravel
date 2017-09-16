@@ -10,7 +10,7 @@
 <html lang="en">
 <head>
     @yield('head.pre')
-    @include('theme.unify-consulting.head.default')
+    @include('unify-consulting.head')
     @yield('head.post')
 </head>
 
@@ -20,12 +20,12 @@
 
 <main>
 
-    @include('theme.unify-consulting.nav.default')
+    @include('unify-consulting.nav')
 
     @yield('content')
 
-    @include('theme.unify-consulting.footer.default')
-    @include('theme.unify-consulting.copyright.default')
+    @include('unify-consulting.footer')
+    @include('unify-consulting.copyright')
 
 </main>
 

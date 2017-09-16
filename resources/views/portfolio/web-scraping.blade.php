@@ -6,7 +6,7 @@
  * Time: 23:40
  */
 ?>
-@extends('theme.unify-consulting.layouts.default')
+@extends('unify-consulting.layout')
 @section('content')
     <!-- Web Scraping -->
     <div id="demo-stripe">
@@ -29,7 +29,7 @@
 
             <!-- Web Scraping Form -->
             <section class="container text-center mx-auto">
-                @include('pages.portfolio.web-scraping.google.search')
+                @include('portfolio.web-scraping.google.search')
             </section>
             <!-- End Web Scraping Form -->
         </div>

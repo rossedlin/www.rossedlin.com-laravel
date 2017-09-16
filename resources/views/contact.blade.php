@@ -8,14 +8,14 @@
  * Time: 16:52
  */
 ?>
-@extends('theme.unify-consulting.layouts.default')
+@extends('unify-consulting.layout')
 
 @section('content')
 
-    @include('pages.contact.sections.contact')
+    @include('sections.contact')
 
 @stop
 
 @section('body.post')
-    @include('pages.index.snippets.body-post')
+    @include('index.snippets.body-post')
 @stop

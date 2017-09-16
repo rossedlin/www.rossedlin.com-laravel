@@ -7,15 +7,15 @@
  */
 ?>
 
-@extends('theme.unify-consulting.layouts.default')
+@extends('unify-consulting.layout')
 
 @section('content')
 
-    @include('theme.unify-consulting.header.default')
+    @include('unify-consulting.header')
 
-    @include('pages.index.sections.about-1')
-    @include('pages.index.sections.services')
-    @include('pages.index.sections.quote-1')
+    @include('index.sections.about-1')
+    @include('index.sections.services')
+    @include('sections.quote.one')
 
     {{--@include('pages.index.sections.quote-2')--}}
 
@@ -26,5 +26,5 @@
 @stop
 
 @section('body.post')
-    @include('pages.index.snippets.body-post')
+    @include('index.snippets.body-post')
 @stop

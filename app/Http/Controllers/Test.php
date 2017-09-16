@@ -21,41 +21,6 @@ class Test extends _Controller
 	 */
 	public function __invoke()
 	{
-		$string = 'abcdefghijklm';
-
-		pre($this->reverseString1($string));
-		pre($this->reverseString2($string));
-	}
-
-	/**
-	 * @param $string
-	 *
-	 * @return mixed
-	 */
-	public function reverseString1($string)
-	{
-		for ($key = strlen($string) - 1, $start = 0; $start < $key; $key--, $start++)
-		{
-			list($string[$start], $string[$key]) = array($string[$key], $string[$start]);
-		}
-
-		return $string;
-	}
-
-	/**
-	 * @param $string
-	 *
-	 * @return string
-	 */
-	public function reverseString2($string)
-	{
-		$new = "";
-
-		for ($key = (int)strlen($string) - 1; $key >= 0; $key--)
-		{
-			$new .= substr($string, $key, 1);
-		}
-
-		return $new;
+		return view('test', $this->data);
 	}
 }

@@ -24,7 +24,7 @@ class WebScraping extends Controllers\_Controller
 	 */
 	public function __invoke()
 	{
-		return view('pages/portfolio/web-scraping/index', $this->data);
+		return view('portfolio/web-scraping', $this->data);
 	}
 
 	/**
@@ -41,6 +41,6 @@ class WebScraping extends Controllers\_Controller
 			'subUrl' => $subUrl,
 		]);
 
-		return view('pages/portfolio/web-scraping/google/search/table', $this->data);
+		return view('portfolio/web-scraping/google/search/table', $this->data);
 	}
 }

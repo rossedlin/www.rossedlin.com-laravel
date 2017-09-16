@@ -10,7 +10,7 @@
  * @var \App\Objects\Portfolio\Item[] $portfolio
  */
 ?>
-@extends('theme.unify-consulting.layouts.default')
+@extends('unify-consulting.layout')
 
 @section('content')
     <!-- Portfolio -->
@@ -39,7 +39,7 @@
 
                                 <?php foreach ($portfolio as $item) {
                                 ?>
-                                @include('pages.portfolio.item')
+                                @include('portfolio.item')
                                 <?php } ?>
 
                             </div>
@@ -53,5 +53,5 @@
 @stop
 
 @section('body.post')
-    @include('pages.index.snippets.body-post')
+    @include('index.snippets.body-post')
 @stop
