@@ -11,19 +11,21 @@
 @extends('unify-consulting.layout')
 
 @section('content')
-    <!-- News Content -->
-    <section class="g-pt-50 g-pb-100">
-        <div class="container">
-            <div class="row">
+    <div id="content" class="g-pt-100">
+        <!-- News Content -->
+        <section class="g-pt-50 g-pb-100">
+            <div class="container">
+                <div class="row">
 
-                @include('sections.blog.post.article')
+                    @include('sections.blog.post.article')
 
-                @include('sections.blog.post.sidebar')
+                    @include('sections.blog.post.sidebar')
 
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- End News Content -->
+        </section>
+        <!-- End News Content -->
+    </div>
 @stop
 
 @section('body.post')
