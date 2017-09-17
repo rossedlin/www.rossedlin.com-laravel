@@ -18,6 +18,7 @@
  */
 Route::get('/', 'Index');
 Route::get('/blog', 'Blog');
+Route::get('/blog/{date}/{slug}', 'Blog@post');
 Route::get('/about', 'About');
 Route::get('/contact', 'Contact');
 Route::get('/portfolio', 'Portfolio');

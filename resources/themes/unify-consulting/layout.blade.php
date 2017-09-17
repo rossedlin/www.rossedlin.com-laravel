@@ -22,7 +22,9 @@
 
     @include('unify-consulting.nav')
 
-    @yield('content')
+    <div id="content" class="g-pt-100">
+        @yield('content')
+    </div>
 
     @include('unify-consulting.footer')
     @include('unify-consulting.copyright')
