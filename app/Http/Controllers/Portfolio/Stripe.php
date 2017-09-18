@@ -3,7 +3,9 @@ namespace App\Http\Controllers\Portfolio;
 
 use \App\Http\Controllers;
 use \App\Objects;
+use Cryslo\Api;
 use \Cryslo\Core;
+use Cryslo\Object;
 
 /**
  * Created by PhpStorm.
@@ -12,6 +14,7 @@ use \Cryslo\Core;
  * Time: 17:35
  *
  * Class Stripe
+ *
  * @package App\Http\Controllers
  */
 class Stripe extends Controllers\_Controller
@@ -35,10 +38,11 @@ class Stripe extends Controllers\_Controller
 	/**
 	 *
 	 */
-	public function checkoutAuthorise()
+	public function apiAuthorise()
 	{
-		$id          = Core\Request::post('id');
-		$stripeToken = Core\Request::post('stripeToken');
+		$api   = new Object\Api();
+		$id    = Core\Request::post('id');
+		$token = Core\Request::post('token');
 
 		try
 		{
@@ -46,19 +50,30 @@ class Stripe extends Controllers\_Controller
 			$response = \Stripe\Charge::create(array(
 				"amount"      => self::getAmount(),
 				"currency"    => self::getCurrencyCode(),
-				"source"      => $stripeToken,
+				"source"      => $token['id'],
 				"description" => "Test Payment #" . $id,
 			));
 
 			if ($response instanceof \Stripe\Charge)
 			{
-				pre($response);
+				$api->setSuccess(true);
+				$api->setMessage(view('alerts/success-stripe', [
+					'title'   => "Success",
+					'message' => "Great! You just made a test payment.",
+				]));
 			}
 		}
 		catch (\Exception $e)
 		{
-			pre($e);
+			$api->setSuccess(false);
+			$api->setMessage(view('alerts/danger-1', [
+				'title'   => "Error",
+				'message' => "Oh... Had a slight problem, maybe try it again? :/",
+			]));
 		}
+
+
+		Api\Factory::renderAndExit($api);
 	}
 
 	/**
@@ -66,7 +81,7 @@ class Stripe extends Controllers\_Controller
 	 */
 	public static function getId()
 	{
-		return rand();
+		return time();
 	}
 
 	/**

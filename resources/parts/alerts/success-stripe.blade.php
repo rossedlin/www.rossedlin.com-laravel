@@ -17,6 +17,12 @@
         <span aria-hidden="true">&times;</span>
     </button>
 
-    <h4 class="alert-heading"><?= $title ?></h4>
-    <p><?= $message ?></p>
+    <h4 class="alert-heading"><span><?= $title ?></span></h4>
+    <p><span><?= $message ?></span></p>
+
+    <p>
+        <span>You can see the payment here: <a href="https://dashboard.stripe.com/login" target="_blank">stripe.com/login</a></span><br/>
+        <span>Username: demo@rossedlin.com</span><br/>
+        <span>Password: Password1234!!!</span><br/>
+    </p>
 </div>

@@ -37,23 +37,62 @@
         <div class="row text-center mx-auto">
 
             <div class="col-sm-6">
-                <h3 class="g-color-main-light-v1 g-font-weight-600 g-letter-spacing-2 mb-4">
-                    Stripe Details
-                </h3>
-                <p class="g-font-size-16">
-                    <a href="https://dashboard.stripe.com/login" target="_blank">https://stripe.com/login</a><br/>
-                    <span>demo@rossedlin.com</span><br/>
-                    <span>Password1234!!!</span><br/>
-                </p>
+                <table class="table table-striped">
+                    <thead class="thead-inverse">
+                    <tr>
+                        <th class="hidden-sm-down">#</th>
+                        <th>Login Details</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="hidden-sm-down">Link</td>
+                        <td><a href="https://dashboard.stripe.com/login" target="_blank">https://stripe.com/login</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden-sm-down">Username</td>
+                        <td>demo@rossedlin.com</td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden-sm-down">Password</td>
+                        <td>Password1234!!!</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div class="col-sm-6">
-                <h4>Test card details</h4>
-                <p>
-                    4242 4242 4242 4242<br/>
-                    <span style="margin-right: 30px;  color: #8b140c;">12 / 34</span>
-                    <span style="margin-left: 30px; color: #20118b;">123</span>
-                </p>
+                <table class="table table-striped">
+                    <thead class="thead-inverse">
+                    <tr>
+                        <th class="hidden-sm-down">#</th>
+                        <th>Test Details</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="hidden-sm-down">Card</td>
+                        <td>4242 4242 4242 4242</td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden-sm-down">Expiry</td>
+                        <td>12 / 32</td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden-sm-down">CVC</td>
+                        <td>123</td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden-sm-down">Zip</td>
+                        <td>12345</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>

@@ -32,7 +32,7 @@ Route::group(['prefix' => 'portfolio'], function ()
     /**
      * Stripe
      */
-    Route::get('/stripe/authorise', 'Demo\Stripe@ApiAuthorise');
+    Route::post('/stripe/authorise', 'Portfolio\Stripe@apiAuthorise');
 
     /**
      * Marco Verch
