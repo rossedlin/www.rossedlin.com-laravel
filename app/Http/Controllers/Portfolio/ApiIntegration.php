@@ -23,7 +23,7 @@ class ApiIntegration extends Controllers\_Controller
 	 */
 	public function __invoke()
 	{
-		return view('portfolio/api-integration');
+		return view('portfolio/api-integration', $this->data);
 	}
 
 	/**
