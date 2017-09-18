@@ -13,3 +13,4 @@ yarn-error.log
 /public/google*.html
 /public/.htaccess
 /public/robots.txt
+/public/mix-manifest.json
