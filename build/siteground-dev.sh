@@ -13,6 +13,7 @@ if [ -d ~/rossedlin.com/www.rossedlin.com-laravel ]; then
     #Composer
     cd ~/rossedlin.com/www.rossedlin.com-laravel
     composer install
+    composer update
 
     #Environment File
     cd ~/rossedlin.com/
