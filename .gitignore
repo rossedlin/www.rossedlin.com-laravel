@@ -12,3 +12,4 @@ yarn-error.log
 .env
 /public/google*.html
 /public/.htaccess
+/public/robots.txt
