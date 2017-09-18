@@ -24,6 +24,11 @@ if [ -d ~/rossedlin.com/www.rossedlin.com-laravel ]; then
     mv www old_www
     mv www.rossedlin.com-laravel www
 
+    #Public
+    cd ~/rossedlin.com/www
+    cp ./build/dev/robots.txt ./public/robots.txt
+    cp ./build/dev/.htaccess ./public/.htaccess
+
     #Permissions
     chmod 755 -R ~/rossedlin.com/www
 

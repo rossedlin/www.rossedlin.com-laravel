@@ -23,9 +23,10 @@ if [ -d ~/rossedlin.com/www.rossedlin.com-laravel ]; then
     mv laravel-dev old_laravel-dev
     mv www.rossedlin.com-laravel laravel-dev
 
-    #Robots.txt
+    #Public
     cd ~/rossedlin.com/laravel-dev
-    cp ./build/robots-dev.txt ./public/robots.txt
+    cp ./build/dev/robots.txt ./public/robots.txt
+    cp ./build/dev/.htaccess ./public/.htaccess
 
     #Permissions
     chmod 755 -R ~/rossedlin.com/laravel-dev
