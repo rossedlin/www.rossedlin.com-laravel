@@ -26,12 +26,25 @@ class Portfolio extends _Controller
 			$this->getFiveGuys(),
 			$this->getApiIntegration(),
 			$this->getCryslo(),
+			$this->getStripe(),
 			$this->getRossEdlinLanding(),
 			$this->getDishdashNoqu(),
 			$this->getGoodEarth(),
 		];
 
 		return view('portfolio', $this->data);
+	}
+
+	public function getStripe()
+	{
+		$obj = new Objects\Portfolio\Item();
+		$obj->setTitle('Stripe Payments');
+		$obj->setDate('September 2017');
+		$obj->setExcerpt('A payment provider integrated into the page, you can make fake payments with this.');
+		$obj->setLink(url('/portfolio/stripe'));
+		$obj->setImage(url('/img/portfolio/stripe/stripe-logo-450x200.jpg'));
+
+		return $obj;
 	}
 
 	/**
