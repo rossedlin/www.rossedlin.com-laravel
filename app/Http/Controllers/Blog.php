@@ -22,8 +22,8 @@ class Blog extends _Controller
 	 */
 	public function __invoke()
 	{
-
-		return view('blog', $this->data);
+		return view('coming-soon', $this->data);
+//		return view('blog', $this->data);
 	}
 
 	/**
@@ -36,8 +36,9 @@ class Blog extends _Controller
 	 */
 	public function post($date, $slug)
 	{
-		$this->data['post'] = WordPress\Api::getPost($slug);
+		return view('coming-soon', $this->data);
+//		$this->data['post'] = WordPress\Api::getPost($slug);
 
-		return view('blog/post', $this->data);
+//		return view('blog/post', $this->data);
 	}
 }
