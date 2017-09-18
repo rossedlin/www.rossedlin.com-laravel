@@ -44,8 +44,8 @@ Route::group(['prefix' => 'portfolio'], function ()
 	/**
 	 * Stripe
 	 */
-	Route::get('/stripe', 'Demo\Stripe');
-	Route::post('/stripe/authorise', 'Demo\Stripe@checkoutAuthorise');
+	Route::get('/stripe', 'Portfolio\Stripe');
+	Route::post('/stripe/authorise', 'Portfolio\Stripe@checkoutAuthorise');
 
 	/**
 	 *

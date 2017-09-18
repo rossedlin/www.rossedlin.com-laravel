@@ -10,15 +10,16 @@
  * @var string $csrf_token
  */
 ?>
-@extends('theme.unify-consulting.layouts.default')
+@extends('unify-consulting.layout')
+
 @section('head.post')
-    {{--@include('pages.demo.stripe.head')--}}
+    @include('portfolio.stripe.head')
 @stop
 
 @section('content')
-    @include('pages.demo.stripe.content')
+    @include('portfolio.stripe.content')
 @stop
 
 @section('footer.post')
-    {{--@include('pages.demo.stripe.footer')--}}
+    @include('portfolio.stripe.footer')
 @stop

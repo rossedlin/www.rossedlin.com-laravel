@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\Demo;
+namespace App\Http\Controllers\Portfolio;
 
 use \App\Http\Controllers;
 use \App\Objects;
@@ -21,13 +21,13 @@ class Stripe extends Controllers\_Controller
 	 */
 	public function __invoke()
 	{
-		return view('pages/demo/stripe', [
+		return view('portfolio/stripe', [
 			'id'                 => self::getId(),
 			'amount'             => self::getAmount(),
 			'currency_code'      => self::getCurrencyCode(),
 			'secret_key'         => self::getSecretKey(),
 			'publish_key'        => self::getPublishKey(),
-			'url_ajax_authorise' => secure_url('demo/stripe/ajax_authorise'),
+			'url_ajax_authorise' => secure_url('portfolio/stripe/ajax_authorise'),
 			'csrf_token'         => csrf_token(),
 		], $this->data);
 	}

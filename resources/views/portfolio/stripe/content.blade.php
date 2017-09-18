@@ -28,7 +28,7 @@
 
         <!-- Stripe Form -->
         <section class="container text-center mx-auto">
-            @include('pages.demo.stripe.snippets.elements')
+            @include('portfolio.stripe.snippets.elements')
         </section>
 
         <!-- Card Details -->
@@ -39,9 +39,9 @@
                     Stripe Details
                 </h3>
                 <p class="g-font-size-16">
-                    <a href="https://dashboard.stripe.com/login">https://stripe.com/login</a><br/>
-                    <span>demo@rossedlin.co.uk</span><br/>
-                    <span>password1234</span><br/>
+                    <a href="https://dashboard.stripe.com/login" target="_blank">https://stripe.com/login</a><br/>
+                    <span>demo@rossedlin.com</span><br/>
+                    <span>Password1234!!!</span><br/>
                 </p>
             </div>
 
@@ -66,7 +66,7 @@
                         processing. Quickly integrate Checkout into your site to provide your users with a streamlined,
                         mobile-ready payment experience that is constantly improving.</p>
 
-                    {{--@include('pages.demo.stripe.snippets.checkout')--}}
+                    {{--@include(portfolio.stripe.snippets.checkout')--}}
 
                 </div>
             </div>
