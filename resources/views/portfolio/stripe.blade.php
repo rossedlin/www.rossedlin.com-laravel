@@ -12,14 +12,9 @@
 ?>
 @extends('unify-consulting.layout')
 
-@section('head.post')
-    @include('portfolio.stripe.head')
-@stop
-
 @section('content')
-    @include('portfolio.stripe.content')
-@stop
 
-@section('footer.post')
-    @include('portfolio.stripe.footer')
+    <script src="https://js.stripe.com/v3/"></script>
+
+    @include('portfolio.stripe.stripe')
 @stop

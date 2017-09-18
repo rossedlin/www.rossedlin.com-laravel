@@ -28,7 +28,9 @@
 
         <!-- Stripe Form -->
         <section class="container text-center mx-auto">
-            @include('portfolio.stripe.snippets.elements')
+            {{--@include('portfolio.stripe.snippets.checkout')--}}
+            @include('portfolio.stripe.snippets.custom')
+            {{--@include('portfolio.stripe.snippets.elements')--}}
         </section>
 
         <!-- Card Details -->
@@ -56,21 +58,5 @@
 
         </div>
         <!-- End Card Details -->
-
-        <div class="row" style="display: none;">
-
-            <div class="card col-xs-12" style="margin-bottom: 30px;">
-                <div class="card-block">
-                    <h4 class="card-title">Stripe Checkout - ID #<?= $id ?></h4>
-                    <p class="card-text">Stripe's embedded payment form, Checkout, simplifies and secures online payment
-                        processing. Quickly integrate Checkout into your site to provide your users with a streamlined,
-                        mobile-ready payment experience that is constantly improving.</p>
-
-                    {{--@include(portfolio.stripe.snippets.checkout')--}}
-
-                </div>
-            </div>
-
-        </div>
     </div>
 </div>
