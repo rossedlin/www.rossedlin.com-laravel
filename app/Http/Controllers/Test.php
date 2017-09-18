@@ -21,6 +21,7 @@ class Test extends _Controller
 	 */
 	public function __invoke()
 	{
+		$this->data['dump'] = [];
 		return view('test', $this->data);
 	}
 }

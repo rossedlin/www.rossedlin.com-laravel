@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Cryslo\Core\Utils;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -20,7 +21,9 @@ abstract class _Controller extends BaseController
 	/**
 	 * Redis Keys
 	 */
-	const CACHE_WORDPRESS = 'feed-wordpress';
+	const WORDPRESS_CACHE = 'feed-wordpress';
+	const WORDPRESS_URL   = 'https://wordpress.rossedlin.com';
+	const WORDPRESS_DATE  = 'jS M Y';
 
 	/**
 	 * @var Objects\Page $page
@@ -55,18 +58,42 @@ abstract class _Controller extends BaseController
 	 */
 	public function getLatestPosts()
 	{
+		return [];
 		try
 		{
-			$items = Cache::get(self::CACHE_WORDPRESS, false);
+			$items = false;
+//			$items = Cache::get(self::CACHE_WORDPRESS, false);
 
 			if (!$items)
 			{
 				$feed = new Api\WordPress();
-				$feed->setUrl("https://wordpress.rossedlin.com/category/general/feed/");
+				$feed->setUrl(self::WORDPRESS_URL . "/category/general/feed/");
 
 				$items = $feed->getFeed()->getChannel()->getItems();
 
-				Cache::put(self::CACHE_WORDPRESS, $items, 60);
+				foreach ($items as $key => &$item)
+				{
+					/**
+					 * Strip old URL
+					 */
+					if (Utils::startsWith($item->getLink(), self::WORDPRESS_URL))
+					{
+						$item->setLink(substr($item->getLink(), 31, strlen($item->getLink()) - 31));
+					}
+					else
+					{
+						unset($items[$key]);
+						continue;
+					}
+
+					/**
+					 * Reformat Date
+					 */
+
+					$item->setPublishDate(date(self::WORDPRESS_DATE, strtotime($item->getPublishDate())));
+				}
+
+				Cache::put(self::WORDPRESS_CACHE, $items, 60);
 			}
 
 			return $items;
