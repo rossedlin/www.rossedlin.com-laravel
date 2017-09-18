@@ -71,7 +71,8 @@ class Portfolio extends _Controller
 		$obj->setTitle('Dishdash / NOQU');
 		$obj->setDate('Feb 2016');
 		$obj->setExcerpt('The main backend to a multitude of websites, including FiveGuys and GoodEarth, branded as Dishdash. I was a key developer at Lineten working in a small team to bring this to life, I worked in areas such as Payment, POS, handling the entire order process and Android development.');
-		$obj->setLink(url('/portfolio/dishdash-noqu'));
+//		$obj->setLink(url('/portfolio/dishdash-noqu'));
+		$obj->setLink("https://dishdash.co.uk/", true);
 		$obj->setImage(url('/img/portfolio/dishdash-noqu/dishdash-noqu-homepage-450x200.jpg'));
 
 		return $obj;
