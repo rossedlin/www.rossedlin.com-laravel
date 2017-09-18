@@ -47,8 +47,8 @@
 
 <!-- JS Unify -->
 <script src="/theme/unify/assets/js/hs.core.js"></script>
-<script src="/theme/unify/assets/js/components/hs.header.js"></script>
 <script src="/theme/unify/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="/theme/unify/assets/js/components/hs.header.js"></script>
 <script src="/theme/unify/assets/js/components/hs.scroll-nav.js"></script>
 <script src="/theme/unify/assets/js/components/hs.counter.js"></script>
 <script src="/theme/unify/assets/js/components/hs.carousel.js"></script>
@@ -58,6 +58,8 @@
 
 <!-- JS Customization -->
 <script src="/theme/unify/assets/js/custom.js"></script>
+
+<script src="<?//= \Cryslo\Core\Utils::addVersionToCssFile('/js/app.js') ?>"></script>
 
 @yield('body.post')
 
