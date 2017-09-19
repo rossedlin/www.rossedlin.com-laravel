@@ -36,9 +36,8 @@ class Blog extends _Web
 	 */
 	public function post($date, $slug)
 	{
-		return view('coming-soon', $this->data);
-//		$this->data['post'] = WordPress\Api::getPost($slug);
+		$this->data['post'] = WordPress\Api::getPost($slug);
 
-//		return view('blog/post', $this->data);
+		return view('blog/post', $this->data);
 	}
 }

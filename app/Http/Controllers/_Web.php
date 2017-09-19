@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Cryslo\Core\Utils;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -10,10 +9,18 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 use Illuminate\Support\Facades\Cache;
 
+use App\Library\WordPress;
+
 use Cryslo\Api;
 use Cryslo\Object;
+use Cryslo\Core\Utils;
 use \App\Objects;
 
+/**
+ * Class _Web
+ *
+ * @package App\Http\Controllers
+ */
 abstract class _Web extends BaseController
 {
 	use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
@@ -49,58 +56,7 @@ abstract class _Web extends BaseController
 
 		$this->data = [
 			'page'         => $this->page,
-			'latest_posts' => $this->getLatestPosts(),
+			'latest_posts' => WordPress\Api::getLatestPosts(),
 		];
-	}
-
-	/**
-	 * @return Object\WordPress\Item[]
-	 */
-	public function getLatestPosts()
-	{
-		return [];
-		try
-		{
-			$items = false;
-//			$items = Cache::get(self::CACHE_WORDPRESS, false);
-
-			if (!$items)
-			{
-				$feed = new Api\WordPress();
-				$feed->setUrl(self::WORDPRESS_URL . "/category/general/feed/");
-
-				$items = $feed->getFeed()->getChannel()->getItems();
-
-				foreach ($items as $key => &$item)
-				{
-					/**
-					 * Strip old URL
-					 */
-					if (Utils::startsWith($item->getLink(), self::WORDPRESS_URL))
-					{
-						$item->setLink(substr($item->getLink(), 31, strlen($item->getLink()) - 31));
-					}
-					else
-					{
-						unset($items[$key]);
-						continue;
-					}
-
-					/**
-					 * Reformat Date
-					 */
-
-					$item->setPublishDate(date(self::WORDPRESS_DATE, strtotime($item->getPublishDate())));
-				}
-
-				Cache::put(self::WORDPRESS_CACHE, $items, 60);
-			}
-
-			return $items;
-		}
-		catch (\Exception $e)
-		{
-			return [];
-		}
 	}
 }

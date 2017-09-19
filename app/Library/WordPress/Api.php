@@ -62,50 +62,24 @@ class Api
 		{
 			throw $e;
 		}
+	}
 
-		exit;
+	/**
+	 * @param string $slug
+	 *
+	 * @return Object\WordPress\Post
+	 *
+	 * @throws \Exception
+	 */
+	public static function getLatestPosts()
+	{
 		try
 		{
-			$items = false;
-//			$items = Cache::get(self::CACHE_WORDPRESS, false);
-
-			if (!$items)
-			{
-				$feed = new Api\WordPress();
-				$feed->setUrl(self::WORDPRESS_URL . "/category/general/feed/");
-
-				$items = $feed->getFeed()->getChannel()->getItems();
-
-				foreach ($items as $key => &$item)
-				{
-					/**
-					 * Strip old URL
-					 */
-					if (Utils::startsWith($item->getLink(), self::WORDPRESS_URL))
-					{
-						$item->setLink(substr($item->getLink(), 31, strlen($item->getLink()) - 31));
-					}
-					else
-					{
-						unset($items[$key]);
-						continue;
-					}
-
-					/**
-					 * Reformat Date
-					 */
-
-					$item->setPublishDate(date(self::WORDPRESS_DATE, strtotime($item->getPublishDate())));
-				}
-
-				Cache::put(self::WORDPRESS_CACHE, $items, 60);
-			}
-
-			return $items;
+			return WordPress::getPosts(env('WORDPRESS_URL') . WordPress\Url::getLatestPosts(['per_page' => 3]));
 		}
 		catch (\Exception $e)
 		{
-			return [];
+			throw $e;
 		}
 	}
 }
