@@ -26,8 +26,8 @@ if [ -d ~/rossedlin.com/www.rossedlin.com-laravel ]; then
 
     #Public
     cd ~/rossedlin.com/www
-    cp ./build/dev/robots.txt ./public/robots.txt
-    cp ./build/dev/.htaccess ./public/.htaccess
+    cp ./build/live/robots.txt ./public/robots.txt
+    cp ./build/live/.htaccess ./public/.htaccess
 
     #Permissions
     chmod 755 -R ~/rossedlin.com/www
