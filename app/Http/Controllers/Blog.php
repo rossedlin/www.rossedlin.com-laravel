@@ -15,7 +15,7 @@ use \App\Objects;
  * Class PageController
  * @package App\Http\Controllers
  */
-class Blog extends _Controller
+class Blog extends _Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

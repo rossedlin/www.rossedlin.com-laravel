@@ -18,7 +18,7 @@ use \Cryslo\Api;
  *
  * @package App\Http\Controllers\Portfolio
  */
-class RossEdlinLanding extends Controllers\_Controller
+class RossEdlinLanding extends Controllers\_Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

@@ -14,7 +14,7 @@ use \App\Objects;
  * Class Portfolio
  * @package App\Http\Controllers
  */
-class Portfolio extends _Controller
+class Portfolio extends _Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

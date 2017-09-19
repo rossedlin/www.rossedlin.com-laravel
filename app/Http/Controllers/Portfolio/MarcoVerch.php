@@ -20,7 +20,7 @@ use MarcoVerch\Mandrill;
  *
  * @package App\Http\Controllers
  */
-class MarcoVerch extends Controllers\_Controller
+class MarcoVerch extends Controllers\_Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

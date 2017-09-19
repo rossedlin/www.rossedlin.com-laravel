@@ -17,7 +17,7 @@ use \Cryslo\Api;
  *
  * @package App\Http\Controllers
  */
-class WebScraping extends Controllers\_Controller
+class WebScraping extends Controllers\_Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

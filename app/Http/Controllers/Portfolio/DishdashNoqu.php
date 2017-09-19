@@ -18,7 +18,7 @@ use \Cryslo\Api;
  *
  * @package App\Http\Controllers\Portfolio
  */
-class DishdashNoqu extends Controllers\_Controller
+class DishdashNoqu extends Controllers\_Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

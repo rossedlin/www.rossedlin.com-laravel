@@ -14,7 +14,7 @@ use Cryslo\Api;
 use Cryslo\Object;
 use \App\Objects;
 
-abstract class _Controller extends BaseController
+abstract class _Web extends BaseController
 {
 	use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 

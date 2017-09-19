@@ -12,7 +12,7 @@ use \App\Objects;
  * Class PageController
  * @package App\Http\Controllers
  */
-class Index extends _Controller
+class Index extends _Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

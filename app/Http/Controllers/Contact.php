@@ -16,7 +16,7 @@ use \Cryslo\Object;
  * Class Portfolio
  * @package App\Http\Controllers
  */
-class Contact extends _Controller
+class Contact extends _Web
 {
 	/**
 	 * @param $id

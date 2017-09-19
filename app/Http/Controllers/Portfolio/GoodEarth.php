@@ -18,7 +18,7 @@ use \Cryslo\Api;
  *
  * @package App\Http\Controllers\Portfolio
  */
-class GoodEarth extends Controllers\_Controller
+class GoodEarth extends Controllers\_Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

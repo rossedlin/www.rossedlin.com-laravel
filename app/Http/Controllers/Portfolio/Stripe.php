@@ -17,7 +17,7 @@ use Cryslo\Object;
  *
  * @package App\Http\Controllers
  */
-class Stripe extends Controllers\_Controller
+class Stripe extends Controllers\_Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

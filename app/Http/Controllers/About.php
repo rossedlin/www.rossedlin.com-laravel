@@ -17,7 +17,7 @@ use Cryslo\Object;
  * Class Portfolio
  * @package App\Http\Controllers
  */
-class About extends _Controller
+class About extends _Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

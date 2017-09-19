@@ -16,7 +16,7 @@ use \Cryslo\Api;
  *
  * @package App\Http\Controllers
  */
-class ApiIntegration extends Controllers\_Controller
+class ApiIntegration extends Controllers\_Web
 {
 	/**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
