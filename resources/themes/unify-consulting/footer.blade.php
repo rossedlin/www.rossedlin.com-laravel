@@ -119,7 +119,7 @@
                         </div>
                         <p class="mb-0">
                             <a class="g-color-white--hover"
-                               href="mailto:contact@cuttingweb.co.uk">contact@rossedlin.com</a>
+                               href="mailto:contact@rossedlin.com">contact@rossedlin.com</a>
                             <br>
                             <a class="g-color-white--hover"
                                href="https://www.rossedlin.com">www.rossedlin.com</a>
