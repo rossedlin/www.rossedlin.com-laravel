@@ -34,7 +34,7 @@
         <tr>
             <th scope="row"><?= $key + 1 ?></th>
             <td><?= $row['title'] ?></td>
-            <td class="hidden-xs-down"><a href="<?= $row['href'] ?>" target="_blank"><?= $row['href'] ?></a></td>
+            <td class="hidden-xs-down"><a href="<?= \Cryslo\Core\Utils::addHttp($row['href']) ?>" target="_blank"><?= $row['href'] ?></a></td>
             <td class="hidden-sm-down"><?= $row['description'] ?></td>
         </tr>
         <?php } ?>
