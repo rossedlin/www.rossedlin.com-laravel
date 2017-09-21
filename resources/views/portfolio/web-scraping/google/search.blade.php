@@ -16,7 +16,7 @@
             <input id="scrap-google-search-value"
                    class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15"
                    type="text" placeholder="Ross Edlin"
-                   value="Ross Edlin">
+                   value="Joe Blogs">
         </div>
     </div>
 </div>
