@@ -22,8 +22,13 @@ class Blog extends _Web
 	 */
 	public function __invoke()
 	{
-		return view('coming-soon', $this->data);
-//		return view('blog', $this->data);
+		$this->data['tags'] = WordPress\Api::getTags();
+		$this->data['posts'] = WordPress\Api::getPosts([
+			'per_page'  => 6,
+			'_embed'    => true,
+		]);
+
+		return view('blog', $this->data);
 	}
 
 	/**

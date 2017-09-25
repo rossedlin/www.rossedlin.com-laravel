@@ -67,6 +67,10 @@
         </header>
 
         <div class="g-font-size-16 g-line-height-1_8 g-mb-30">
+            <figure class="u-shadow-v25 g-mb-30">
+                <img class="img-fluid w-100" src="<?= $post->getFeaturedMedia() ?>" alt="Image Description">
+            </figure>
+
             <?= $post->getContent() ?>
         </div>
 

@@ -6,6 +6,8 @@
  *
  * Date: 21/09/2017
  * Time: 16:27
+ *
+ * @var Cryslo\Object\WordPress\Tag[] $tags
  */
 ?>
 <div class="g-pl-20--lg">
@@ -88,34 +90,15 @@
             <div class="g-mb-40">
                 <h3 class="h5 g-color-black g-font-weight-600 mb-4">Tags</h3>
                 <ul class="u-list-inline mb-0">
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">Design</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">Art</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">Graphic</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">Front End Development</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">CSS</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">HTML</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">Sass</a>
-                    </li>
+
+                    <?php foreach ($tags as $tag)
+                    { ?>
+                        <li class="list-inline-item g-mb-10">
+                            <a class="<?= $tag->getCssClass() ?> u-tags-v1 g-font-size-12 g-rounded-50 g-py-4 g-px-15"
+                               href="#"><?= $tag->getName() ?></a>
+                        </li>
+                    <?php } ?>
+
                 </ul>
             </div>
             <!-- End Tags -->

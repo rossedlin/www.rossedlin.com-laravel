@@ -19,32 +19,6 @@ use App\Objects;
  */
 class Api
 {
-	public function __construct()
-	{
-		$url = trim();
-		$url = rtrim($url, '/');
-
-		return $url;
-	}
-
-	/**
-	 * @param string $id
-	 *
-	 * @return Object\WordPress\Posts
-	 * @throws \Exception
-	 */
-	public static function query(string $id)
-	{
-		try
-		{
-//			return WordPress::query(self::_getUrl() . "/wp-json");
-		}
-		catch (\Exception $e)
-		{
-			throw $e;
-		}
-	}
-
 	/**
 	 * @param string $slug
 	 *
@@ -56,7 +30,7 @@ class Api
 	{
 		try
 		{
-			return WordPress::getPost(env('WORDPRESS_URL') . WordPress\Url::getPostsBySlug($slug));
+			return WordPress::getPost(env('WORDPRESS_URL') . WordPress\Url::getPostBySlug($slug));
 		}
 		catch (\Exception $e)
 		{
@@ -65,8 +39,6 @@ class Api
 	}
 
 	/**
-	 * @param string $slug
-	 *
 	 * @return Object\WordPress\Post
 	 *
 	 * @throws \Exception
@@ -75,11 +47,105 @@ class Api
 	{
 		try
 		{
-			return WordPress::getPosts(env('WORDPRESS_URL') . WordPress\Url::getLatestPosts(['per_page' => 3]));
+			return WordPress::getPosts(env('WORDPRESS_URL') . WordPress\Url::getPosts(['per_page' => 3]));
 		}
 		catch (\Exception $e)
 		{
 			throw $e;
 		}
+	}
+
+	/**
+	 * @param $args
+	 *
+	 * @return Object\WordPress\Post[]
+	 *
+	 * @throws \Exception
+	 */
+	public static function getPosts($args = [])
+	{
+		try
+		{
+			$posts = WordPress::getPosts(env('WORDPRESS_URL') . WordPress\Url::getPosts($args));
+
+			foreach ($posts as $post)
+			{
+				$tags = $post->getTags();
+
+				$post->setTags(self::applyTagsCssClass($tags));
+			}
+
+			return $posts;
+		}
+		catch (\Exception $e)
+		{
+			throw $e;
+		}
+	}
+
+	/**
+	 * @param array $args
+	 *
+	 * @return Object\WordPress\Tag[]
+	 * @throws \Exception
+	 */
+	public static function getTags($args = [])
+	{
+		try
+		{
+			$tags = WordPress::getTags(env('WORDPRESS_URL') . WordPress\Url::getTags($args));
+
+			self::applyTagsCssClass($tags);
+
+			return $tags;
+		}
+		catch (\Exception $e)
+		{
+			throw $e;
+		}
+	}
+
+	/**
+	 * @param Object\WordPress\Tag $tag
+	 *
+	 * @return string
+	 */
+	public static function getTagCssClass(Object\WordPress\Tag $tag)
+	{
+		switch ($tag->getSlug())
+		{
+			case 'website':
+				return 'g-color-yellow g-bg-yellow-opacity-0_1 g-bg-yellow--hover';
+
+			default:
+				return 'g-color-teal g-bg-teal-opacity-0_1 g-bg-teal--hover';
+//				return 'g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover';
+		}
+	}
+
+	/**
+	 * @param Object\WordPress\Tag $tag
+	 *
+	 * @return Object\WordPress\Tag
+	 */
+	public static function applyTagCssClass(Object\WordPress\Tag &$tag)
+	{
+		$tag->setCssClass(self::getTagCssClass($tag));
+		return $tag;
+	}
+
+	/**
+	 * @param Object\WordPress\Tag[] $tags
+	 *
+	 * @return Object\WordPress\Tag[]
+	 */
+	public static function applyTagsCssClass(array &$tags)
+	{
+		foreach ($tags as &$tag)
+		{
+			self::applyTagCssClass($tag);
+		}
+
+		return $tags;
 	}
 }
