@@ -14,6 +14,7 @@
 
 @section('content')
 
+    <?php /*
     <!-- Breadcrumbs -->
     <section class="g-bg-gray-light-v5 g-py-80 g-pt-140">
         <div class="container text-center">
@@ -35,9 +36,10 @@
         </div>
     </section>
     <!-- End Breadcrumbs -->
+    */ ?>
 
     <!-- Blog -->
-    <div class="container g-pt-50 g-pb-20">
+    <div class="container g-pt-50 g-pb-20 g-pt-140">
         <div class="row justify-content-between">
             <div class="col-lg-9 g-mb-80">
                 <div class="g-pr-20--lg">
