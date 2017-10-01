@@ -39,7 +39,7 @@ class Api
 	}
 
 	/**
-	 * @return Object\WordPress\Post
+	 * @return Object\WordPress\Post[]
 	 *
 	 * @throws \Exception
 	 */
@@ -51,8 +51,10 @@ class Api
 		}
 		catch (\Exception $e)
 		{
-			throw $e;
+//			throw $e; //todo
 		}
+
+		return [];
 	}
 
 	/**
@@ -79,8 +81,10 @@ class Api
 		}
 		catch (\Exception $e)
 		{
-			throw $e;
+//			throw $e; //todo
 		}
+
+		return [];
 	}
 
 	/**
@@ -101,8 +105,10 @@ class Api
 		}
 		catch (\Exception $e)
 		{
-			throw $e;
+//			throw $e; //todo
 		}
+
+		return [];
 	}
 
 	/**
@@ -117,9 +123,11 @@ class Api
 			case 'website':
 				return 'g-color-yellow g-bg-yellow-opacity-0_1 g-bg-yellow--hover';
 
+			case 'lineten':
+				return 'g-color-lineten g-bg-lineten-opacity-0_1 g-bg-lineten--hover';
+
 			default:
 				return 'g-color-teal g-bg-teal-opacity-0_1 g-bg-teal--hover';
-//				return 'g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover';
 		}
 	}
 
