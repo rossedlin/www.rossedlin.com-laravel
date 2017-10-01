@@ -30,7 +30,15 @@ class Api
 	{
 		try
 		{
-			return WordPress::getPost(env('WORDPRESS_URL') . WordPress\Url::getPostBySlug($slug));
+			$post = WordPress::getPost(env('WORDPRESS_URL') . WordPress\Url::getPostBySlug($slug));
+
+			/**
+			 * Apply styling to tags
+			 */
+			$tags = $post->getTags();
+			$post->setTags(self::applyTagsCssClass($tags));
+
+			return $post;
 		}
 		catch (\Exception $e)
 		{
@@ -72,8 +80,10 @@ class Api
 
 			foreach ($posts as $post)
 			{
+				/**
+				 * Apply styling to tags
+				 */
 				$tags = $post->getTags();
-
 				$post->setTags(self::applyTagsCssClass($tags));
 			}
 

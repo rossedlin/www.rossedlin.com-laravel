@@ -34750,7 +34750,8 @@ pre[class*="language-"] .toolbar-item a {
 }
 
 .g-bg-yellow--hover:hover {
-  background-color: #ebc71d !important;
+    color:            #FFFFFF !important;
+    background-color: #ebc71d !important;
 }
 
 /* Color Aqua */
