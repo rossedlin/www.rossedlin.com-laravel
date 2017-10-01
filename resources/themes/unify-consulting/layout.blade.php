@@ -59,8 +59,6 @@
 <!-- JS Customization -->
 <script src="/theme/unify/assets/js/custom.js"></script>
 
-<script src="<?//= \Cryslo\Core\Utils::addVersionToCssFile('/js/app.js') ?>"></script>
-
 @yield('body.post')
 
 </body>
