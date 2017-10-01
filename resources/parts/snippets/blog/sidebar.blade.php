@@ -40,6 +40,8 @@
     <div id="stickyblock-start">
         <div class="js-sticky-block g-sticky-block--lg g-pt-50" data-responsive="true"
              data-start-point="#stickyblock-start" data-end-point="#stickyblock-end">
+
+            <?php /*
             <!-- Publications -->
             <div class="g-mb-50">
                 <h3 class="h5 g-color-black g-font-weight-600 mb-4">Publications</h3>
@@ -85,6 +87,7 @@
             <!-- End Publications -->
 
             <hr class="g-brd-gray-light-v4 g-my-50">
+            */ ?>
 
             <!-- Tags -->
             <div class="g-mb-40">
