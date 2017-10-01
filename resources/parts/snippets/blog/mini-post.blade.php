@@ -21,7 +21,9 @@
         <div class="g-bg-white g-pa-30">
 
             <div>
-                <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2">1 June 2017</span>
+                <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 mb-2">
+                    <?= $post->getDateFormatted() ?>
+                </span>
                 <h2 class="h5 g-color-black g-font-weight-600 mb-3">
                     <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer"
                        href="<?= url('/blog/' . $post->getYear() . '/' . $post->getSlug()) ?>">
