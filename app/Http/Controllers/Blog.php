@@ -42,8 +42,6 @@ class Blog extends _Web
 	public function post($date, $slug)
 	{
 		$post = WordPress\Api::getPost($slug);
-		$user = WordPress\Api::getUser($post->getAuthorId());
-		$post->setUser($user);
 
 		return view('blog/post', $this->data, [
 			'post' => $post,

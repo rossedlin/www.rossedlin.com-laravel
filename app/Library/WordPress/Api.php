@@ -36,7 +36,9 @@ class Api
 
 			if (!($post instanceof Object\WordPress\Post))
 			{
-				$post = WordPress::getPost(env('WORDPRESS_URL') . WordPress\Url::getPostBySlug($slug));
+				$post = WordPress::getPost(env('WORDPRESS_URL') . WordPress\Url::getPostBySlug($slug, [
+						'_embed' => true,
+					]));
 
 				/**
 				 * Apply styling to tags

@@ -20,7 +20,7 @@
 
     <div class="media g-brd-around g-brd-gray-light-v4 rounded g-pa-30 g-mb-20">
         <img class="d-flex u-shadow-v25 g-width-80 g-height-80 rounded-circle g-mr-15"
-             src="<?= $post->getUser()->getAvatar(\Cryslo\Object\WordPress\User::AVATAR_48, '/theme/unify/assets/img-temp/100x100/img8.jpg') ?>" alt="Image Description">
+             src="<?= $post->getUser()->getAvatar(\Cryslo\Object\WordPress\User::AVATAR_96, '/theme/unify/assets/img-temp/100x100/img8.jpg') ?>" alt="Image Description">
 
         <div class="media-body">
             <h4 class="g-color-gray-dark-v1 g-mb-15">
