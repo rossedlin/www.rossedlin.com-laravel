@@ -399,6 +399,7 @@
         </div>
         <!-- End News Feed -->
 
+        <?php /*
         <!-- Top Authors -->
         <div class="g-mb-40">
             <div class="u-heading-v3-1 g-mb-30">
@@ -450,6 +451,8 @@
             </article>
         </div>
         <!-- End Top Authors -->
+        */ ?>
+
     </div>
 </div>
 <!-- End Sidebar -->
