@@ -16,7 +16,7 @@
     <ul class="list-inline d-sm-flex g-color-gray-dark-v4 mb-0">
         <li class="list-inline-item">
             <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover"
-               href="#"><?= $post->getAuthor()->getDisplayName()?></a>
+               href="#"><?= $post->getUser()->getDisplayName()?></a>
         </li>
         <li class="list-inline-item g-mx-10">/</li>
         <li class="list-inline-item">

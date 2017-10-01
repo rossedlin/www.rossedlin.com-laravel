@@ -1,6 +1,7 @@
 <?php
 namespace App\Library\WordPress;
 
+use App\Library;
 use Cryslo\Api\WordPress;
 use Cryslo\Object;
 use App\Objects;
@@ -30,13 +31,21 @@ class Api
 	{
 		try
 		{
-			$post = WordPress::getPost(env('WORDPRESS_URL') . WordPress\Url::getPostBySlug($slug));
+			$post = false;
+//			$post = Library\Cache::get(Library\Cache\Keys::getWordpressPost($slug));
 
-			/**
-			 * Apply styling to tags
-			 */
-			$tags = $post->getTags();
-			$post->setTags(self::applyTagsCssClass($tags));
+			if (!($post instanceof Object\WordPress\Post))
+			{
+				$post = WordPress::getPost(env('WORDPRESS_URL') . WordPress\Url::getPostBySlug($slug));
+
+				/**
+				 * Apply styling to tags
+				 */
+				$tags = $post->getTags();
+				$post->setTags(self::applyTagsCssClass($tags));
+
+				Library\Cache::set(Library\Cache\Keys::getWordpressPost($slug), $post);
+			}
 
 			return $post;
 		}
@@ -55,7 +64,16 @@ class Api
 	{
 		try
 		{
-			return WordPress::getPosts(env('WORDPRESS_URL') . WordPress\Url::getPosts(['per_page' => 3]));
+			$latestPosts = Library\Cache::get(Library\Cache\Keys::getWordpressLatestPosts());
+
+			if (!is_array($latestPosts))
+			{
+				$latestPosts = WordPress::getPosts(env('WORDPRESS_URL') . WordPress\Url::getPosts(['per_page' => 3]));
+
+				Library\Cache::set(Library\Cache\Keys::getWordpressLatestPosts(), $latestPosts);
+			}
+
+			return $latestPosts;
 		}
 		catch (\Exception $e)
 		{
@@ -107,9 +125,15 @@ class Api
 	{
 		try
 		{
-			$tags = WordPress::getTags(env('WORDPRESS_URL') . WordPress\Url::getTags($args));
+			$tags = Library\Cache::get(Library\Cache\Keys::getWordpressTag());
 
-			self::applyTagsCssClass($tags);
+			if (!is_array($tags))
+			{
+				$tags = WordPress::getTags(env('WORDPRESS_URL') . WordPress\Url::getTags($args));
+				self::applyTagsCssClass($tags);
+
+				Library\Cache::set(Library\Cache\Keys::getWordpressTag(), $tags);
+			}
 
 			return $tags;
 		}
@@ -119,6 +143,35 @@ class Api
 		}
 
 		return [];
+	}
+
+	/**
+	 * @param int $id
+	 *
+	 * @return Object\WordPress\User
+	 *
+	 * @throws \Exception
+	 */
+	public static function getUser($id)
+	{
+		try
+		{
+			$user = false;
+//			$user = Library\Cache::get(Library\Cache\Keys::getWordpressPost($slug));
+
+			if (!($user instanceof Object\WordPress\User))
+			{
+				$user = WordPress::getUser(env('WORDPRESS_URL') . WordPress\Url::getUser($id));
+
+				Library\Cache::set(Library\Cache\Keys::getWordpressUser($id), $user);
+			}
+
+			return $user;
+		}
+		catch (\Exception $e)
+		{
+			throw $e;
+		}
 	}
 
 	/**

@@ -17,9 +17,13 @@
         @include('sections.blog.post.article.header')
 
         <div class="g-font-size-16 g-line-height-1_8 g-mb-30">
+
+            <?php if ($post->getFeaturedMedia($post::SIZE_ORIGINAL)) { ?>
             <figure class="u-shadow-v25 g-mb-30">
-                <img class="img-fluid w-100" src="<?= $post->getFeaturedMedia() ?>" alt="Image Description">
+                <img class="img-fluid w-100" src="<?= $post->getFeaturedMedia($post::SIZE_ORIGINAL) ?>"
+                     alt="<?= $post->getTitle() ?>">
             </figure>
+            <?php } ?>
 
             <?= $post->getContent() ?>
         </div>

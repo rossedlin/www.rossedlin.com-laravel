@@ -12,8 +12,6 @@ namespace App\Library;
 
 class Cache
 {
-	const WORDPRESS_TAGS = "wordpress.tags";
-
 	/**
 	 * @param $key
 	 *
@@ -26,13 +24,14 @@ class Cache
 
 	/**
 	 * @param string $key
-	 * @param mixed $content
+	 * @param        $content
+	 * @param int    $expiresAt - Minutes
 	 *
-	 * @return mixed
+	 * @return bool
 	 */
-	public static function set(string $key, $content)
+	public static function set(string $key, $content, $expiresAt = 60)
 	{
-		if (\Illuminate\Support\Facades\Cache::store('file')->put($key, $content, 1))
+		if (\Illuminate\Support\Facades\Cache::store('file')->put($key, $content, $expiresAt))
 		{
 			return true;
 		}

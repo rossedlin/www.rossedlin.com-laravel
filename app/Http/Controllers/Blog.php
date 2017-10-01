@@ -22,10 +22,10 @@ class Blog extends _Web
 	 */
 	public function __invoke()
 	{
-		$this->data['tags'] = WordPress\Api::getTags();
+		$this->data['tags']  = WordPress\Api::getTags();
 		$this->data['posts'] = WordPress\Api::getPosts([
-			'per_page'  => 6,
-			'_embed'    => true,
+			'per_page' => 6,
+			'_embed'   => true,
 		]);
 
 		return view('blog', $this->data);
@@ -41,8 +41,12 @@ class Blog extends _Web
 	 */
 	public function post($date, $slug)
 	{
-		$this->data['post'] = WordPress\Api::getPost($slug);
+		$post = WordPress\Api::getPost($slug);
+		$user = WordPress\Api::getUser($post->getAuthorId());
+		$post->setUser($user);
 
-		return view('blog/post', $this->data);
+		return view('blog/post', $this->data, [
+			'post' => $post,
+		]);
 	}
 }

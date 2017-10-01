@@ -25,7 +25,7 @@ class Keys
 	 *
 	 * @return string
 	 */
-	public static function getWordpressPost($slug)
+	public static function getWordpressPost(string $slug)
 	{
 		return "wordpress.post." . $slug;
 	}
@@ -35,6 +35,16 @@ class Keys
 	 */
 	public static function getWordpressLatestPosts()
 	{
-		return "wordpress.latest.posts";
+		return "wordpress.posts.latest";
+	}
+
+	/**
+	 * @param int $id
+	 *
+	 * @return string
+	 */
+	public static function getWordpressUser(int $id)
+	{
+		return "wordpress.user." . $id;
 	}
 }
