@@ -23,6 +23,8 @@
 
 <link rel="stylesheet" href="/theme/unify/assets/vendor/icon-line-pro/style.css">
 
+<link rel="stylesheet" href="<?= \Cryslo\Core\Utils::addVersionToCssFile('/css/custom.css') ?>">
+
 <?php if (App::environment('production'))
 {
     echo \Cryslo\Api\Google\Analytics::getHtml('UA-61673839-8');
