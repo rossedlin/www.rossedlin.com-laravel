@@ -31,8 +31,7 @@ class Api
 	{
 		try
 		{
-			$post = false;
-//			$post = Library\Cache::get(Library\Cache\Keys::getWordpressPost($slug));
+			$post = Library\Cache::get(Library\Cache\Keys::getWordpressPost($slug));
 
 			if (!($post instanceof Object\WordPress\Post))
 			{
