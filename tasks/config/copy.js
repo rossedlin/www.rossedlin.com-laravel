@@ -34,11 +34,7 @@ module.exports = function (grunt) {
                     'fonts/**',
                     'img/**',
                     'favicon.ico',
-                    'index.php',
-                    // '!**/css/**',
-                    // '!**/js/**',
-                    // '!**/sass/**',
-                    // '!**/vendor/**',
+                    'index.php'
                 ],
                 dest: '.tmp/public'
             }]
