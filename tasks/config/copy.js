@@ -33,7 +33,7 @@ module.exports = function (grunt) {
         src: [
           '**/*.!(coffee|less)'
         ],
-        dest: 'public'
+        dest: '.tmp/public'
       }]
     },
 
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
         src: [
           'jquery.js'
         ],
-        dest: 'public/js'
+        dest: '.tmp/public/js'
       }]
     },
 
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
           'js/bootstrap.js',
           'css/bootstrap.css'
         ],
-        dest: 'public'
+        dest: '.tmp/public'
       }]
     },
 
@@ -77,21 +77,36 @@ module.exports = function (grunt) {
           'css/lightgallery.css',
           'js/lightgallery.js'
         ],
-        dest: 'public/vendor/lightgallery'
+        dest: '.tmp/public/vendor/lightgallery'
       }, {
         expand: true,
         cwd: './node_modules/lg-thumbnail/dist',
         src: [
           'lg-thumbnail.js'
         ],
-        dest: 'public/vendor/lg-thumbnail'
+        dest: '.tmp/public/vendor/lg-thumbnail'
       }, {
         expand: true,
         cwd: './node_modules/lg-fullscreen/dist',
         src: [
           'lg-fullscreen.js'
         ],
-        dest: 'public/vendor/lg-fullscreen'
+        dest: '.tmp/public/vendor/lg-fullscreen'
+      }]
+    },
+
+    /**
+     * Public
+     */
+    public: {
+      files: [{
+        expand: true,
+        cwd: '.tmp/public',
+        src: [
+          '*',
+          '**'
+        ],
+        dest: 'public'
       }]
     }
   });

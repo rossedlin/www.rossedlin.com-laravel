@@ -1,15 +1,21 @@
 module.exports = function (grunt) {
-  grunt.registerTask('default', [
-    'clean:dev',
+    grunt.registerTask('default', [
+        'clean:tmp',
+        'clean:public',
 
-    'copy:assets',
-    'copy:jquery',
-    'copy:bootstrap',
-    'copy:lightgallery',
+        'copy:assets',
+        'copy:jquery',
+        'copy:bootstrap',
+        'copy:lightgallery',
+        // 'string-replace:lightgallery',
 
-    // 'less:dev',
+        'sass:tmp',
+        // 'less:dev',
+        
+        // 'concat',
 
-    // 'concat'
-    // 'coffee:dev',
-  ]);
+        'clean:public',
+        // 'clean:prePublic',
+        'copy:public'
+    ]);
 };
