@@ -7,7 +7,7 @@ module.exports = function (grunt) {
          */
         assets: {
             files: {
-                '.tmp/assets/css/head.css': 'resources/assets/sass/head.scss'
+                '.tmp/sass/head.css': 'resources/assets/sass/head.scss'
             }
         }
     });
