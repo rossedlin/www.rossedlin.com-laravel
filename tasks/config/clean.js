@@ -10,30 +10,26 @@
 module.exports = function (grunt) {
 
     grunt.config.set('clean', {
-        tmp: ['.tmp/public/**'],
+
+        /**
+         * Assets
+         */
+        tmpAssets: ['.tmp/assets/**'],
+
+        /**
+         * Assets
+         */
+        tmpSass: ['.tmp/sass/**'],
+
+        /**
+         * Tmp
+         */
+        tmpPublic: ['.tmp/public/**'],
 
         /**
          * Public
          */
-        public: ['public/**'],
-        postPublic: [
-
-            /**
-             * Css
-             */
-            'public/css/**',
-
-            /**
-             * JavaScript
-             */
-            'public/js/**',
-
-            /**
-             *
-             */
-            'public/sass/**',
-            'public/vendor/**',
-        ]
+        public: ['public/**']
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
