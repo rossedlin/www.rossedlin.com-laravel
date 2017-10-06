@@ -3,11 +3,11 @@ module.exports = function (grunt) {
     grunt.config.set('sass', {
 
         /**
-         * Temp Public
+         * Assets
          */
-        tmp: {
+        assets: {
             files: {
-                '.tmp/public/css/head.css': '.tmp/public/sass/head.scss'
+                '.tmp/assets/css/head.css': 'resources/assets/sass/head.scss'
             }
         }
     });

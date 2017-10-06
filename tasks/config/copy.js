@@ -21,95 +21,113 @@
  */
 module.exports = function (grunt) {
 
-  grunt.config.set('copy', {
+    grunt.config.set('copy', {
 
-    /**
-     *
-     */
-    assets: {
-      files: [{
-        expand: true,
-        cwd: './resources/assets',
-        src: [
-          '**/*.!(coffee|less)'
-        ],
-        dest: '.tmp/public'
-      }]
-    },
+        /**
+         * Assets
+         */
+        assets: {
+            files: [{
+                expand: true,
+                cwd: './resources/assets',
+                src: [
+                    '**/*',
+                    '!**/css/**',
+                    '!**/js/**',
+                    '!**/sass/**',
+                    '!**/vendor/**',
+                ],
+                dest: '.tmp/public'
+            }]
+        },
 
-    /**
-     * jQuery
-     */
-    jquery: {
-      files: [{
-        expand: true,
-        cwd: './node_modules/jquery/dist',
-        src: [
-          'jquery.js'
-        ],
-        dest: '.tmp/public/js'
-      }]
-    },
+        /**
+         * Temp
+         */
+        tmp: {
+            files: [{
+                expand: true,
+                cwd: './resources/assets',
+                src: [
+                    'js/**'
+                ],
+                dest: '.tmp/assets'
+            }]
+        },
 
-    /**
-     * Bootstrap
-     */
-    bootstrap: {
-      files: [{
-        expand: true,
-        cwd: './node_modules/bootstrap/dist',
-        src: [
-          'js/bootstrap.js',
-          'css/bootstrap.css'
-        ],
-        dest: '.tmp/public'
-      }]
-    },
+        /**
+         * jQuery
+         */
+        jquery: {
+            files: [{
+                expand: true,
+                cwd: './node_modules/jquery/dist',
+                src: [
+                    'jquery.js'
+                ],
+                dest: '.tmp/assets/js'
+            }]
+        },
 
-    /**
-     * Light Gallery
-     */
-    lightgallery: {
-      files: [{
-        expand: true,
-        cwd: './node_modules/lightgallery/dist',
-        src: [
-          'css/lightgallery.css',
-          'js/lightgallery.js'
-        ],
-        dest: '.tmp/public/vendor/lightgallery'
-      }, {
-        expand: true,
-        cwd: './node_modules/lg-thumbnail/dist',
-        src: [
-          'lg-thumbnail.js'
-        ],
-        dest: '.tmp/public/vendor/lg-thumbnail'
-      }, {
-        expand: true,
-        cwd: './node_modules/lg-fullscreen/dist',
-        src: [
-          'lg-fullscreen.js'
-        ],
-        dest: '.tmp/public/vendor/lg-fullscreen'
-      }]
-    },
+        /**
+         * Bootstrap
+         */
+        bootstrap: {
+            files: [{
+                expand: true,
+                cwd: './node_modules/bootstrap/dist',
+                src: [
+                    'js/bootstrap.js',
+                    'css/bootstrap.css'
+                ],
+                dest: '.tmp/assets'
+            }]
+        },
 
-    /**
-     * Public
-     */
-    public: {
-      files: [{
-        expand: true,
-        cwd: '.tmp/public',
-        src: [
-          '*',
-          '**'
-        ],
-        dest: 'public'
-      }]
-    }
-  });
+        /**
+         * Light Gallery
+         */
+        lightgallery: {
+            files: [{
+                expand: true,
+                cwd: './node_modules/lightgallery/dist',
+                src: [
+                    'css/lightgallery.css',
+                    'js/lightgallery.js'
+                ],
+                dest: '.tmp/assets/vendor/lightgallery'
+            }, {
+                expand: true,
+                cwd: './node_modules/lg-thumbnail/dist',
+                src: [
+                    'lg-thumbnail.js'
+                ],
+                dest: '.tmp/assets/vendor/lg-thumbnail'
+            }, {
+                expand: true,
+                cwd: './node_modules/lg-fullscreen/dist',
+                src: [
+                    'lg-fullscreen.js'
+                ],
+                dest: '.tmp/assets/vendor/lg-fullscreen'
+            }]
+        },
 
-  grunt.loadNpmTasks('grunt-contrib-copy');
+        /**
+         * Public
+         */
+        public: {
+            files: [{
+                expand: true,
+                cwd: '.tmp/public',
+                src: [
+                    '*',
+                    '**',
+                ],
+                dest: 'public'
+            }]
+        }
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-copy');
 };

@@ -11,12 +11,29 @@ module.exports = function (grunt) {
 
     grunt.config.set('clean', {
         tmp: ['.tmp/public/**'],
-        prePublic: [
-            '.tmp/public/js/**',
-            '.tmp/public/sass/**',
-            '.tmp/public/vendor/**',
-        ],
-        public: ['public/**']
+
+        /**
+         * Public
+         */
+        public: ['public/**'],
+        postPublic: [
+
+            /**
+             * Css
+             */
+            'public/css/**',
+
+            /**
+             * JavaScript
+             */
+            'public/js/**',
+
+            /**
+             *
+             */
+            'public/sass/**',
+            'public/vendor/**',
+        ]
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
