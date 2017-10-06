@@ -26,6 +26,17 @@ module.exports = function (grunt) {
         /**
          * Assets
          */
+        assetsToTmpAssets: {
+            files: [{
+                expand: true,
+                cwd: './resources/assets',
+                src: [
+                    'vendor/**'
+                ],
+                dest: '.tmp/assets'
+            }]
+        },
+        
         assetsToTmpPublic: {
             files: [{
                 expand: true,

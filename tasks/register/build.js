@@ -11,6 +11,7 @@ module.exports = function (grunt) {
         /**
          * Build Assets
          */
+        'copy:assetsToTmpAssets',
         'copy:tmpSassToTmpAssets',
         'copy:jqueryToTmpAssets',
         'copy:bootstrapToTmpAssets',
@@ -25,6 +26,6 @@ module.exports = function (grunt) {
         /**
          * Publish
          */
-        'copy:public',
+        'copy:public'
     ]);
 };
