@@ -26,7 +26,7 @@ module.exports = function (grunt) {
         /**
          * Assets
          */
-        assetsToPublic: {
+        assetsToTmpPublic: {
             files: [{
                 expand: true,
                 cwd: './resources/assets',

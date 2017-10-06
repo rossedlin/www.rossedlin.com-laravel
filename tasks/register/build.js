@@ -19,7 +19,7 @@ module.exports = function (grunt) {
         /**
          * Build Public
          */
-        'copy:assetsToPublic',
+        'copy:assetsToTmpPublic',
         'concat',
 
         /**
