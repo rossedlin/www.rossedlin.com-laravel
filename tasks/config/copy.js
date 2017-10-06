@@ -26,16 +26,19 @@ module.exports = function (grunt) {
         /**
          * Assets
          */
-        assets: {
+        assetsToPublic: {
             files: [{
                 expand: true,
                 cwd: './resources/assets',
                 src: [
-                    '**/*',
-                    '!**/css/**',
-                    '!**/js/**',
-                    '!**/sass/**',
-                    '!**/vendor/**',
+                    'fonts/**',
+                    'img/**',
+                    'favicon.ico',
+                    'index.php',
+                    // '!**/css/**',
+                    // '!**/js/**',
+                    // '!**/sass/**',
+                    // '!**/vendor/**',
                 ],
                 dest: '.tmp/public'
             }]
@@ -44,21 +47,21 @@ module.exports = function (grunt) {
         /**
          * Temp
          */
-        tmp: {
+        tmpSassToTmpAssets: {
             files: [{
                 expand: true,
-                cwd: './resources/assets',
+                cwd: '.tmp/sass',
                 src: [
-                    'js/**'
+                    '*.css'
                 ],
-                dest: '.tmp/assets'
+                dest: '.tmp/assets/css'
             }]
         },
 
         /**
          * jQuery
          */
-        jquery: {
+        jqueryToTmpAssets: {
             files: [{
                 expand: true,
                 cwd: './node_modules/jquery/dist',
@@ -72,7 +75,7 @@ module.exports = function (grunt) {
         /**
          * Bootstrap
          */
-        bootstrap: {
+        bootstrapToTmpAssets: {
             files: [{
                 expand: true,
                 cwd: './node_modules/bootstrap/dist',
@@ -87,7 +90,7 @@ module.exports = function (grunt) {
         /**
          * Light Gallery
          */
-        lightgallery: {
+        lightgalleryToTmpAssets: {
             files: [{
                 expand: true,
                 cwd: './node_modules/lightgallery/dist',

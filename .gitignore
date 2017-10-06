@@ -4,6 +4,8 @@
 /public/storage
 /storage/*.key
 /vendor
+/.sass-cache
+/.tmp
 /.idea
 /.vagrant
 composer.lock
