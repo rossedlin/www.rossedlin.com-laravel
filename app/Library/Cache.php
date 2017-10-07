@@ -19,6 +19,7 @@ class Cache
 	 */
 	public static function get(string $key)
 	{
+//		return false;
 		return \Illuminate\Support\Facades\Cache::get($key);
 	}
 

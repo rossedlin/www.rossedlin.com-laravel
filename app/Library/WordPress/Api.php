@@ -69,7 +69,10 @@ class Api
 
 			if (!is_array($latestPosts))
 			{
-				$latestPosts = WordPress::getPosts(env('WORDPRESS_URL') . WordPress\Url::getPosts(['per_page' => 3]));
+				$latestPosts = WordPress::getPosts(env('WORDPRESS_URL') . WordPress\Url::getPosts([
+						'per_page' => 3,
+						'_embed'   => true,
+					]));
 
 				Library\Cache::set(Library\Cache\Keys::getWordpressLatestPosts(), $latestPosts);
 			}

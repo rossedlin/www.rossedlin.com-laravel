@@ -6,10 +6,14 @@
  *
  * Date: 17/09/2017
  * Time: 17:46
+ *
+ * @var Cryslo\Object\WordPress\Post[] $latest_posts
  */
 ?>
 <!-- Sidebar -->
 <div class="col-lg-3">
+
+<?php /*
     <!-- Useful Links -->
     <div class="g-mb-50">
         <div class="u-heading-v3-1 g-mb-30">
@@ -63,6 +67,59 @@
         </ul>
     </div>
     <!-- End Useful Links -->
+    */ ?>
+
+<!-- Recent Posts -->
+    <div class="g-mb-30">
+        <div class="u-heading-v3-1 g-mb-30">
+            <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">
+                Recent Posts
+            </h2>
+        </div>
+
+        <?php foreach ($latest_posts as $latest_post)
+        { ?>
+            <!-- Article -->
+            <article class="media g-mb-30">
+
+
+                <a class="d-flex u-shadow-v25 mr-3" href="/blog/<?= $latest_post->getYear() ?>/<?= $latest_post->getSlug() ?>">
+                    <img class="g-width-60 g-height-60"
+                         src="<?= $latest_post->getFeaturedMedia(Cryslo\Object\WordPress\Post::SIZE_THUMBNAIL, '/theme/unify/assets/img-temp/100x100/img4.jpg') ?>"
+                         alt="<?= $latest_post->getTitle() ?>">
+                </a>
+
+                <div class="media-body">
+                    <h3 class="h6">
+                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover"
+                           href="/blog/<?= $latest_post->getYear() ?>/<?= $latest_post->getSlug() ?>">
+                            <?= $latest_post->getTitle() ?>
+                        </a>
+                    </h3>
+
+                    <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
+                        <li class="list-inline-item">
+                            <?= $latest_post->getDateFormatted() ?>
+                        </li>
+
+                        <?php /*
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                            <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#">
+                                <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i>
+                                18
+                            </a>
+                        </li>
+                        */ ?>
+                    </ul>
+                </div>
+            </article>
+            <!-- End Article -->
+        <?php } ?>
+    </div>
+    <!-- End Recent Posts -->
+
+    <hr />
 
     <!-- Subscribe -->
     <div class="u-shadow-v25 u-bg-overlay g-bg-img-hero g-bg-white-gradient-opacity-v2--after g-py-40 g-px-20 g-mb-50"
@@ -92,131 +149,7 @@
     </div>
     <!-- End Subscribe -->
 
-    <!-- Recent Posts -->
-    <div class="g-mb-30">
-        <div class="u-heading-v3-1 g-mb-30">
-            <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Recent
-                Posts</h2>
-        </div>
-
-        <!-- Article -->
-        <article class="media g-mb-30">
-            <a class="d-flex u-shadow-v25 mr-3" href="#">
-                <img class="g-width-60 g-height-60" src="/theme/unify/assets/img-temp/100x100/img4.jpg"
-                     alt="Image Description">
-            </a>
-
-            <div class="media-body">
-                <h3 class="h6">
-                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#">Best
-                        dessert recipes for breakfast which will..</a>
-                </h3>
-
-                <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                    <li class="list-inline-item">
-                        July 20, 2017
-                    </li>
-                    <li class="list-inline-item">/</li>
-                    <li class="list-inline-item">
-                        <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#">
-                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i>
-                            18
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <!-- End Article -->
-
-        <!-- Article -->
-        <article class="media g-mb-30">
-            <a class="d-flex u-shadow-v25 mr-3" href="#">
-                <img class="g-width-60 g-height-60" src="/theme/unify/assets/img-temp/100x100/img5.jpg"
-                     alt="Image Description">
-            </a>
-
-            <div class="media-body">
-                <h3 class="h6">
-                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#">Stylish
-                        things to do, see and purchase..</a>
-                </h3>
-
-                <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                    <li class="list-inline-item">
-                        July 16, 2017
-                    </li>
-                    <li class="list-inline-item">/</li>
-                    <li class="list-inline-item">
-                        <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#">
-                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i>
-                            31
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <!-- End Article -->
-
-        <!-- Article -->
-        <article class="media g-mb-30">
-            <a class="d-flex u-shadow-v25 mr-3" href="#">
-                <img class="g-width-60 g-height-60" src="/theme/unify/assets/img-temp/100x100/img6.jpg"
-                     alt="Image Description">
-            </a>
-
-            <div class="media-body">
-                <h3 class="h6">
-                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#">Government
-                        plans to test new primary school..</a>
-                </h3>
-
-                <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                    <li class="list-inline-item">
-                        July 07, 2017
-                    </li>
-                    <li class="list-inline-item">/</li>
-                    <li class="list-inline-item">
-                        <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#">
-                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i>
-                            24
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <!-- End Article -->
-
-        <!-- Article -->
-        <article class="media">
-            <a class="d-flex u-shadow-v25 mr-3" href="#">
-                <img class="g-width-60 g-height-60" src="/theme/unify/assets/img-temp/100x100/img7.jpg"
-                     alt="Image Description">
-            </a>
-
-            <div class="media-body">
-                <h3 class="h6">
-                    <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="#">Top 10
-                        Luxury Hotels - 5 Star Best Luxury Hotels</a>
-                </h3>
-
-                <ul class="u-list-inline g-font-size-12 g-color-gray-dark-v4">
-                    <li class="list-inline-item">
-                        July 11, 2017
-                    </li>
-                    <li class="list-inline-item">/</li>
-                    <li class="list-inline-item">
-                        <a class="g-color-gray-dark-v4 g-text-underline--none--hover" href="#">
-                            <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i>
-                            46
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <!-- End Article -->
-    </div>
-    <!-- End Recent Posts -->
-
+<?php /*
     <!-- Popular Videos -->
     <div class="g-mb-50">
         <article class="g-pos-rel">
@@ -241,8 +174,9 @@
         </article>
     </div>
     <!-- End Popular Videos -->
+    */ ?>
 
-    <!-- Social Links -->
+<!-- Social Links -->
     <div class="g-mb-50">
         <div class="u-heading-v3-1 g-mb-30">
             <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">Social
@@ -350,6 +284,8 @@
 
     <div id="stickyblock-start" class="js-sticky-block g-sticky-block--lg g-pt-20"
          data-start-point="#stickyblock-start" data-end-point="#stickyblock-end">
+
+        <?php /*
         <!-- News Feed -->
         <div class="g-mb-40">
             <div class="u-heading-v3-1 g-mb-30">
@@ -398,6 +334,7 @@
             <!-- End Article -->
         </div>
         <!-- End News Feed -->
+        */ ?>
 
         <?php /*
         <!-- Top Authors -->
