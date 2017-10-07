@@ -80,7 +80,7 @@
                 </div>
 
                 <address class="g-bg-no-repeat g-font-size-12 mb-0"
-                         style="background-image: url(/theme/unify/assets/img/maps/map2.png);">
+                         style="background-image: url(/img/maps/map2.png);">
 
                 <?php /*
 					<!-- Location -->
