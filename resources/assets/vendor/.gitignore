@@ -1,4 +1,13 @@
-*/*.json
-*/*.md
-*/LICENSE
-*/*.min.js
+*.json
+*.md
+LICENSE
+*.markdown
+Makefile
+*.min.*
+*.css.map
+*.html
+*.php
+*.txt
+*.zip
+assets
+php
