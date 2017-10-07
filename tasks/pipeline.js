@@ -21,10 +21,27 @@ var headJsFilesToInject = [
     'js/jquery.js',
     'js/bootstrap.js',
 
+    // Vendor - Core
+    'vendor/jquery-migrate/jquery-migrate-3.0.js',
+    'vendor/jquery.easing/js/jquery.easing.js',
+    'vendor/tether.min.js',
+
+    // Vendor - Page
+    'vendor/appear.js',
+    'vendor/slick-carousel/slick/slick.js',
+    'vendor/fancybox/jquery.fancybox.js',
+    'vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js',
+    'vendor/dzsparallaxer/dzsparallaxer.js',
+    'vendor/dzsparallaxer/dzsscroller/scroller.js',
+    'vendor/dzsparallaxer/advancedscroller/plugin.js',
+
+    //Helpers
+    'js/helpers/hs.hamburgers.js',
+
     // Load Light Gallery
-    'vendor/lightgallery/js/lightgallery.js',
-    'vendor/lg-thumbnail/lg-thumbnail.js',
-    'vendor/lg-fullscreen/lg-fullscreen.js',
+    // 'vendor/lightgallery/js/lightgallery.js',
+    // 'vendor/lg-thumbnail/lg-thumbnail.js',
+    // 'vendor/lg-fullscreen/lg-fullscreen.js',
 
     /**
      * Theme
