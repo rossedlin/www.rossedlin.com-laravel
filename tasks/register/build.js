@@ -15,6 +15,7 @@ module.exports = function (grunt) {
         'copy:tmpSassToTmpAssets',
         'copy:jqueryToTmpAssets',
         'copy:bootstrapToTmpAssets',
+        'copy:popperToTmpAssets',
         'copy:lightgalleryToTmpAssets',
         
         /**

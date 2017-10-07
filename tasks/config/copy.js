@@ -96,6 +96,22 @@ module.exports = function (grunt) {
         },
 
         /**
+         * Popper
+         */
+        popperToTmpAssets: {
+            files: [{
+                expand: true,
+                cwd: './node_modules/popper.js/dist',
+                src: [
+                    'popper.js',
+                    'popper-utils.js'
+                ],
+                dest: '.tmp/assets/js'
+            }]
+        },
+
+
+        /**
          * Light Gallery
          */
         lightgalleryToTmpAssets: {
