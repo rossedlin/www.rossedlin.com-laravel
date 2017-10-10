@@ -23,6 +23,7 @@ module.exports = function (grunt) {
          */
         'copy:assetsToTmpPublic',
         'concat',
+        'cssmin',
 
         /**
          * Publish
