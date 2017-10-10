@@ -18,12 +18,8 @@
 <link rel="shortcut icon" href="/favicon.ico">
 
 <!-- CSS Styles -->
-<link rel="stylesheet" href="<?= \Cryslo\Core\Utils::addVersionToCssFile('/css/head.css') ?>">
+<link rel="stylesheet" href="<?= \Cryslo\Core\Utils::addVersionToCssFile('/css/core.css') ?>">
 <!-- End CSS Styles -->
-
-<!-- JavaScript -->
-<script src="<?= \Cryslo\Core\Utils::addVersionToCssFile('/js/head.js') ?>"></script>
-<!-- End JavaScript -->
 
 <?php /*<link rel="stylesheet" href="/theme/unify/assets/vendor/icon-line-pro/style.css"> */ ?>
 

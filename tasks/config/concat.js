@@ -18,12 +18,16 @@ module.exports = function(grunt) {
 
   grunt.config.set('concat', {
     headJs: {
-      src: require('../pipeline').headJsFilesToInject,
-      dest: '.tmp/public/js/head.js'
+      src: require('../pipeline').coreJsFilesToInject,
+      dest: '.tmp/public/js/core.js'
     },
-    headCss: {
-      src: require('../pipeline').headCssFilesToInject,
-      dest: '.tmp/public/css/head.css'
+    coreCss: {
+      src: require('../pipeline').coreCssFilesToInject,
+      dest: '.tmp/public/css/core.css'
+    },
+    themeCss: {
+      src: require('../pipeline').themeCssFilesToInject,
+      dest: '.tmp/public/css/theme.css'
     }
   });
 
