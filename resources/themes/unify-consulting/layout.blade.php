@@ -29,6 +29,10 @@
 
 </main>
 
+<!-- JavaScript -->
+<script src="<?= \Cryslo\Core\Utils::addVersionToCssFile('/js/core.js') ?>"></script>
+<!-- End JavaScript -->
+
 @yield('body.post')
 
 </body>
