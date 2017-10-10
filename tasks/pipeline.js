@@ -10,9 +10,7 @@ var coreCssFilesToInject = [
     'css/theme.css'
 ];
 
-var themeCssFilesToInject = [
-
-];
+var themeCssFilesToInject = [];
 
 
 /**
