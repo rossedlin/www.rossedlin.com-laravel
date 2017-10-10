@@ -153,6 +153,21 @@ module.exports = function (grunt) {
                 ],
                 dest: 'public'
             }]
+        },
+
+        /**
+         * Local Env
+         */
+        localEnv: {
+            files: [{
+                expand: true,
+                cwd: 'build/local',
+                src: [
+                    '.htaccess',
+                    'robots.txt'
+                ],
+                dest: 'public'
+            }]
         }
     });
 
