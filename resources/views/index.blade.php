@@ -13,16 +13,17 @@
 
     @include('unify-consulting.header')
 
+    @include('sections.quote.two')
+
     @include('index.sections.about-1')
     @include('index.sections.services')
-    @include('sections.quote.one')
 
     {{--@include('pages.index.sections.quote-2')--}}
 
     {{--@include('pages.index.sections.portfolio')--}}
     {{--@include('pages.index.sections.blog')--}}
     {{--@include('pages.index.sections.testimonials')--}}
-    {{--@include('pages.index.sections.contact')--}}
+    @include('sections.contact')
 @stop
 
 @section('body.post')

@@ -19,6 +19,6 @@ class Index extends _Web
 	 */
 	public function __invoke()
 	{
-		return view('coming-soon', $this->data);
+		return view('index', $this->data);
 	}
 }
