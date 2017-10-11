@@ -45,6 +45,8 @@ module.exports = function (grunt) {
                 src: [
                     'fonts/**',
                     'img/**',
+                    'js/**',
+                    'vendor/**',
                     'favicon.ico',
                     'index.php'
                 ],

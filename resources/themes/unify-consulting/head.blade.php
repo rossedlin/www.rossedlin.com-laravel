@@ -21,9 +21,11 @@
 <link rel="stylesheet" href="<?= \Cryslo\Core\Utils::addVersionToCssFile('/css/core.min.css') ?>">
 <!-- End CSS Styles -->
 
-<?php /*<link rel="stylesheet" href="/theme/unify/assets/vendor/icon-line-pro/style.css"> */ ?>
+<!-- JavaScript -->
+<script src="<?= \Cryslo\Core\Utils::addVersionToCssFile('/js/core.js') ?>"></script>
+<!-- End JavaScript -->
 
 <?php if (App::environment('production'))
 {
-    echo \Cryslo\Api\Google\Analytics::getHtml('UA-61673839-8');
+echo \Cryslo\Api\Google\Analytics::getHtml('UA-61673839-8');
 } ?>

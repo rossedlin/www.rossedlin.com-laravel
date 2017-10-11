@@ -17,10 +17,6 @@
 module.exports = function(grunt) {
 
   grunt.config.set('concat', {
-    headJs: {
-      src: require('../pipeline').coreJsFilesToInject,
-      dest: '.tmp/public/js/core.js'
-    },
     coreCss: {
       src: require('../pipeline').coreCssFilesToInject,
       dest: '.tmp/public/css/core.css'
@@ -28,6 +24,15 @@ module.exports = function(grunt) {
     themeCss: {
       src: require('../pipeline').themeCssFilesToInject,
       dest: '.tmp/public/css/theme.css'
+    },
+
+    coreJs: {
+      src: require('../pipeline').coreJsFilesToInject,
+      dest: '.tmp/public/js/core.js'
+    },
+    themeJs: {
+      src: require('../pipeline').themeJsFilesToInject,
+      dest: '.tmp/public/js/theme.js'
     }
   });
 
