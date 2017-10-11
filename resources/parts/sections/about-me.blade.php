@@ -6,32 +6,24 @@
  * Time: 13:11
  */
 ?>
+
 <!-- About -->
 <div id="about">
     <div class="container g-pt-100">
-        <!-- Heading -->
-        <div class="g-max-width-550 text-center mx-auto g-mb-100">
-            <h1 class="text-uppercase g-color-main-light-v1 g-font-weight-600 g-font-size-13 g-letter-spacing-2 mb-4">
-                About Me
-            </h1>
-            <p class="g-font-size-16">
-                Unify creative technology company providing key digital services. Focused on
-                helping our clients to build a successful business on web and mobile.
-            </p>
-        </div>
-        <!-- End Heading -->
 
         <!-- Figure -->
         <section class="container g-pt-100 g-pb-40">
             <figure class="row">
                 <!-- Figure Image -->
-                <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0 g-mb-30">
-                    <img class="w-100" src="/img/about/ross-edlin-headshot-400-450.jpg" alt="Image Description">
+                <div class="col-sm-8 offset-sm-2 col-md-3 offset-md-0 g-mb-30">
+                    <img class="w-100 img-thumbnail"
+                         src="/img/about/ross-edlin-headshot-400-450.jpg"
+                         alt="Image Description">
                 </div>
                 <!-- End Figure Image -->
 
                 <!-- Figure Body -->
-                <div class="col-lg-8">
+                <div class="col-md-9">
                     <div class="d-flex justify-content-between g-mb-10">
                         <div class="g-mb-20">
                             <h4 class="h5 g-mb-5">Ross Edlin</h4>
@@ -92,9 +84,16 @@
 
                     <!-- Figure Info -->
                     <div class="g-mb-50">
-                        <p>I am an ambitious workaholic, but apart from that, pretty simple person. Whether it's
-                            branding, print, UI + UX I've got you covered. I strive to figure out the right solutions
-                            for your look to stand out amongst the rest.</p>
+                        <p>
+                            I am an ambitious workaholic and an adventurer, you'll see by this blog, I love to travel and I love to code! <br />
+                            Whether it's building your next kickass solution or simply fixing a bug, I got you covered. <br />
+                            I strive to figure out the right solutions for you or your company, I'll dive deep into why you need what you're asking, finding the root problem.
+                        </p>
+
+                        <p>
+
+                        </p>
+
                         <p>As creatives, it's important that I strive to do work outside of obligation. This lets us
                             stay ahead of the curve for our clients and internal projects. At the end of the day, it's
                             important to not let being busy distract us from having fun. Smiling, laughing, and hanging
@@ -145,6 +144,7 @@
         </section>
         <!-- End Figure -->
 
+        <?php /*
         <!-- Icon Blocks -->
         <ul class="row list-inline u-info-v9-1 g-pb-70 mb-0">
             <li class="col-md-4 list-inline-item g-mx-0 g-mb-30">
@@ -214,6 +214,7 @@
             </li>
         </ul>
         <!-- End Icon Blocks -->
+        */ ?>
     </div>
 </div>
 <!-- End About -->

@@ -24,6 +24,6 @@ class About extends _Web
 	 */
 	public function __invoke()
 	{
-		return view('coming-soon', $this->data);
+		return view('about', $this->data);
 	}
 }
