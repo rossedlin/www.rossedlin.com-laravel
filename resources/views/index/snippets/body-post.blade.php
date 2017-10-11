@@ -110,7 +110,7 @@
                     },
                     arrows: {
                         style: "hermes",
-                        enable: true,
+                        enable: false,
                         hide_onmobile: true,
                         hide_under: 768,
                         hide_onleave: false,
