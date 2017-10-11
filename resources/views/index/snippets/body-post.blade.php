@@ -7,6 +7,23 @@
  */
 ?>
 
+<!-- JS Revolution Slider -->
+<script src="/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.js"></script>
+<script src="/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.js"></script>
+
+<script src="/vendor/revolution-slider/revolution-addons/typewriter/js/revolution.addon.typewriter.js"></script>
+
+<script src="/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.js"></script>
+<script src="/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.js"></script>
+<script src="/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.js"></script>
+<script src="/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.js"></script>
+<script src="/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.js"></script>
+<script src="/vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.js"></script>
+<script src="/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.js"></script>
+<script src="/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.js"></script>
+<script src="/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.js"></script>
+
+
 <!-- JS Plugins Init. -->
 <script>
     $(document).on('ready', function () {
