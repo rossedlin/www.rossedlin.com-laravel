@@ -50,6 +50,7 @@
                 </ul>
             </div>
 
+            <?php /*
             <hr class="g-mb-20 g-mt-10">
 
             <div>
@@ -68,6 +69,7 @@
                     </li>
                 </ul>
             </div>
+            */ ?>
 
         </div>
     </article>
