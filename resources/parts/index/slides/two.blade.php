@@ -8,15 +8,35 @@
  * Time: 13:17
  */
 ?>
-<li data-index="rs-2801" data-transition="slideup" data-slotamount="default" data-hideafterloop="0"
-    data-hideslideonmobile="off" data-easein="default" data-easeout="default"
-    data-masterspeed="default" data-thumb="/theme/unify-consulting/img-temp/1920x1080/img2.jpg"
-    data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
-    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-    data-param9="" data-param10="" data-description="">
+<li data-index="rs-2801"
+    data-transition="slideup"
+    data-slotamount="default"
+    data-hideafterloop="0"
+    data-easein="default"
+    data-easeout="default"
+    data-masterspeed="default"
+    data-thumb=""
+    data-rotate="0"
+    data-saveperformance="off"
+    data-title="Slide"
+    data-param1=""
+    data-param2=""
+    data-param3=""
+    data-param4=""
+    data-param5=""
+    data-param6=""
+    data-param7=""
+    data-param8=""
+    data-param9=""
+    data-param10=""
+    data-description="">
+
     <!-- MAIN IMAGE -->
-    <img src="/img/thailand/pai-canyon.jpg" alt="" data-bgposition="center center"
-         data-bgfit="cover" class="rev-slidebg">
+    <img src="/img/thailand/pai-canyon.jpg"
+         alt=""
+         data-bgposition="center center"
+         data-bgfit="cover"
+         class="rev-slidebg">
     <!-- LAYERS -->
 
     <!-- LAYER NR. 1 -->
@@ -63,8 +83,8 @@
          data-paddingleft="[0,0,0,0]"
 
          style="z-index: 8; white-space: nowrap; font-weight: 400; color: rgba(255, 255, 255, 1.00);border-width:0px;">
-        When you stand on the edge, staring into endless mountains <br/>
-        You'll realise just how much this world has to offer.
+        Standing on the edge, staring into endless mountains <br/>
+        You realise just how much this world has to offer.
     </div>
 
     <!-- LAYER NR. 5 -->
