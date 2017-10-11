@@ -42,6 +42,7 @@ class Contact extends _Web
 		]);
 
 		$transport = \Swift_SmtpTransport::newInstance(env('MAIL_HOST'), env('MAIL_PORT'));
+
 		$transport->setUsername(env('MAIL_USERNAME'));
 		$transport->setPassword(env('MAIL_PASSWORD'));
 
