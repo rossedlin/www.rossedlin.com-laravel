@@ -11,6 +11,8 @@
  */
 ?>
 <div class="g-pl-20--lg">
+
+    <?php /*
     <!-- Links -->
     <div class="g-mb-50">
         <h3 class="h5 g-color-black g-font-weight-600 mb-4">Links</h3>
@@ -36,12 +38,13 @@
     <!-- End Links -->
 
     <hr class="g-brd-gray-light-v4 g-mt-50 mb-0">
+    */ ?>
 
     <div id="stickyblock-start">
         <div class="js-sticky-block g-sticky-block--lg g-pt-50" data-responsive="true"
              data-start-point="#stickyblock-start" data-end-point="#stickyblock-end">
 
-            <?php /*
+        <?php /*
             <!-- Publications -->
             <div class="g-mb-50">
                 <h3 class="h5 g-color-black g-font-weight-600 mb-4">Publications</h3>
@@ -89,23 +92,24 @@
             <hr class="g-brd-gray-light-v4 g-my-50">
             */ ?>
 
-            <!-- Tags -->
+        <!-- Tags -->
             <div class="g-mb-40">
                 <h3 class="h5 g-color-black g-font-weight-600 mb-4">Tags</h3>
                 <ul class="u-list-inline mb-0">
 
                     <?php foreach ($tags as $tag)
                     { ?>
-                        <li class="list-inline-item g-mb-10">
-                            <a class="<?= $tag->getCssClass() ?> u-tags-v1 g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                               href="#"><?= $tag->getName() ?></a>
-                        </li>
+                    <li class="list-inline-item g-mb-10">
+                        <a class="<?= $tag->getCssClass() ?> u-tags-v1 g-font-size-12 g-rounded-50 g-py-4 g-px-15"
+                           href="#"><?= $tag->getName() ?></a>
+                    </li>
                     <?php } ?>
 
                 </ul>
             </div>
             <!-- End Tags -->
 
+            <?php /*
             <hr class="g-brd-gray-light-v4 g-my-50">
 
             <!-- Newsletter -->
@@ -122,6 +126,8 @@
                 </div>
             </div>
             <!-- End Newsletter -->
+            */ ?>
+
         </div>
     </div>
 </div>
