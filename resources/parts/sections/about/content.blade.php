@@ -102,58 +102,59 @@
 
             <!-- User Skills -->
             <div class="d-flex flex-wrap text-center">
-                <!-- Counter Pie Chart -->
-                <div class="g-mr-40 g-mb-20 g-mb-0--xl">
-                    <div class="js-pie g-color-purple g-mb-5" data-circles-value="54" data-circles-max-value="100"
-                         data-circles-bg-color="#d3b6c6" data-circles-fg-color="#9b6bcc" data-circles-radius="30"
-                         data-circles-stroke-width="3" data-circles-additional-text="%" data-circles-duration="2000"
-                         data-circles-scroll-animate="true" data-circles-font-size="14">
-                    </div>
-                    <h4 class="h6 g-font-weight-300">Consulting</h4>
-                </div>
-                <!-- End Counter Pie Chart -->
 
                 <!-- Counter Pie Chart -->
                 <div class="g-mr-40 g-mb-20 g-mb-0--xl">
-                    <div class="js-pie g-color-blue g-mb-5" data-circles-value="72" data-circles-max-value="100"
-                         data-circles-bg-color="#bee3f7" data-circles-fg-color="#3498db" data-circles-radius="30"
-                         data-circles-stroke-width="3" data-circles-additional-text="%" data-circles-duration="2000"
-                         data-circles-scroll-animate="true" data-circles-font-size="14">
-                    </div>
-                    <h4 class="h6 g-font-weight-300">Branding</h4>
-                </div>
-                <!-- End Counter Pie Chart -->
-
-                <!-- Counter Pie Chart -->
-                <div class="g-mr-40 g-mb-20 g-mb-0--xl">
-                    <div class="js-pie g-color-lightred g-mb-5" data-circles-value="81" data-circles-max-value="100"
+                    <div class="js-pie g-color-lightred g-mb-5" data-circles-value="90" data-circles-max-value="100"
                          data-circles-bg-color="#ffc2bb" data-circles-fg-color="#e74c3c" data-circles-radius="30"
                          data-circles-stroke-width="3" data-circles-additional-text="%" data-circles-duration="2000"
                          data-circles-scroll-animate="true" data-circles-font-size="14">
                     </div>
-                    <h4 class="h6 g-font-weight-300">Copywriting</h4>
+                    <h4 class="h6 g-font-weight-300">Developer</h4>
                 </div>
                 <!-- End Counter Pie Chart -->
 
                 <!-- Counter Pie Chart -->
                 <div class="g-mr-40 g-mb-20 g-mb-0--xl">
-                    <div class="js-pie g-color-primary g-mb-5" data-circles-value="83" data-circles-max-value="100"
+                    <div class="js-pie g-color-purple g-mb-5" data-circles-value="65" data-circles-max-value="100"
+                         data-circles-bg-color="#d3b6c6" data-circles-fg-color="#9b6bcc" data-circles-radius="30"
+                         data-circles-stroke-width="3" data-circles-additional-text="%" data-circles-duration="2000"
+                         data-circles-scroll-animate="true" data-circles-font-size="14">
+                    </div>
+                    <h4 class="h6 g-font-weight-300">Consultant</h4>
+                </div>
+                <!-- End Counter Pie Chart -->
+
+                <!-- Counter Pie Chart -->
+                <div class="g-mr-40 g-mb-20 g-mb-0--xl">
+                    <div class="js-pie g-color-blue g-mb-5" data-circles-value="60" data-circles-max-value="100"
+                         data-circles-bg-color="#bee3f7" data-circles-fg-color="#3498db" data-circles-radius="30"
+                         data-circles-stroke-width="3" data-circles-additional-text="%" data-circles-duration="2000"
+                         data-circles-scroll-animate="true" data-circles-font-size="14">
+                    </div>
+                    <h4 class="h6 g-font-weight-300">Traveller</h4>
+                </div>
+                <!-- End Counter Pie Chart -->
+
+                <!-- Counter Pie Chart -->
+                <div class="g-mr-40 g-mb-20 g-mb-0--xl">
+                    <div class="js-pie g-color-primary g-mb-5" data-circles-value="45" data-circles-max-value="100"
                          data-circles-bg-color="#c9ff97" data-circles-fg-color="#72c02c" data-circles-radius="30"
                          data-circles-stroke-width="3" data-circles-additional-text="%" data-circles-duration="2000"
                          data-circles-scroll-animate="true" data-circles-font-size="14">
                     </div>
-                    <h4 class="h6 g-font-weight-300">Marketing</h4>
+                    <h4 class="h6 g-font-weight-300">Marketing / SEO</h4>
                 </div>
                 <!-- End Counter Pie Chart -->
 
                 <!-- Counter Pie Chart -->
                 <div class="g-mb-20 g-mb-0--lg">
-                    <div class="js-pie g-mb-5" data-circles-value="92" data-circles-max-value="100"
+                    <div class="js-pie g-mb-5" data-circles-value="30" data-circles-max-value="100"
                          data-circles-bg-color="#eeeeee" data-circles-fg-color="#111111" data-circles-radius="30"
                          data-circles-stroke-width="3" data-circles-additional-text="%" data-circles-duration="2000"
                          data-circles-scroll-animate="true" data-circles-font-size="14">
                     </div>
-                    <h4 class="h6 g-font-weight-300">Management</h4>
+                    <h4 class="h6 g-font-weight-300">Photographer</h4>
                 </div>
                 <!-- End Counter Pie Chart -->
             </div>
