@@ -13,7 +13,7 @@
     <div class="u-block-hover g-pos-rel">
         <figure>
             <img class="img-fluid w-100 u-block-hover__main--zoom-v1"
-                 src="/img/about/ross-edlin-headshot-400-450.jpg" alt="Image Description">
+                 src="/img/about/ross-edlin-headshot-400-450.jpg" alt="<?= \App\Library\About::getFullName() ?>">
         </figure>
 
         <!-- Figure Caption -->
@@ -43,7 +43,7 @@
         <!-- End Figure Caption -->
 
         <!-- User Info -->
-        <span class="g-pos-abs g-top-20 g-left-0">
+        <span class="g-pos-abs g-top-20 g-left-0 hidden-md-down">
             <span class="btn-sm u-btn-primary g-color-white rounded-0"><?= \App\Library\About::getFullName() ?></span>
             <small class="d-block g-bg-black g-color-white g-pa-5"><?= \App\Library\About::getTitle() ?></small>
         </span>
@@ -111,51 +111,47 @@
 
             <!-- Unify Project -->
             <div class="g-mb-20">
-                <h6 class="g-mb-10">Dribbble Shots <span class="float-right g-ml-10">62%</span></h6>
+                <h6 class="g-mb-10">Lamp Stack <span class="float-right g-ml-10">92%</span></h6>
+                <div class="js-hr-progress-bar progress g-bg-black-opacity-0_1 rounded-0 g-mb-5">
+                    <div class="js-hr-progress-bar-indicator progress-bar g-bg-primary u-progress-bar--xs"
+                         role="progressbar" style="width: 92%;" aria-valuenow="93" aria-valuemin="0"
+                         aria-valuemax="100"></div>
+                </div>
+            </div>
+            <!-- End Unify Project -->
+
+            <!-- DevOps -->
+            <div class="g-mb-20">
+                <h6 class="g-mb-10">DevOps <span class="float-right g-ml-10">62%</span></h6>
                 <div class="js-hr-progress-bar progress g-bg-black-opacity-0_1 rounded-0 g-mb-5">
                     <div class="js-hr-progress-bar-indicator progress-bar g-bg-pink u-progress-bar--xs"
                          role="progressbar" style="width: 62%;" aria-valuenow="62" aria-valuemin="0"
                          aria-valuemax="100"></div>
                 </div>
-                <small class="g-font-size-12">20% less than last week</small>
             </div>
-            <!-- End Unify Project -->
+            <!-- End DevOps -->
 
-            <!-- Unify Project -->
+            <!-- MVC Frameworks -->
             <div class="g-mb-20">
-                <h6 class="g-mb-10">Unify Project <span class="float-right g-ml-10">93%</span></h6>
-                <div class="js-hr-progress-bar progress g-bg-black-opacity-0_1 rounded-0 g-mb-5">
-                    <div class="js-hr-progress-bar-indicator progress-bar g-bg-primary u-progress-bar--xs"
-                         role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0"
-                         aria-valuemax="100"></div>
-                </div>
-                <small class="g-font-size-12">17% more than last week</small>
-            </div>
-            <!-- End Unify Project -->
-
-            <!-- WordPress Coding -->
-            <div class="g-mb-20">
-                <h6 class="g-mb-10">WordPress Coding <span class="float-right g-ml-10">74%</span></h6>
+                <h6 class="g-mb-10">MVC Frameworks <span class="float-right g-ml-10">74%</span></h6>
                 <div class="js-hr-progress-bar progress g-bg-black-opacity-0_1 rounded-0 g-mb-5">
                     <div class="js-hr-progress-bar-indicator progress-bar g-bg-black u-progress-bar--xs"
                          role="progressbar" style="width: 74%;" aria-valuenow="74" aria-valuemin="0"
                          aria-valuemax="100"></div>
                 </div>
-                <small class="g-font-size-12">35% more than last week</small>
             </div>
-            <!-- End WordPress Coding -->
+            <!-- End MVC Frameworks -->
 
-            <!-- Pixeel Ltd -->
+            <!-- DevOps -->
             <div class="g-mb-20">
-                <h6 class="g-mb-10">Pixeel Ltd <span class="float-right g-ml-10">86%</span></h6>
+                <h6 class="g-mb-10">DevOps <span class="float-right g-ml-10">60%</span></h6>
                 <div class="js-hr-progress-bar progress g-bg-black-opacity-0_1 rounded-0 g-mb-5">
                     <div class="js-hr-progress-bar-indicator progress-bar g-bg-darkpurple u-progress-bar--xs"
-                         role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0"
+                         role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
                          aria-valuemax="100"></div>
                 </div>
-                <small class="g-font-size-12">42% more than last week</small>
             </div>
-            <!-- End Pixeel Ltd -->
+            <!-- End DevOps -->
         </div>
         <!-- End Panel Body -->
     </div>
