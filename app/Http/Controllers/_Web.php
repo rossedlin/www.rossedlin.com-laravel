@@ -33,6 +33,11 @@ abstract class _Web extends BaseController
 	const WORDPRESS_DATE  = 'jS M Y';
 
 	/**
+	 * @var Objects\Web\Meta $meta
+	 */
+	protected $meta;
+
+	/**
 	 * @var Objects\Page $page
 	 */
 	protected $page;
@@ -50,11 +55,19 @@ abstract class _Web extends BaseController
 //        $feed            = new Feed\Wordpress();
 //        $wordpress = $feed->getFromUrl("https://wordpress.cuttingweb.co.uk/feed/");
 
+		$this->meta = new Objects\Web\Meta();
+		$this->meta->setTitle("Ross Edlin");
+		$this->meta->setSiteName("Ross Edlin");
+		$this->meta->setDescription("Follow Ross Edlin's blog, talking about new technology, travel, photography.");
+		$this->meta->setKeywords('ross edlin, ross, edlin, technology, travel, photography');
+		$this->meta->setUrl(url('/'));
+
 		$this->page = new Objects\Page([
 //            'title' => $wordpress->getTitle(),
 		]);
 
 		$this->data = [
+			'meta'         => $this->meta,
 			'page'         => $this->page,
 			'latest_posts' => WordPress\Api::getLatestPosts(),
 		];
