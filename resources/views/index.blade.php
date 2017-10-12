@@ -15,7 +15,7 @@
 
     @include('sections.quote.two')
 
-    @include('index.sections.services')
+    {{--@include('index.sections.services')--}}
 
     {{--@include('pages.index.sections.quote-2')--}}
 
