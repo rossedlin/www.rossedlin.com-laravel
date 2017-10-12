@@ -37,6 +37,9 @@
 <script src="/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
 <script src="/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 <script src="/vendor/fancybox/jquery.fancybox.js"></script>
+<script src="/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="/vendor/circles/circles.js"></script>
+<script src="/vendor/malihu-scrollbar/jquery.mCustomScrollbar.js"></script>
 
 <!-- JS Unify -->
 <script src="/js/hs.core.js"></script>
@@ -48,6 +51,10 @@
 <script src="/js/components/hs.cubeportfolio.js"></script>
 <script src="/js/components/hs.popup.js"></script>
 <script src="/js/components/hs.go-to.js"></script>
+<script src="/js/components/hs.tabs.js"></script>
+<script src="/js/components/hs.progress-bar.js"></script>
+<script src="/js/components/hs.scrollbar.js"></script>
+<script src="/js/components/hs.chart-pie.js"></script>
 
 @yield('body.post')
 
