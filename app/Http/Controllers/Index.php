@@ -1,7 +1,6 @@
 <?php
-namespace App\Http\Controllers;
 
-use \App\Objects;
+namespace App\Http\Controllers;
 
 /**
  * Created by PhpStorm.
@@ -14,11 +13,11 @@ use \App\Objects;
  */
 class Index extends _Web
 {
-	/**
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 */
-	public function __invoke()
-	{
-		return view('index', $this->data);
-	}
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function __invoke()
+    {
+        return view('index', $this->data);
+    }
 }

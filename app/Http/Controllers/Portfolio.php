@@ -1,7 +1,6 @@
 <?php
-namespace App\Http\Controllers;
 
-use \App\Objects;
+namespace App\Http\Controllers;
 
 /**
  * Created by PhpStorm.
@@ -16,24 +15,24 @@ use \App\Objects;
  */
 class Portfolio extends _Web
 {
-	/**
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 */
-	public function __invoke()
-	{
-		$portfolio = new \App\Library\Portfolio();
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function __invoke()
+    {
+        $portfolio = new \App\Library\Portfolio();
 
-		$this->data['portfolio'] = [
-			$portfolio->getWebScraping(),
-			$portfolio->getFiveGuys(),
-			$portfolio->getApiIntegration(),
-			$portfolio->getCryslo(),
-			$portfolio->getStripe(),
-			$portfolio->getRossEdlinLanding(),
-			$portfolio->getDishdashNoqu(),
-			$portfolio->getGoodEarth(),
-		];
+        $this->data['portfolio'] = [
+            $portfolio->getWebScraping(),
+            $portfolio->getFiveGuys(),
+            $portfolio->getApiIntegration(),
+            $portfolio->getCryslo(),
+            $portfolio->getStripe(),
+            $portfolio->getRossEdlinLanding(),
+            $portfolio->getDishdashNoqu(),
+            $portfolio->getGoodEarth(),
+        ];
 
-		return view('portfolio', $this->data);
-	}
+        return view('portfolio', $this->data);
+    }
 }

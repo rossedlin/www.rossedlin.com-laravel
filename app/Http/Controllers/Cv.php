@@ -1,11 +1,8 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Library\WordPress;
-//use \App\Objects;
-//use \Cryslo\Core;
-//use \Cryslo\Api;
-//use Cryslo\Object;
 
 /**
  * Created by PhpStorm.
@@ -21,13 +18,13 @@ use App\Library\WordPress;
  */
 class Cv extends _Web
 {
-	/**
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 */
-	public function __invoke()
-	{
-		$this->data['tags']  = WordPress\Api::getTags();
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function __invoke()
+    {
+        $this->data['tags'] = WordPress\Api::getTags();
 
-		return view('cv', $this->data);
-	}
+        return view('cv', $this->data);
+    }
 }

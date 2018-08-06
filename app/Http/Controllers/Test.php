@@ -1,7 +1,6 @@
 <?php
-namespace App\Http\Controllers;
 
-use \App\Objects;
+namespace App\Http\Controllers;
 
 /**
  * Created by PhpStorm.
@@ -16,12 +15,12 @@ use \App\Objects;
  */
 class Test extends _Web
 {
-	/**
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 */
-	public function __invoke()
-	{
-		$this->data['dump'] = [];
-		return view('test', $this->data);
-	}
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function __invoke()
+    {
+        $this->data['dump'] = [];
+        return view('test', $this->data);
+    }
 }
